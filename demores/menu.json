@@ -1,0 +1,152 @@
+{
+  "root": "WebSuite功能菜单",
+  "tip": "Websuite 库，使用是免费的，而且永久免费！\n个别模块需要开发授权，在开发环境下会有授权提示，但也仅此而已。\n即使没开发授权，最多就是测试的时候，弹个对话框而已，编译后使用不会弹框，仅开发环境弹框。\n\n                                                                             大自在 QQ:781770213",
+  "menu": [
+    {
+      "label": "首页",
+      "page": "uo_tabpage_homepage",
+      "tip": "开始之前，建议先花点时间，阅读一下本说明。\n了解一下 websuite 库的基本功能。"
+    },
+    {
+      "label": "uo_json(JSON处理)",
+      "page": "uo_tabpage_json",
+      "tip": "快速解析和生成JSON，提供高效基于 datawindow 的导入和导出。\n最值得一用的功能是：在有子JSON和数组的时候，可以用符号 / 直接取得成员值，不需要一层层解析。\n该对象处理JSON的效率和速度，在PB界是最快的，与PB2019的JSON持平。"
+    },
+    {
+      "label": "uo_xml(XML处理)",
+      "page": "uo_tabpage_xml",
+      "tip": "xml 文件和字符串解析和生成，高效方便。"
+    },
+    {
+      "label": "uo_httpclient(HTTP/HTTPS)",
+      "page": "uo_tabpage_httpclient",
+      "tip": "提供基于 WinHttp 的 HTTP/HTTPS 协议的数据访问，封装有下载和上传功能，可以直接传送JSON对象，自动 utf8 转码。\n可完全取代系统的 xmlhttp 对象功能，只会更强更方便。"
+    },
+    {
+      "label": "国家医保接口相关实现(VIP)",
+      "page": "uo_tabpage_yb",
+      "tip": "提供基于国家医保标准的部分省份接口和SM2 SM3 SM4 算法。"
+    },
+    {
+      "label": "uo_ftp(FTP)",
+      "page": "uo_tabpage_ftp",
+      "tip": "基于 libftp 库，完全从底层协议实现的 ftp 客户端。\n与基于 WINAPI 的 FTP 客户端不同的是：提供了更多的详细控制。"
+    },
+    {
+      "label": "uo_ftp((FTP资源管理器)",
+      "page": "uo_tabpage_ftp_browser",
+      "tip": "基于 libftp 库，完全从底层协议实现的 ftp 客户端。\n与基于 WINAPI 的 FTP 客户端不同的是：提供了更多的详细控制。\n这是模仿资源管理器实现的一个 FTP 客户端管理器。双击资源管理器里的文件，可以编辑后自动更新到服务器里去。"
+    },
+    {
+      "label": "uo_sftp(SFTP)",
+      "page": "uo_tabpage_sftp",
+      "tip": "基于 ssh 协议的 FTP 客户端，简称 sftp。\n除了文件上传下载以外，还可以在服务端执行操作系统命令，相当于合并了 ssh 功能。"
+    },
+    {
+      "label": "加/解密和编码",
+      "page": "uo_tabpage_crypto",
+      "tip": "基于 openssl 实现常用的功能。\n1.RSA 公钥私钥生成、加密解密、签名和验签。\n2.CRC32 CRC16 CRC8 校验。\n3.MD5、SHA、SM3、base64、urlencode/urldecode、timestamp等众多编码解码功能。\n4.AES、DES、3DES、SM4等众多加密解密功能。\n以上可以用于完成绝大多数电子商务签名、加密解密工作。"
+    },
+    {
+      "label": "uo_map 容器",
+      "page": "uo_tabpage_map_asn1",
+      "tip": "Map是一种关联容器，它按照特定顺序存储由键值Key和映射值Value组合而成的元素。这是一个非常有用的工具。其特性有：\n1.键值Key通常用于排序和唯一标识元素，而映射值Value存储与此键值Key相关联的内容。\n2.元素总是按照其键Key进行排序的。\n在保存类似数据字典这样的数据时非常有用。\nasn1编码是将数据编码成二进制，方便对非格式化数据进行打包处理。"
+    },
+    {
+      "label": "uo_zip(ZIP文件压缩/解压缩)",
+      "page": "uo_tabpage_zip",
+      "tip": "提供 ZIP 格式的压缩和解压缩功能。\n除对文件进行压缩和解压缩外，也可以把BLOB数据添加进压缩包，或者将压缩里的内容读入BLOB变量。"
+    },
+    {
+      "label": "uo_compress(压缩/解压缩)",
+      "page": "uo_tabpage_compress",
+      "tip": "提供 数据流压缩和解压缩功能。支持压缩、解压缩 .gz 格式文件。"
+    },
+    {
+      "label": "uo_sql(数据库)/dbf",
+      "page": "uo_tabpage_sql",
+      "tip": "提供了众多数据库连接支持。快速高效访问数据库和结果集。支持的连接方式和数据库有：\n1.ODBC\n2.Microsoft SQL Server\n3.Oracle\n4.InterBase/Firebird\n5.SQLBase\n6.DB2\n7.Sybase\n8.MySQL\n9.PostgreSQL\n10.SQLite\n11.SQLAnywere"
+    },
+    {
+      "label": "uo_hook(钩子)",
+      "page": "uo_tabpage_hook",
+      "tip": "提供 API 钩子功能。\n作用就是将系统函数的调用地址，改成我们指定函数的地址，在调用前和调用后，可以触发我们指定的函数功能，实现特定的功能。\n甚至可以用我们自己的函数，来替代系统的功能函数。\n这是一个很特殊的功能!!!。"
+    },
+    {
+      "label": "uo_string(字符串高级处理)",
+      "page": "uo_tabpage_string",
+      "tip": "一个快速高效的字符串处理对象，尤其是在很多字符串拼接操作中，比 string 变量操作快五十倍之多。\n除查找、替换等功能以外，其他特殊功能有：\n1.正则表达式搜索、匹配、替换。\n2.大文本按行处理。\n3.字符集转换。\n4.直接读写文本文件\n5.字符串分割。\n6.控制台输出调试功能。"
+    },
+    {
+      "label": "uo_pdfview(PDF浏览与签名)",
+      "page": "uo_tabpage_pdf",
+      "tip": "比较少见的 pdf 文件阅读控件（不是 ocx）。\n功能有：\n1.加载PDF，可打印和另存，如同首页上显示的内容一般。\n2.将PDF转成图片。\n3.将PDF转成纯文本内容，可取到每一个单词。\n4.在指定位置添加图片。\n5.添加手写签名。"
+    },
+    {
+      "label": "uo_mail(电子邮件收发)",
+      "page": "uo_tabpage_mail",
+      "tip": "1.基于 smtp 协议发送邮件。\n2.基于 pop 协议接收邮件。收到的邮件已解析为 json 结构，方便利用。"
+    },
+    {
+      "label": "uo_image(图片处理)",
+      "page": "uo_tabpage_image",
+      "tip": "支持 bmp、jpg、png、图片加载、显示、转换。"
+    },
+    {
+      "label": "uo_utils(工具类函数)",
+      "page": "uo_tabpage_utils",
+      "tip": "各种杂项函数和功能的集合，ping 、 线程的等待状态框、文件查找、多语言多字符集的字符集转换，等等..."
+    },
+    {
+      "label": "数据窗口-Excel",
+      "page": "uo_tabpage_excel",
+      "tip": "datawindow与excel导入导出。"
+    },
+    {
+      "label": "拖拽数据窗口",
+      "page": "uo_tabpage_drag_datawindow",
+      "tip": "基于 datawindow的远比PB自身提供的 drag 方便好用得多的拖拽功能。\n可用于排班、排房间等业务系统中。"
+    },
+    {
+      "label": "uo_application(多线程)",
+      "page": "uo_tabpage_thread",
+      "tip": "拟开发的多线程处理功能，目前还有些技术问题没有解决。以后有机会再实现。"
+    },
+    {
+      "label": "pss_server",
+      "page": "uo_tabpage_pss_server",
+      "tip": "websocket 服务端"
+    },
+    {
+      "label": "websocket_client",
+      "page": "uo_tabpage_ws_client",
+      "tip": "websocket 客户端"
+    },
+    {
+      "label": "socket_client",
+      "page": "uo_tabpage_socket_client",
+      "tip": "socket 客户端"
+    },
+    {
+      "label": "redis",
+      "page": "uo_tabpage_redis",
+      "tip": "redis 服务端/客户端"
+    },
+    {
+      "label": "painter(画图)",
+      "page": "uo_tabpage_painter",
+      "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
+    },
+    {
+      "label": "Datawindow",
+      "page": "uo_tabpage_datawindow",
+      "tip": "datawindow扩展功能"
+    },
+    {
+      "label": "海康指纹仪",
+      "page": "uo_tabpage_fingerprint",
+      "tip": "海康指纹仪"
+    }
+
+  ]
+}

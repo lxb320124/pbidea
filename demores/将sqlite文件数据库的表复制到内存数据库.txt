@@ -1,0 +1,58 @@
+uo_database db
+string ls_user,ls_dbms,ls_servername,ls_database,ls_pass,ls_dbparm
+ls_user       = ""
+ls_dbms       = "sqlite"
+ls_servername = ""
+ls_database   = ":memory:"
+ls_pass       = ""
+ls_dbparm     = ""
+
+//打开内存数据库
+db = create uo_database
+db.LogId = ls_user
+db.DBMS = ls_dbms
+db.ServerName = ls_servername
+db.Database = ls_database
+db.LogPass = ls_pass
+db.DBParm = ls_dbparm
+if not db.open() then
+	messagebox("",db.sqlerrtext)
+	destroy db
+	return
+end if
+
+//将 test.db 附加到内存数据库
+db.executesql("Attach 'test.db' as test")
+
+//取附加进来的文件数据库的所有表名称 ，并把数据复制到内存数据库
+uo_recordset rs
+string ls_sql,ls_tabname
+rs = db.executesql("select name from test.sqlite_master where type='table'")
+if isvalid(rs) then
+	do while rs.fetchnext()
+		ls_tabname = rs.GetField(1).GetString()
+		ls_sql = "create table " + ls_tabname + " as select * from test." + ls_tabname;
+		db.executesql(ls_sql)
+	loop
+	rs.close()
+else
+	messagebox("",db.sqlerrtext)
+end if
+
+//卸载文件数据库
+db.executesql("dettach test")
+
+//查一下复制过来的表名称,有没有记录数
+long ll_count
+rs = db.executesql("select count(*) from ry")
+if isvalid(rs) then
+	do while rs.fetchnext()
+		ll_count = rs.GetField(1).GetLong()
+		MessageBox("","record count : " + string(ll_count))
+	loop
+	rs.close()
+end if
+
+//关闭内存数据库
+db.close()
+destroy db 
