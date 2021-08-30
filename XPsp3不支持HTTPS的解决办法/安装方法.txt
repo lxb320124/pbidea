@@ -1,0 +1,30 @@
+1.修改注册表,将XP伪装为POSReady 2009
+
+[HKEY_LOCAL_MACHINE\SYSTEM\WPA\PosReady]
+“Installed”=dword:00000001
+
+2.找到和TLS 1.2有关的补丁,并安装
+
+kb4019276和kb4467770,这两个独立的补丁其实作用并不一样.
+KB4019276(http://www.catalog.update.microsoft.com/Search.aspx?q=KB4019276)的作用是让xp支持TLS 1.2.
+安装了这个之后,有些第三方软件就可以使用TLS1.2了.
+KB4467770(http://www.catalog.update.microsoft.com/Search.aspx?q=KB4467770)的作用是让调用Winhttp服务来建立SSL连接时可以使用TLS1.2.
+Outlook等MS自家的必须要装上这个才行.
+
+3.装完后导入注册表文件。
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client]
+"DisabledByDefault"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server]
+"DisabledByDefault"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client]
+"DisabledByDefault"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server]
+"DisabledByDefault"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]
+"DefaultSecureProtocols"=dword:00000800
