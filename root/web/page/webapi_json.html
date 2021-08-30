@@ -1,0 +1,64 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="keywords" content="scclui框架">
+    <meta name="description" content="scclui为轻量级的网站后台管理系统模版。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>Web API Json</title>
+    <script type="text/javascript" src="../common/lib/jquery-1.9.0.min.js"></script>    
+    <script type="text/javascript" src="../common/js/sccl-util.js"></script>
+
+</head>
+  
+<body>
+    <div align=center>
+        <h1 style="color:#a00;">Web API json 接口</h1>
+        <hr />
+        <p />
+
+        <div id="loginbox">
+            <form action="/logon" method="post" target="_blank">
+
+                <p>SessionID: <input type="text" name="sessionid" id="sessionid" value="" readonly="readonly" maxlength="32" size="32" /></p>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;<input type="button" id="getjson" value="获取JSON数据" />
+                &nbsp;&nbsp;&nbsp;&nbsp;<input type="button" id="opentest" value="新窗口中打开" />
+            </form>
+            <p />
+        </div>
+
+
+
+        <p />
+        <div id="result">
+            点击 "获取JSON数据" 按钮，获取数据。
+        </div>
+        <p />
+        
+        
+    </div>
+
+    <script>
+        
+        $("#getjson").click(function () {
+            $.post("/?action=json&sessionid=" + $("#sessionid").val(),
+                {
+                }, function (data, status) {
+                    $("#result").text(JSON.stringify(data));           
+                });
+        });
+        $("#opentest").click(function () {
+            window.open("/?action=json&sessionid=" + $("#sessionid").val());
+        });
+
+    </script>
+    <script>
+        var v = getCookie("pssSessionID");
+        $("#sessionid").val(v);
+    </script>
+</body>
+</html>

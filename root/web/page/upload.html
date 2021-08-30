@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="keywords" content="文件上传">
+	<meta name="description" content="文件上传">
+    <title>PowerScript Server 文件上传</title>
+
+	<link rel="stylesheet" href="../common/layui/css/layui.css">
+	<link rel="stylesheet" href="../common/css/sccl.css">
+	<script type="text/javascript" src="../common/js/jquery-3.5.1.min.js"></script>
+	<style>
+        .file-box {
+            position: relative;
+            width: 300px
+        }
+
+        .txt {
+            height: 38px;
+            border: 1px solid #cdcdcd;
+            width: 164px;
+        }
+
+        .btn {
+            background-color: #FFF;
+            border: 1px solid #CDCDCD;
+            height: 24px;
+            width: 70px;
+        }
+
+        .file {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            height: 34px;
+            filter: alpha(opacity:0);
+            opacity: 0;
+            width: 260px
+        }
+    </style>
+</head>
+
+<body class="login-bg">
+	<div class="login-box">
+		<header>
+            <h1>PowerScript Server 文件上传</h1>
+		</header>
+		<div class="login-main">
+            <form action="/upload" class="layui-form" method="post" enctype="multipart/form-data">
+                <div class="layui-form-item">
+                    <div class="file-box">
+                        <input type='text' name='textfield' id='textfield' class="txt" placeholder="这里输入文件名" />
+                        <button type='button' class="layui-btn layui-btn-primary">浏览</button>
+                        <input type="file" name="file" id="file" lay-verify="file" autocomplete="off" placeholder="这里输入文件名" class="file" size="28" onchange="document.getElementById('textfield').value=this.value" />
+                    </div>
+                    <br/>
+                    <div>
+                        <input type="text" name="memo" id="memo" lay-verify="memo" autocomplete="off" placeholder="这里输入备注" class="layui-input">
+                    </div>
+                </div>                
+                <div class="pull-right">
+                    
+                    <button class="layui-btn layui-btn-primary" lay-submit="" lay-filter="login">
+                        <i class="layui-icon"></i> 上传
+                    </button>
+                </div>
+</div>
+			</form>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="../common/lib/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="../common/js/sccl-util.js"></script>
+	<script src="../common/layui/layui.js"></script>
+
+    <script>
+        layui.use(['layer', 'form'], function () {
+            var layer = layui.layer,
+                $ = layui.jquery,
+                form = layui.form();
+
+            form.verify({
+                file: function (value) {
+                    if (value === '')
+                        return '请选择要上传的文件名';
+                }
+            });
+
+            var errorCount = 0;
+
+            form.on('submit(login)', function (data) {
+                
+                return true;
+                
+            });
+
+        });
+
+    </script>
+</body>
+</html>

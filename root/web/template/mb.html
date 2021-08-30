@@ -1,0 +1,96 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="keywords" content="PowerScript Server系统框架">
+    <meta name="description" content="PowerScript Server系统框架">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>首页</title>
+    <link rel="stylesheet" href="/web/common/layui/css/layui.css">
+    <link rel="stylesheet" href="/web/common/css/sccl.css">
+
+    <style type="text/css">
+        pre.sourceCode {
+            background-color: #9FB5DE;
+            border: 1px solid black;
+            margin: 20px;
+            padding:20px;
+        }
+    </style>
+
+</head>
+
+<body class="blank-bg">
+
+    <div class="blank-box" style="height:160px;">
+        <div class="blank-main" align="center">
+            <br><br><br>
+            <h1>这是一个模板!</h1>
+            <h1>当前日期<%=date%></h1>
+            <h1>当前时间<% = time%></h1>
+            <h1>当前时间<%= time%></h1>
+        </div>
+    </div>
+
+    <div>
+        <pre class="sourceCode">
+模板里定义：
+        &lt;h1&gt;这是一个模板!&lt;/h1&gt;
+        &lt;h1&gt;当前日期&lt;%=date%&gt;&lt;/h1&gt;
+        &lt;h1&gt;当前时间&lt;%=time%&gt;&lt;/h1&gt;
+</pre>
+    </div>
+
+    <div>
+        <pre class="sourceCode">
+PB里加载：
+	header.set("Content-Type","text/html; charset=utf-8")
+	//读入模板文件，并且完成替换
+	ls_file = ls_root + "\web\template\mb.html"
+	if html.readfile(ls_file) then
+		html.setvar( "date", string(today()))
+		html.setvar( "time", string(now()))
+		response = html.toString()
+	end if
+
+</pre>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var preElements = document.getElementsByTagName("pre");
+            for (var i = 0; i < preElements.length; i++) {
+                var target = preElements.item(i);
+                if (target.className != "sourceCode") {
+                    continue;
+                }
+                var content = target.firstChild.nodeValue;
+                var linesArray = content.split(String.fromCharCode(13));
+                if (linesArray.length == 1) {
+                    linesArray = content.split(String.fromCharCode(10));
+                }
+
+                var olContainer = document.createElement("ol");
+                var index = 1;
+                for (var j = 0; j < linesArray.length; j++) {
+                    var liContainer = document.createElement("li");
+                    liContainer.className = index++ % 2 ? "odd" : "even";
+                    var spanContainer = document.createElement("span");
+                    var aText = document.createTextNode(linesArray[j]);
+                    spanContainer.appendChild(aText);
+                    liContainer.appendChild(spanContainer);
+                    olContainer.appendChild(liContainer);
+                }
+                while (target.firstChild) {
+                    target.removeChild(target.firstChild);
+                }
+
+                target.appendChild(olContainer);
+            }
+        }
+    </script>
+</body>
+</html>

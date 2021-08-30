@@ -1,0 +1,655 @@
+﻿<html>
+
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=Generator content="Microsoft Word 12 (filtered)">
+    <style>
+        <!--
+        /* Font Definitions */
+        @font-face {
+            font-family: 宋体;
+            panose-1: 2 1 6 0 3 1 1 1 1 1;
+        }
+
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+        }
+
+        @font-face {
+            font-family: Calibri;
+            panose-1: 2 15 5 2 2 2 4 3 2 4;
+        }
+
+        @font-face {
+            font-family: "\@宋体";
+            panose-1: 2 1 6 0 3 1 1 1 1 1;
+        }
+        /* Style Definitions */
+        p.MsoNormal, li.MsoNormal, div.MsoNormal {
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            #font-size:12pt;
+            font-family: "Calibri","sans-serif";
+        }
+
+        p.MsoHeader, li.MsoHeader, div.MsoHeader {
+            mso-style-link: "页眉 Char";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            text-align: center;
+            layout-grid-mode: char;
+            border: none;
+            padding: 0cm;
+            font-size: 9.0pt;
+            font-family: "Calibri","sans-serif";
+        }
+
+        p.MsoFooter, li.MsoFooter, div.MsoFooter {
+            mso-style-link: "页脚 Char";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            layout-grid-mode: char;
+            font-size: 9.0pt;
+            font-family: "Calibri","sans-serif";
+        }
+
+        a:link, span.MsoHyperlink {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:visited, span.MsoHyperlinkFollowed {
+            color: purple;
+            text-decoration: underline;
+        }
+
+        p.MsoAcetate, li.MsoAcetate, div.MsoAcetate {
+            mso-style-link: "批注框文本 Char";
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            font-size: 9.0pt;
+            font-family: "Calibri","sans-serif";
+        }
+
+        p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph {
+            margin: 0cm;
+            margin-bottom: .0001pt;
+            text-align: justify;
+            text-justify: inter-ideograph;
+            text-indent: 21.0pt;
+            font-size: 10.5pt;
+            font-family: "Calibri","sans-serif";
+        }
+
+        span.Char {
+            mso-style-name: "页眉 Char";
+            mso-style-link: 页眉;
+        }
+
+        span.Char0 {
+            mso-style-name: "页脚 Char";
+            mso-style-link: 页脚;
+        }
+
+        span.Char1 {
+            mso-style-name: "批注框文本 Char";
+            mso-style-link: 批注框文本;
+        }
+        /* Page Definitions */
+        @page WordSection1 {
+            size: 595.3pt 841.9pt;
+            margin: 72.0pt 56.65pt 72.0pt 70.9pt;
+            layout-grid: 15.6pt;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+        /* List Definitions */
+        ol {
+            margin-bottom: 0cm;
+        }
+
+        ul {
+            margin-bottom: 0cm;
+        }
+        -->
+    </style>
+
+</head>
+
+<body >
+
+    <div class=WordSection1 style='layout-grid:15.6pt'>
+
+        <p class=MsoNormal align=center style='text-align:center'>
+            <span style='font-size:24.0pt;color:#365F91'>PowerScriptServer(websocke 和 webapi)服务使用说明</span>
+        </p>
+
+        <p class=MsoNormal><span>&nbsp;</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>基于uo_websocket_server对象，实现了 web server 和 websocket server的 PowerScriptServer(以下简称PSS)发布了。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:28.45pt'><b><span>&nbsp;</span></b></p>
+
+        <p class=MsoNormal style='text-indent:28.45pt'>
+            <b>
+                <span>一、有哪些用处</span>
+            </b>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>需要实现设备 websocket 对接数据，或者提供 web server静态访问，或者提供 web api 数据接口（JSON，XML等），往往大家第一印象就是：我要安装IIS、nginx、apache…，我要安装tomcat、weblogic …，我要学习asp、jsp、c#、java、go、php ……总是很伤脑筋，一大堆要配置，一大堆要学习，对一个 PBer 来说，痛苦得很。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>现在，不用如此烦恼了，因为PSS出场了。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>1. PSS能干什么？它同时支持web server 和 websocket server。<span style='color:#C00000'>只要你会写</span></span><span style='color:#C00000'>PB</span><span style='font-family:宋体;color:#C00000'>程序，就可以使用 websuite 套件，用你的PB代码(PowerScript)轻松写出你的websocket server或 web server。只要有PowerBuilder就行，不再需要考虑IIS、布署、C#、JAVA这些伤脑筋的东西，<span style='color:#C00000'>仅仅</span></span><span style='color:#C00000'>PB</span><span style='font-family:宋体;
+color:#C00000'>，就能搞定一切。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>2. PSS如何布署？想多了，<span style='color:#C00000'>不需要你想的那些布署</span>。就和普通PB程序一样，你写好程序，需要你做的仅仅是：<span style='color:#C00000'>编译成</span>
+            </span><span style='color:#C00000'>EXE</span><span style='font-family:宋体;color:#C00000'>程序，运行你的</span><span style='color:#C00000'>EXE</span><span style='font-family:宋体;color:#C00000'>程序，一切就搞定了。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>&nbsp;</span></p>
+
+        <p class=MsoNormal style='text-indent:28.45pt'>
+            <b>
+                <span>二、如何使用 PSS</span>
+            </b>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span><img src="home.files/image001.png"></span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>（一）先看一下DEMO</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>开门见山第一步，加入QQ群，624409252，共享文件里下载 demo，文件名称开头是PB_Json_httpclient_xxxxxx.xxx。用PB打开DEMO，左边选中 websocket_server，右边设置好端口号，点击</span>
+            <span>“websocket start”按钮，服务就启动了。这时候可以用浏览器、httpclient访问web server 服务，示例里有静态服务和 webapi 接口服务示例。对于各自业务，你自己可以有更加灵活多样的实现。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>PSS同时也支持 websocket server,可以百度一个在线的基于浏览器的websocket 客户端（百度里搜索，点开就行），地址填入“ws://127.0.0.1:9000”，就可以用浏览器连接到ws服务，并发送和接收消息。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>（二）如何从头开始，构建自己的服务。</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>1.创建一个窗口，切换到 Instance Variables，写入</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                uo_websocket_server
+                wsserver
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>2.窗口上放一个启动按钮，按钮里写入代码</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                If not
+                isvalid(wsserver ) then create uo_websocket_server
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>uo_json jsParam</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                jsParam = create
+                uo_json
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>//监听端口</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>jsParam.set(&quot;port&quot;,long(sle_port.text))</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>//接收通知的窗口句柄</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>jsParam.set(&quot;hwnd&quot;,handle(parent))</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>//接收通知的号，以上面指定的窗口other事件里，判断 message.number = 这里的消息号，即是收到通知</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>jsParam.set(&quot;messageid&quot;,ii_msg)</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>//指定HTML静态内容的根目录，可以是相对目录，也可以是绝对目录</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>jsParam.set(&quot;root&quot;,&quot;.\root\&quot;)</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>//响应线程事件的对象</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>//这个对象里面至少有4个事件
+                onhttp,onconnect,ondisconnect,onmessage
+            ，分别用于响应 http 请求
+                ,ws
+            连接，ws 断开,ws消息,这4个事件，都有一个参数 ulong handle ，是一个消息句柄，用于操作消息</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>jsParam.set(&quot;object&quot;,&quot;nvo_websocket_reponse&quot;)</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>//线程数</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>jsParam.set(&quot;threadcount&quot;,16)</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                wsserver.start(jsParam)
+                //
+            使用jsParam作为参数启动服务</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>destroy jsParam</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>这时候就可以连接到服务了</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>3.实现请求响应</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>启动时有一个参数是响应对象jsParam.set(&quot;object&quot;,&quot;nvo_websocket_reponse&quot;)，那么，我们就需要从 uo_websocket_server 继承一个对象，并保存为&quot;nvo_websocket_reponse&quot;。接下来，我们的多线程响应就在&quot;nvo_websocket_reponse&quot;里面实现。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>请注意，我们的响应是多线程的，所以，&quot;nvo_websocket_reponse&quot;这个对象实际在内存里实例数是和线程数一样的，如果是16个线程，&quot;nvo_websocket_reponse&quot;这个对象在内存里就会有16个实例。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>在&quot;nvo_websocket_reponse&quot;的 onhttp 事件里写入：</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>uo_map header</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                header = create
+                uo_map
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                header.set(&quot;Content-Type&quot;,&quot;text/html;
+                charset=utf-8&quot;)
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                SetResponse(id,”hello
+                world” ,header)
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>Destroy header</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>保存后，启动服务，在浏览器里输入</span>
+            <span><a href="http://127.0.0.1:9000">http://127.0.0.1:9000</a> ，就可以看到输出内容了”hello world”。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:28.45pt'><b><span>&nbsp;</span></b></p>
+
+        <p class=MsoNormal style='text-indent:28.45pt'>
+            <b>
+                <span>三、服务实现机制</span>
+            </b>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>PSS服务是多线程响应机制。首先，在PB主线程里启动服务，这本身就是一个线程，启动时要指定服务线程数，如果jsParam.set(&quot;threadcount&quot;,16)那就是指定了16个服务响应线程，加上PB启动线程，那么就至少有17个线程处理活动中。作为PBer，知道它是这样就行了，具体线程不需要去干涉或调度。</span>
+        </p>
+
+        <p class=MsoNormal align=left style='text-align:left;text-indent:1.0cm'>
+            <span>PB的线程在运行期间，互相之间是不共享数据的，也就是在一个程里不能访问另一个线程的变量。为解决这个问题，可以使用uo_websocket_server 里的 SetVar/GetVar 函数来定义和访问线程，这里定义的变量是可以跨线程访问的。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>&quot;nvo_websocket_reponse&quot;作为响应线程，它处理完请求，实际就任务就完成了。但有时候，我们需要调试，需要观察日志，所以，需要主线程有内容显示。这个显示是通过windows消息机制来实现。具体是在uo_tabpage_ws_server 的 other 里取得消息，消息号分别对应：</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span><img border=0 id="图片 13" src="home.files/image003.png"></span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>然后分别触发 onstart、 onstop、
+                onconnect
+            、
+                ondisconnect
+            、
+                onmessage&nbsp;
+            、onhttp事件。</span>
+        </p>
+
+        <p class=MsoListParagraph style='margin-left:46.35pt;text-indent:-18.0pt'>
+            <span>1.<span style='font:9.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>onstart服务成功启动后触发</span>
+        </p>
+
+        <p class=MsoListParagraph style='margin-left:46.35pt;text-indent:-18.0pt'>
+            <span>2.<span style='font:9.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>onstop服务停止时触发</span>
+        </p>
+
+        <p class=MsoListParagraph style='margin-left:46.35pt;text-indent:-18.0pt'>
+            <span>3.<span style='font:9.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>onconnect 一个 websocket 客户端连接时触发</span>
+        </p>
+
+        <p class=MsoListParagraph style='margin-left:46.35pt;text-indent:-18.0pt'>
+            <span>4.<span style='font:9.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>ondisconnect 一个websocket客户端断开时触发</span>
+        </p>
+
+        <p class=MsoListParagraph style='margin-left:46.35pt;text-indent:-18.0pt'>
+            <span>5.<span style='font:9.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>onmessage 一个 websocket 发来消息时触发</span>
+        </p>
+
+        <p class=MsoListParagraph style='margin-left:46.35pt;text-indent:-18.0pt'>
+            <span>6.<span style='font:9.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>onhttp 有web请求时触发</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>以上事件，主要是给PBer
+                记录日志，或者显示调试信息使用，不要在这里面做出耗时的响应。<span style='color:#C00000'>耗时响应都应该放到</span>
+            </span><span style='color:
+#C00000'>&quot;nvo_websocket_reponse&quot;</span><span style='font-family:宋体;
+color:#C00000'>线程对象里面去处理。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>&nbsp;</span></p>
+
+        <p class=MsoNormal style='text-indent:28.45pt'>
+            <b>
+                <span>三、主要API</span>
+            </b><b><span>对象及参数说明</span></b>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>（一）uo_websocket_server 对象</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                <img border=0 id="图片 10" src="home.files/image005.png">
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>onconnect 一个 websocket 客户端连接时触发</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>ondisconnect 一个websocket客户端断开时触发</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>onmessage 一个 websocket 发来消息时触发</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>onhttp 有web请求时触发</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>这4个事件，要在它的继承对象</span><span style='color:#C00000'>&quot;nvo_websocket_reponse&quot;里响应，实现线程应答。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>函数声明。</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>1.//启动 websocket/http 服务</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                function boolean
+                Start(readonly uo_json jsParam) system library &quot;PbJson.dll&quot; alias for
+                &quot;wsStartServer&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>2.//停止 websocket/http 服务</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                function boolean
+                Stop() system library &quot;PbJson.dll&quot; alias for &quot;wsStopServer&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>3.//根据事件提供的ID号，取回请求消息，返回的请求信息，都存在JSON里面，可以在界面上显示这个JSON，观察请求内容，方便调试。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                function boolean
+                GetMessage(ulong messageID,ref uo_json js) system library
+                &quot;PbJson.dll&quot; alias for &quot;wsGetMessageServer&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>4.//根据事件提供的ID号，发送一个 websocket 消息。仅用于 websocket server向客户端发送消息</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                function boolean
+                SendMessage(ulong messageID,readonly blob msg) system library &quot;PbJson.dll&quot;
+                alias for &quot;wsSendMessageServer&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>&nbsp;</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>5.//根据事件提供的ID号，对相应请求设置相应的响应内容和格式头。用于
+                webapi/http
+            响应客户端请求</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                function boolean
+                SetResponse(ulong messageID,readonly uo_json json,readonly uo_map header)
+                system library &quot;PbJson.dll&quot; alias for &quot;wsSetResponse&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                function boolean
+                SetResponse(ulong messageID,readonly uo_xml data,readonly uo_map header) system
+                library &quot;PbJson.dll&quot; alias for &quot;wsSetResponse&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                function boolean
+                SetResponse(ulong messageID,readonly blob data,readonly uo_map header) system
+                library &quot;PbJson.dll&quot; alias for &quot;wsSetResponse&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                function boolean
+                SetResponse(ulong messageID,readonly string data,readonly uo_map header) system
+                library &quot;PbJson.dll&quot; alias for &quot;wsSetResponse&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>6.//根据事件提供的ID号，移除缓存在内存中的请求包。如果不删除请求包，服务会自动在5分钟后删除。建议手工删除不用的消息包，避免内存短时间内快速增长。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                subroutine RemoveMessage(ulong
+                messageID) system library &quot;PbJson.dll&quot; alias for
+                &quot;wsRemoveMessageServer&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'><span>&nbsp;</span></p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>7.//跨线程变量访问,这些共用变量是进程内全局共享</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>//可以设置超时时间，即超过多少毫秒没有访问后，判断此变量即为过期。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>//变量过期特性，对于一些特殊类型的变量尤其有用，例如登录超时、二维码付款有效性限制</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                subroutine
+                SetVar(readonly string varName,readonly any value) system library
+                &quot;PbJson.dll&quot; alias for &quot;wsSetVar&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                subroutine
+                SetVar(readonly string varName,readonly any value,long timeout) system library
+                &quot;PbJson.dll&quot; alias for &quot;wsSetVar&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>//根据变量名取变量值</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                function any
+                GetVar(readonly string varName) system library &quot;PbJson.dll&quot; alias for
+                &quot;wsGetVar&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>//根据变量名判断此变量是否已过期，即自动根据 SetVar 设置的超时时间，判断是否已经过 timeout 没有访问过。每次 SetVar/GetVar 都是自动更新它的最后一次访问时间。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                function boolean
+                VarExpired(readonly string varName) system library &quot;PbJson.dll&quot; alias
+                for &quot;wsVarExpired&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>//删除一个全局变量</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                subroutine
+                RemoveVar(readonly string varName) system library &quot;PbJson.dll&quot; alias
+                for &quot;wsRemoveVar&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>//获取一个不会重复的字符串，确保唯一性</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:1.0cm'>
+            <span>
+                function string
+                GetNextID() system library &quot;PbJson.dll&quot; alias for
+                &quot;wsGetNextID&quot;
+            </span>
+        </p>
+
+        <p class=MsoNormal><span>&nbsp;</span></p>
+
+        <p class=MsoNormal style='text-indent:21.2pt'><b><span>四、其他特别说明</span></b></p>
+
+        <p class=MsoNormal style='text-indent:21.2pt'>
+            <span>Web端响应，对时效性要求比较高，所以要对业务做好规划，对SQL语句做好优化。另外，处理字符串时建议使用 uo_string 对象，数据库连接，增、删、改、查时使用 uo_database、uo_recordset 对象，这些都比PB直连的效率要高，使用SQL生成JSON语句时也更方便。同时也支持多结果集。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:21.2pt'><span>&nbsp;</span></p>
+
+        <p class=MsoNormal style='text-indent:21.2pt'><b><span>五、开发授权</span></b></p>
+
+        <p class=MsoNormal style='text-indent:21.2pt'>
+            <span>1.本模块作为个人用户使用，提供单线程响应，免费使用。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:21.2pt'>
+            <span>2.作为商业用户需要多线程，授权费用1688元（不开票）。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:21.2pt'>
+            <span>3.作为商业用户需要多线程，授权费用3688元（需要开票）。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:21.2pt'>
+            <span>4.已拥有 websuite任何曾经授权，本次只增加 PSS 部分授权，授权费 688元。</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:21.2pt'><span>&nbsp;</span></p>
+
+        <p class=MsoNormal style='text-indent:21.2pt'><span>&nbsp;</span></p>
+
+        <p class=MsoNormal style='text-indent:21.2pt'><span>&nbsp;</span></p>
+
+        <p class=MsoNormal style='margin-left:125.8pt;text-indent:21.2pt'>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 大自在 QQ:781770213</span>
+        </p>
+
+        <p class=MsoNormal style='margin-left:125.8pt;text-indent:26.45pt'>
+            <span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                2020
+            年8月</span>
+        </p>
+
+        <p class=MsoNormal style='text-indent:21.2pt'><span>&nbsp;</span></p>
+
+    </div>
+
+</body>
+
+</html>

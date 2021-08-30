@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>PowerScriptServer</title>
+    <style type="text/css" media="screen">
+        <!-- /* PR-CSS */
+
+        table {
+            border-collapse: collapse; /* 关键属性：合并表格内外边框(其实表格边框有2px，外面1px，里面还有1px哦) */
+            border: solid #999; /* 设置边框属性；样式(solid=实线)、颜色(#999=灰) */
+            border-width: 1px 0 0 1px; /* 设置边框状粗细：上 右 下 左 = 对应：1px 0 0 1px */
+        }
+
+            table th, table td {
+                border: solid #999;
+                border-width: 0 1px 1px 0;
+                padding: 2px;
+            }
+
+        tfoot td {
+            text-align: center;
+        }
+        -->
+    </style>
+</head>
+<body>
+    <br>
+    <div align=center>
+        <h1> </h1>
+        <h3 style="color:#a00;"> DownloadApp下载，双向动态更新应用程序</h3>
+        <hr style="width:800px;" />
+        <p />
+        <p />
+        <div id="result" style="height:200px;margin:32px;">
+            <p />
+            注意，这是一个测试，用意是在说明客户端 自动更新程序的用处和用法。
+            <p /> 下载 DownloadApp ，会将程序发布安装到 c:\pbjson 目录，并且在桌面建立好快捷方式。
+            <p />
+
+            <div class="table-c">
+                <table width="90%">
+                    <tr>
+                        <td colspan="2" align="center"> 下载相关程序</td>
+                    </tr>
+                    <tr>
+                        <td> <a href="../../app/DownloadApp.exe"> DownloadApp.exe</a> </td>
+                        <td> 主程序，用于下载更新程序。可将此程序改名为主运行程序，起到每次启动程序，都能及时检查更新的作用。</td>
+                    </tr>
+                    <tr>
+                        <td> <a href="../../app/参数编辑器.bat"> 参数编辑器.bat</a> </td>
+                        <td> 参数编辑器，修改安装目录、图标等</td>
+                    </tr>
+                    <tr>
+                        <td> <a href="../../app/差异性上传.bat"> 差异性上传.bat</a> </td>
+                        <td> 差异性上传, 可以将本地更新内容，上传到更新服务里去，达到双向更新的目的。</td>
+                    </tr>
+                    <tr>
+                        <td> <a href="../../app/自动布署和增量更新程序使用说明.pdf" target="_blank"> 自动布署和增量更新程序使用说明.pdf</a> </td>
+                        <td> 自动布署和增量更新程序使用说明</td>
+                    </tr>
+                    <tr>
+                        <td> <a href="../../app/UpdateMD5.exe" target="_blank"> UpdateMD5.exe</a> </td>
+                        <td> 批量更新某目录下所有文件的MD5文件，非PSS服务(IIS,Apache,Nginx等作为服务)时，使用此文件更新服务端MD5列表</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
