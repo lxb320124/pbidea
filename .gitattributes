@@ -1,0 +1,3 @@
+*.js linguist-language=PowerBuilder
+*.css linguist-language=PowerBuilder
+*.html linguist-language=PowerBuilder
