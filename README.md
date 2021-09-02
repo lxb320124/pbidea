@@ -68,3 +68,20 @@
 
                     大自在(QQ:781770213 群：624409252) 
                              2020/03/06
+![image](https://user-images.githubusercontent.com/89757391/131769153-7e3ca4f2-32d3-4698-8775-aa601984ad56.png)
+![image](https://user-images.githubusercontent.com/89757391/131769204-a56fe102-3954-4079-af7c-a08735023bd4.png)
+![image](https://user-images.githubusercontent.com/89757391/131769228-04f14668-5b42-4be4-8b07-96f67c89e472.png)
+![image](https://user-images.githubusercontent.com/89757391/131769285-742bbfdd-c45a-4a80-b1e3-375285a345fa.png)
+![image](https://user-images.githubusercontent.com/89757391/131769313-495bcacb-e504-4628-b149-b7a50f6906cc.png)
+![image](https://user-images.githubusercontent.com/89757391/131769331-d8080d93-49e3-4158-82f8-6419097a01bf.png)
+![image](https://user-images.githubusercontent.com/89757391/131769351-0eb68140-5851-415c-b784-0432b45b047e.png)
+![image](https://user-images.githubusercontent.com/89757391/131769407-a01eac7a-94bf-4ee1-bce8-08619c9c1220.png)
+![image](https://user-images.githubusercontent.com/89757391/131769444-c5608c52-5da3-405a-b6ec-c85f70ac5528.png)
+![image](https://user-images.githubusercontent.com/89757391/131769495-01436487-ee8a-43d9-84ea-9b4a30d75af2.png)
+![image](https://user-images.githubusercontent.com/89757391/131769531-e5ad576f-9167-44d5-ae86-ba9bcb8df45c.png)
+redis client:
+![image](https://user-images.githubusercontent.com/89757391/131769551-14245b82-014e-4e81-9f47-3a6c4d3e520e.png)
+![image](https://user-images.githubusercontent.com/89757391/131769602-e59deca4-2f1e-4b63-9930-ea93cce2b1e1.png)
+![image](https://user-images.githubusercontent.com/89757391/131769612-1fa2580e-9ddd-4da1-8816-df3ddc1a712c.png)
+
+![image](https://user-images.githubusercontent.com/89757391/131769524-5580bf2e-dfd4-4aa2-9433-46f82c464f72.png)
