@@ -1,16 +1,16 @@
-    开始之前，建议先花点时间，阅读一下本说明。
+Before starting, it is recommended to take a moment to read this instruction
 
-    这是一个基于JSON及webapi 接口的强大PowerBuilder接口扩展库。支持版本 pb8 - pb2019.
-    一、JSON部分
-    好用的 json for PB ,与 datawindow/datasore 无缝对接，能动态创建 dw/ds实现数据导入，也可以在现有dw/ds上按列匹配导入。
-    实时导入导出 json，速度快，效率高。
-    uo_json功能函数主要有4个，即:
-    1、Parse：将字符串转为JSON对象
-    2、ToString：将JSON对象转为字符串
-    3、Set：设置JSON对象或数组值
-    4、Get：获取JSON对象或数组值
-    在有多层嵌套的情况下，可以使用级联字符串直接取值。例如
-    [
+    This library is specially developed for PowerBuilder applications. After testing, it is applicable to PB versions 8 – 2019.
+1、JSON
+    The user-friendly json for PB is seamlessly connected with datawindow/datasore. It can dynamically create dw/ds to import data, or match and import existing dw/ds by column.
+Real time import and export of json is fast and efficient.
+uo_ There are mainly four json function functions, namely:
+1. Parse: Convert string to JSON object
+2. ToString: convert JSON object to string
+3. Set: set JSON object or array value
+4. Get: Get JSON object or array value
+In the case of multi-level nesting, concatenated strings can be used to directly take values. for example    
+[
     {
     "__rowid__":1,
     "id":1.0,
@@ -24,64 +24,52 @@
         ]
     }
     ]
-    要取得第一行数组"菜3"下面的dj,可以这样写key字符串:
-    deciaml ld_dj
-    json.Get("/0/sub/2/dj",ref ld_dj)
-    "/0/sub/2/dj"这个串里，第一个0表示是大数组的第1行数据，sub表示第一行数据是JSON，取其sub的值，sub的值是一个JSON数组。然后跟着的2表示取子数组的第3行数据，key为dj,取值类型为 decimal。
-    ***这里注意，与PB的数组下限从1开始到n结束不同，这里JSON数组下限是0从开始，n-1结束。
+To get the dj under the first line array "Dish 3", you can write the key string as follows:
+deciaml ld_ dj
+json. Get("/0/sub/2/dj",ref ld_dj)
+In the "/0/sub/2/dj" string, the first 0 represents the data in the first row of the large array, and the sub represents the data in the first row is JSON. The sub value is a JSON array. The following 2 represents the data in the third line of the sub array. The key is dj and the value type is decimal.
+***Note that the lower limit of the JSON array starts from 0 and ends at n-1, which is different from the lower limit of the PB array.
 
-    二、HttpClient部分
-    开发了PBJson，然后突然就感到HttpClient也成了必然需要。由此写了这么个HttpClient。因为以前用HttpClient不多，经验不够，不足之处，在所难免。见谅！
-
-    HttpClient内部使用了 WinHttp API：
-    1.使用简单，主要只有一个参数Request，完成请求。参数说明，请参看 uo_httpclient Local External Functions 里的声明
-    2.借助 pbjson，可完美与 json,datawindow 结合工作。
-    3.uo_httpclient 内置了一个变量 uo_response response，用于记录各种响应结果和数据。
-
-    4.先了解一下请求类别
-    //静态变量，require 函数的第一个参数 nHttpType 
-    constant int HttpGet      = 1
+2、HttpClient
+After developing PBJson, I suddenly feel that HttpClient has become an inevitable need. This is the HttpClient. Because I didn't use HttpClient much before, I didn't have enough experience, and my shortcomings are inevitable. Excuse me!
+HttpClient uses WinHttp API internally:
+1. It is simple to use. There is only one parameter, Request, to complete the request. For parameter description, see uo_ Statement in httpclient Local External Functions
+2. With the help of pbjson, it can work perfectly with json and datawindow.
+3.uo_ Httpclient has a built-in variable uo_ Response response is used to record various response results and data.
+4. Learn about the request category first
+//Static variable, the first parameter nHttpType of the require function
+constant int HttpGet      = 1
     constant int HttpPost     = 2
     constant int HttpPut      = 3
 
-    5.很有必要事先了解一下，httpclient 发送 request 后，会返回哪些内容。
-    string header          //保存 httpclient 的response header
-    string headerlist[]    //保存 httpclient 的response header 关键字
-    blob   data            //保存 httpclient 的结果，不仅限于文本，也可能是其他二进制数据。在只是文本的情况下，可以取 text 值
-    int    errcode         //返回值错误值 
-    string errtext         //返回值错误文本
-    int    httpcode        //200 正常 , 404 501
-    string verb            //POST ，PUT ，GET 。。。
-    long   timeout = 5000  //默认5秒超时
-    string charset         //语言编码 utf-8 gbk 等
-    string ContentType     //text/html application/json等
-    string Server          //服务器类型
-    string text            //文本，由data转换而来。对utf8,GBK,UNICODE各种类型做了自动转换为当前文字编码。在多数情况下，此文本是可用的。但不排除响应结果是非文本情况，例如图片、声音等二进制数据，那
+5. It is necessary to know in advance what will be returned after the httpclient sends the request.
+String header//Save the response header of the httpclient
+String headerlist []//Save the response header keyword of httpclient
+Blob data//Save the result of the httpclient, which is not limited to text, but may also be other binary data. In the case of text only, you can take the text value
+Int errcode//The returned value is incorrect
+string errtext//The returned value error text
+Int httpcode//200 normal, 404 501
+string verb //POST ，PUT ，GET 。。。
+Long timeout=5000//The default timeout is 5 seconds
+String charset//Language code utf-8 gbk, etc
+String ContentType//text/html application/json, etc
+String Server//Server type
+String text//Text, converted from data. Automatically convert various types of utf8, GBK, UNICODE to the current text code. In most cases, this text is available. However, it does not rule out that the response result is non text, such as binary data such as pictures and sounds. You must read the data to obtain the correct result.
+uo_ Json json//When Content Type: application/json is returned, this json object will be generated
+    3、Encryption, decryption and encoding
+It provides RSA, AES, DES, signature, base64, CRC, urlencode, etc.
 
-就必须读取 data才能获取正确结果。
-    uo_json json           //当返回Content-Type: application/json时，会生成此 json 对象
+4、 In the future, other functions will be added to the library to facilitate PB application. Stay tuned.
 
-    三、加密解密、编码部分
-    提供 RSA、AES、DES、签名、base64、CRC、urlencode ......等实现功能。
+5、About being reported as anti-virus software by 360
+Some DLLs developed by myself are often reported as viruses or trojans by 360. Here, I solemnly guarantee that I will never write malicious code in DLL! To solve the 360 virus, you can compress the DLL into a zip file and submit it to the https://open.soft.360.cn/report.php testing. After passing the test, 360 will no longer report the virus.
 
-    有任何BUG或者建议，可以我联系。
+6、Special instructions
+1) The copyright is mine, which is certain.
+2) DLL is free of charge.
+3) Individual modules need development authorization. But it is not absolute. Even if there is no development authorization, the most important thing is to pop up a dialog box when testing. After compiling, it will not pop up, but only pop up the development environment.
 
-                    大自在(QQ:781770213 群：624409252) 
-                             2020/03/06
-![image](https://user-images.githubusercontent.com/89757391/131769153-7e3ca4f2-32d3-4698-8775-aa601984ad56.png)
-![image](https://user-images.githubusercontent.com/89757391/131769204-a56fe102-3954-4079-af7c-a08735023bd4.png)
-![image](https://user-images.githubusercontent.com/89757391/131769228-04f14668-5b42-4be4-8b07-96f67c89e472.png)
-![image](https://user-images.githubusercontent.com/89757391/131769285-742bbfdd-c45a-4a80-b1e3-375285a345fa.png)
-![image](https://user-images.githubusercontent.com/89757391/131769313-495bcacb-e504-4628-b149-b7a50f6906cc.png)
-![image](https://user-images.githubusercontent.com/89757391/131769331-d8080d93-49e3-4158-82f8-6419097a01bf.png)
-![image](https://user-images.githubusercontent.com/89757391/131769351-0eb68140-5851-415c-b784-0432b45b047e.png)
-![image](https://user-images.githubusercontent.com/89757391/131769407-a01eac7a-94bf-4ee1-bce8-08619c9c1220.png)
-![image](https://user-images.githubusercontent.com/89757391/131769444-c5608c52-5da3-405a-b6ec-c85f70ac5528.png)
-![image](https://user-images.githubusercontent.com/89757391/131769495-01436487-ee8a-43d9-84ea-9b4a30d75af2.png)
-![image](https://user-images.githubusercontent.com/89757391/131769531-e5ad576f-9167-44d5-ae86-ba9bcb8df45c.png)
-redis client:
-![image](https://user-images.githubusercontent.com/89757391/131769551-14245b82-014e-4e81-9f47-3a6c4d3e520e.png)
-![image](https://user-images.githubusercontent.com/89757391/131769602-e59deca4-2f1e-4b63-9930-ea93cce2b1e1.png)
-![image](https://user-images.githubusercontent.com/89757391/131769612-1fa2580e-9ddd-4da1-8816-df3ddc1a712c.png)
+                    大自在(QQ:781770213 group：624409252) 
+                                                       2020/03/06
 
-![image](https://user-images.githubusercontent.com/89757391/131769524-5580bf2e-dfd4-4aa2-9433-46f82c464f72.png)
+
