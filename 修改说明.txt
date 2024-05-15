@@ -1,73 +1,832 @@
-﻿/******************************************************************************************************
-* 特别注意:自2021年8月24日起，因pbjson.dll与官方最新版本DLL重名，特此更名为 pbidea.dll，内部功能完全兼容。
-*                             原有版本升级，只需要将 pbidea.dll 改名为 pbjson.dll ，然后覆盖，即可!
-******************************************************************************************************/
+修改日志
 
-2019/11/26
-1.修改 true/false 类型读写的BUG
-2.修复导出JSON时取 decimal 列的一个BUG
-3.dwExportJson 增加了一个参数,DWItemStatus  : 0:NotModified! , 1:DataModified! ,2:New!,3:NewModified! ，可以指定只导出这些状态的数据
+/*************************************************************************************************
+* 特别注意:自2021年8月24日起，因pbjson.dll与官方最新版本DLL重名，
+* 特此更名为 pbidea.dll，内部功能完全兼容。
+*原有版本升级，只需要将 pbidea.dll 改名为 pbjson.dll ，然后覆盖，即可!
+*************************************************************************************************/
+2024/5/8
+增加 uo_dir，用于操作文件目录.
 
-2019/11/28
-1.数字型导入DW的一个BUG
-2.第一行为null的字段，后面默认都当长度为20的字符串处理
+2024/5/6
+1.增加直接调用 C# dll功能。不需注册COM，直接解析C# dll对象声明，直接调用函数，直接设置或者读取对象属性。
+2.增加文件拖拉对象 uo_dragfile，将此对象拖入窗口，响应对象的 on_file_drag 事件即可。当有文件拖入所在窗口时，会触发此事件。
 
-2019/11/29
-1.(*)修复内存泄漏的BUG
-2.(*)增加两个模式，直接从文件导入dw/ds，和直接将 dw/ds存为文件，几万条数据秒读秒写.
+2024/4/27
+修改BUG：pss 响应对象的构造函数取不到全局变量
 
-2019/11/30
-全面优化，10W条记录，秒读秒写
+2024/4/25
+Pss多进程版本正式发布，感谢大家多日以来帮助测试以及协助修改BUG。
 
-2019/12/2
-增加一组函数，使用方法很简单：
-/******************************************************************************************************
-* 特别注意，这组函数必须放在 datawindow/datastore 的继承类中 Local External Function 里面声明 !!!
-******************************************************************************************************/
-//此函数放在 dw/ds 的继承类中使用
-//使用方法，在dw/ds 的继承类中 Local External Function 里面声明此函数，然后直接就可以 dw_1.ImportJson("data.json")
-function long    ImportJson(string jsonFile) system library "PbJsonA.dll" alias for "ImportJson"
+2024/4/22
+pss增加计划任务功能，语法参考linux cron。
 
-//将datawindow/datastore 数据生成JSON，返回生成条数,status : 0:NotModified! , 1:DataModified! ,2:New!,3:NewModified!	
-//参数jsonFile为直接生成到文件
-//3个参数，可以任意组合，自己声明吧
-//使用方法，在dw/ds 的继承类中 Local External Function 里面声明此函数，然后直接就可以 dw_1.ExportJson("data.json")
-function long    ExportJson(string jsonFile) system library "PbJsonA.dll" alias for "ExportJson"
-function long    ExportJson(int status) system library "PbJsonA.dll" alias for "ExportJson"
-function long    ExportJson(int status ,string jsonFile) system library "PbJsonA.dll" alias for "ExportJson"
-//只导出listColumns指定的所有列数
-function long    ExportJson(string listColumns[]) system library "PbJsonA.dll" alias for "ExportJson"
-function long    ExportJson(string listColumns[],string jsonFile) system library "PbJsonA.dll" alias for "ExportJson"
+2024/4/18
+1.增加了 uo_eventlog对象，将操作系统事件日志转为json
+2.修复发票识别卡死问题
 
-使用方法很简单：
-dw_2.ImportJson("json5.txt")
-dw_2.ExportJson("export.txt")
-给你原生无异。
+2024/4/13
+1.PSS重大升级，由多线程机制改为多进程机制，增加稳定性.!!!!!!
+2.内部重构日志记录系统。使用日志对象写日志时，同一进程如果指定是同一日志文件名 ，会重复利用资源，确保同一文件不会被写乱。
+
+2024/3/21
+修复BUG：插件加载时，遇中文路径时失败
+
+2024/3/20
+1.修复uo_curl BUG： PUT误发为 POST
+2.websocket取客户列表，涉及中文乱码问题
+
+2024/3/17
+uo_pdfview 增加SplitPDF功能
+1．按照书签页拆分
+2．按照自定义关键字拆分，支持分组关键字，不同位置相同关键字的页面，自动合并为同一个PDF。关键字判断，可以通过位置+偏移量+正则表达式判断.
+
+2024/3/12
+uo_pdfview 支持显示电子签名
+
+2024/3/9
+1.uo_datawindowex 增加了设置线条颜色函数 CreateGrid。
+2.uo_datawindowex 增加了设置背景图片函数SetBackground,同时支持在窗口背景前提下DW有透明效果。
+3.uo_datawindowex 增加了设置背景图片函数 GetRowColPos 函数，准确获取指定行列的左下角位置
+
+2024/3/4
+uo_crypto对象增加了PKCS7sign/PKCS7verify、PKCS7encrypt/PKCS7decrypt函数，基于公钥私钥的签名验签、加密解密并封装为PKCS7结构的一组函数。
+
+2024/2/23
+1.增加了工具栏
+2.uo_pdfview增加函数 SplitPDF ，将一个pdf文件，按页分成若干个pdf文件。
+3.uo_json 增加了 ReadINI 和 WriteINI 函数，可以直接在 ini 文件和 json格式之间读写转换、修改。
+
+2024/1/27
+1.增加了状态条，可添加文本、按钮和进度条
+2.增加了3个登录对话框
+
+2024/1/24
+1.为堆叠控件添加 header,具备TAB功能，具备现代风格。
+2.对于 webView2 多进程开启会报错的情况，内部采用按照进程句柄设置不同临时用户目录的方法予以解决。
+
+2024/1/10
+修复BUG： 发送邮件，附件不能是中文路径.
+
+2024/1/1
+1.增加加 Tree Datawindow
+2.新增 uo_tempfile 对象，用于生成临时文件，或者管理临时文件，确保窗口退出或程序关闭时这些临时文件自动删除。
+3.以前增加全局函数 ReadFile ，支持从本地文件读数据，也支持直接使用 url 读数据，即下载。
+4.修复3个BUG：一是uo_crypto.aes_decrypt 用 blob key, 二是uo_xml_attribute.set(name, value),三是uo_xml_attribute修改值。
+
+2023/12/28
+1.增加了一个漂亮的弹出菜单功能
+2.可定制window窗口菜单。
+3.修复 vo_button 在 pb125以上版本中，按 alt 会露原形的问题。
+4．datawindow垂直居中
+
+2023/12/11
+1．增强uo_widgetstack堆叠式控件，支持window及各种控件
+2.优化uo_logger uo_logfile 及 pss 日志系统。
+
+2023/12/7
+1.增加加uo_widgetstack,堆叠式控件，可以理解为没有切换按钮的tab控件，用于组织可视化userobject对象。DEMO主窗口就使用这个控件组织所有功能演示模块。
+2.uo_json 修复2个BUG，一个是 displaydata 选项失效问题，另一个是 dwImportJson 日期字符串无法导入问题。
+
+2023/11/28
+增加 uo_utils sort() 函数，可对字符串数组、int、long排序
+
+2023/11/14
+1.增加 uo_zplay 对象，播放 wav mp3等音频。
+2.改进uo_curl_async对象多线程多任务下载功能。
+
+2023/11/07
+1. 增加 uo_camera 对象，支持 usb 摄像头播放与拍照，可录制H265格式高清视频(此格式对PC性能要求比较高，低性能PC会导致内存暴满)。
+2.改进 dicom 显示
+
+2023/10/19
+改进图像浏览控件，支持dicom图片。同时改进显示效率，降低内存占用。
+
+2023/10/1
+1.增加了自定义全局函数 MessageBox，有更美观的外观，以及更加友好的显示，提供文本消息复制。
+2．增加了自定义全局函数 MsgBox，与MessageBox使用保持一致(事实上，它是调用 MessageBox显示)。
+
+2023//26
+为uo_httpclient uo_curl 增加了 SetCompress 函数
+内部设置SetHeader("Accept-Encoding", "gzip, deflate, br")， 同时对上传数据自动进行压缩。
+需要服务端支持上传压缩数据，pss内置支持。
+
+2023/9/25 
+1.增加矢量图.svg格式支持.
+2.增加函数 SetPointer ，支持将 .svg .png 或者 iconfont 字符直接设置为鼠标指针.
+3.vo_button 支持自定义鼠标指针和设置 .svg 图标.
+4.取消了将压缩文件 res.zip 作为资源文件格式，剪裁了一部分 iconfont 图标.
+
+2023/9/12
+1.	uo_json Parse和 ParseFile 增加了参数boolean NumAsString;当此参数为 true 时：
+j.parse('{"a":123,"b":3.45}', false,true)
+结果：
+{
+    "a": "123",
+    "b": "3.45"
+}
+2. webView2改进
+3.增加 uo_dib 对象，方便更加高效处理图片，以及格式转换、像素转换、二值化等
+4.改进条码和二维码功能，使用矢量格式，DW拉伸不变形。
+5.重新整合了底层图片框架。
+
+2023/8/21
+1.完善webView2与pb的交互功能。
+  (1) pb-> webView2: 
+a.ExecuteScript  直接调用页面上的 JavaScript 代码
+b. PostWebMessage 发字符串消息给页面，字符串可以是JSON。页面上可监听消息，获取来自PB的消息。
+//监听由pb发来的消息
+        window.chrome.webview.addEventListener("message",
+            arg => {
+                console.log(arg);
+                alert(arg.data);
+            });
+  （2）webView2->pb(webView2使用 JavaScript代码调PB功能):
+       <script src="pbidea.js"></script> //必须
+       a. pbInvokeEvent 调用PB事件，2个参数分别是uo_webView2 自定义事件和一个字符串，字符串可以是JSON。
+       b. pbPostMessage 发消息给PB,内容是一个字符串, 字符串可以是JSON.PB在 uo_webView2.on_webmessage_received 事件里进行处理.
+2.增加了组织机构图演示
+
+2023/8/17
+1.修复 uo_json dwExportJson 函数，当 datawindow 表达式列为空值时，会导出失败的bug.
+
+2023/8/15
+1.	uo_httpclient  uo_curl  关于x-www-form-urlencoded处理的一个BUG
+
+2023/8/12
+1.修复 uo_recordset bindParam date/datetime数据类型的bug.
+2.增加了狂风提供的一个echarts展板例子，使用  uo_webView2进行展示，通过 uo_json 提供数据支持。
+	
+2023/8/9  
+1.修复了 uo_httpclient 设置压缩和解压缩的一个bug.
+2. 使用 curl 内置压缩和解压缩功能
+
+2023/8/3
+1.uo_json对象: dwExportJson dwImportJson 改进，即使DW里的列没有拖放到设计界面上，也可以导出或导入数据。
+2.uo_image对象： 增加DecodeSymbol函数，可从图片中识别条码和二维码 
+
+2023/7/17
+去掉了AutoInstantiate对象的自动实例化属性性。注意：需要原有代码里的相关对象要手动 create/destroy。
+原因：自动实例化对象难以释放内存，会导致一些问题。
+这些对象有：
+uo_autoresize
+uo_config
+uo_database_pool
+uo_i18n
+uo_mail
+uo_monitor
+uo_string
+uo_html
+uo_tooltip
+
+2023/6/15
+1.增加字体子集库生成功能
+2．增加 gb18030字符集选项，支持显示冷僻字。
+2023/6/5
+改进 uo_pdfview, 增加发票识别算法。升级了pdfium.dll
+
+2023/5/30
+1.增加 uo_dns 对象，用于解析域名-ip
+2.优化 uo_mail，改进电子邮件发送和接收,支持 smtps,pop3s
+
+2023/5/21
+FTP Server支持服务端事件通知.
+
+2023/5/19
+增加了 uo_datetime 组件，让日期计算变得更加方便
+
+2023/5/5
+增加了 uo_sciter组件，可以利用 sciter 实现界面
+
+2023/4/1
+提供了文件头加密、解密函数。对一些有文件头的文件（例如png,bmp,jpg,mp4等）只加密头部N个字节，就等于是对整个文件进行了加密。解密也是相同原理。无论文件有多大，速度都非常快。
+
+2023/3/21
+增加了 uo_imageview控件，用于浏览图片
+ 
+
+2023/2/26
+增加 uo_progress_dialog对象，提供基于线程的进度或状态对话框，支持取消功能。
+ 
+使用方法
+uo_progress_dialog dialog
+uo_json js
+js = create uo_json
+js.set("title","正在导出数据...")   //窗口标题
+js.set("text1","总记录 100 条")       //第1个文本
+js.set("text2","当前表第 1 第记录") //第2个文本
+js.set("button","取消导出")         //按钮文本
+js.set("/progress/min",0)           //进度条最小值
+js.set("/progress/max",100)         //进度条最大值
+js.set("/progress/value",0)           //进度条当前值
+dialog = create uo_progress_dialog
+dialog.open(js)
+
+参数说明:
+1.以上参数均为可选参数，dialog.open(js) 时初始化，dialog.SetInfo(js) 设置值
+2.进度条最小值小于进度条最大值时，显示进度条，否则隐藏进度条
+3.业务循环中，使用dialog.SetInfo(js)设置相关信息
+4.业务循环中，使用dialog.iscancel()判断是用户是否点了取消
+5.代码中可以使用 dialog.cancel() 设置取消
+6.可以使用 js.set("/progress/pos",0) 设置进度值 ，也可以使用 dialog.StepIt() 步进
 
 
-2019/12/4
-增导入列映射功能。
-第一步，设置印象 ，印射方式为 "json关键字":"dw/ds列名"
-uo_json jsmap
-jsmap.set("UnitPrice","je") ,即将 json 的 UnitPrice 映射到 datawindow.je 列
-第二步
-ll_rows = js.dwImportJson(dw_1,jsmap)
-或
-ll_rows = js.dwImportJson(dw_1,"json3.txt",jsmap)
-导入，并使用映射关系指定
-两种情况下映射无效：1.动态创建DW、DS。2.datawindow里存在JSON关系字列，依然以关键字列导入。
+2023/2/1
+1．增加 uo_pdfwriter对象，支持自由创建pdf文件。基于uo_pdfwriter，增加了第二种 dw2pdf方式。
+2．改进 uo_pdfmaker 对象 dw2pdf 功能。
 
-2019/12/5
-增加压缩、解压缩函数。
-两组，分别基于 lzma 和 zlib
 
-2019/12/6
-修改 Get longlong double real deicmal 时不能取所有数值的BUG
+2023/1/1
+诸多细节及优化
+uo_config
+uo_structure
+uo_json.jsonFromStructure
+多线程机制底层重新设计
+PSS优化
+uo_sysenv
+uo_orca
+zip entry
+uo_kv
+global function: msgbox,printf,format,tr
+uo_biginteger
 
-2019/12/16
-1.//xml 转 json
-function boolean JsonFromXML(string xml) system library "PbJsonA.dll" alias for "JsonFromXML"
-2.增加对PB8支持
+2022/10/28
+增加了uo_config对象，方便保存配置内容。该配置对象基于uo_json对象，可自动对值进行加密解密。
+
+2022/10/25
+1．增加了uo_sysenv对象，方便对环境变量操作。
+2．uo_mqtt publish 增参数retain，控制发布消息是否保留给下次订阅时自动收取最后一条消息。
+
+2022/10/24
+1.uo_pdfview 对象增加 oncommand 事件，传入工具条按钮的ID，如果事件返回 true，则工具条不执行默认动作。
+2. uo_pdfview 对象增函数 print(uo_json options)。使用 json 作为参数，提供更多打印自定义功能
+	js = create uo_json
+	js.set("showPrintDialog",false) //如果打开对话框为 true，其他配置无效
+	js.set("printerName","pdfFactory Pro") //如果不指定，则取默认打印机
+	js.set("paperOrientation",2) // 1 纵向，2横向
+	js.Set("paperSize", 256) //自定义纸张,7 A3,8 9  A4,12 B5等。
+	js.Set("paperWidth", 20) //20cm，可以是小数例如 21.5
+	js.Set("paperHeight", 12) //12cm，可以是小数例如29.7
+	this.print(js)
+	destroy js
+
+2022/10/10
+增加了uo_util. SetLicense 函数，可以直接使用这个字符串设置授权，这样就不需要文件了。
+//设置license授权文件内容
+subroutine SetLicense(readonly string license) system library "PbIdea.dll" alias for "licSetLicense"
+
+2022/10/1
+1.	增加了uo_sdtapi 对象，提供通用型身份证读卡功能，异步读卡使用方法高效。
+需要sdtapi.dll读信息，wltrs.dll或dewlt.dll 解码照片数据。
+2.	增加 uo_timer 对象，提供线程异步计时器,毫秒级控制。
+
+2022/9/30
+3.	增加了另一个版本的 RSA 加密/解密、签名/验签对象 uo_rsa,支持更多特性。
+4.	因各种杀毒软件报 pbidea.dll 带有病毒，因此停用了与 hook 相关的一些功能，涉及到 uo_transaction,uo_panda对象。
+
+2022/9/27
+1.	给 PSS 增加日志功能。
+PSS启动时设置参数：
+jsParam.set("log",true) //是否开启日志
+jsParam.set("log_file","log/pss.log") //如果不设置文件，则输出到控制台
+2.	增加日志对象 uo_logger,原来的 uo_logfile 可以弃用，uo_logger可以直接替换 uo_logfile。
+
+2022/9/25
+uo_image对象中增加MakeQrcode函数，使用uo_json作为参数，为定制二维码图片提供更多丰富支持函数。
+uo_json j
+j = create uo_json
+//文本内容
+j.set("text","二维码测试文本")
+//容错级别 0-3 ,有图标时建议设置为3
+j.set("error_level",3)
+//版本号 1-40
+j.set("version",18)
+//边框宽度
+j.set("border",8)
+//边框与二维码之间的空隙
+j.set("space",4)
+//颜色
+j.set("color",0)
+//底色
+j.set("bgcolor",rgb(255,255,255))
+//指定图片尺寸，小于8时按照默认生成
+j.set("size",196)
+//指定icon图标
+j.set("icon","../demores/images/logo.png")
+//指定icon图标是否缩放
+j.set("icon_zoom",true)
+//另存为图片名称,支持bmp jpg png gif webp 格式默认为bmp
+j.set("file","tmp/test1.bmp")
+//存为.bmp格式时,指定bmp颜色 1位 黑白，256(8位) 灰度，其他全彩
+j.set("bmp",1)
+
+2022/9/17
+使用 uo_database，从连接池中 querypool，数据库即使断开重连，pool也会抛弃已断开的连接，重新创建新连接。
+
+2022/9/13
+1.	中秋节期间发现了隐藏BUG。
+2.	dw2pdf 增加了水印功能
+3.	最近实现几个接口的过程中，添加了若干细节处理参数，更加方便有效。
+4.	增加了 postman 的 uo_curl支持
+5.	增加了 uo_curl PUT方法
+
+2022/9/2
+增加了 postman DEMO 模块，可直接测试，生成 uo_httpclient 请求源码。
+
+2022/8/26
+增加医保-移动支付版接口，支持SM4加密、解密，SM2withSM3签名、验签。此接口适用于国家医保需要encData 和 signData 参数的其他接口，例如 医保电子处方 接口。
+
+2022/8/22
+增加目录文件变化监控对象 uo_dir_watcher，受监控目录下有任何文件发生增删改时会触发ue_changed事件。
+
+2022/8/
+*** 增加 webView2 控件，基于微软的edge/chrome内核，支持浏览各种网页，性能卓越。
+
+2022/8/15
+1.	修复GetIP 的一个BUG，即网卡很多时会导致程序崩溃。
+
+2022/8/5
+2.	*** 增加DLL函数调用，支持 __cdecl调用约定，支持回调实现 
+3.	Pdfview  增加 onready onPageChanged 事件,增加TriggerButton 函数可以代码触发工具条按钮。
+
+2022/7/20
+1.	PSS 下载静态内容，实现异步、流式传送，效率提高，占用内存低。强烈推荐更新。
+2.	增加从x509证书直接读取公钥功能。
+3.	修复 … 可变个数参数带来的一个内存泄漏问题。涉及到多个对象。
+
+2022/7/15
+4.	uo_json的 ToString 函数增加了第4个参数，在转字符串时，指定double类型的小数点位数。
+5.	uo_json 增函数 dwImportJson2，功能是按照JSON顺序，直接将数据导入DW，不比对字段名称。
+
+2022/7/12
+1.修复了AES加密的一个BUG。
+2.uo_recordset增加记录集输出参数绑定
+
+2022/6/20
+处理了控制台关闭会导致进程崩溃的BUG。经我测试，不再崩溃。以观察后效。
+
+2022/6/19
+增加uo_serial对象，处理串口通讯功能
+
+2022/6/16
+增加了rabbitmq客户端，提供生产者和消费者支持
+
+2022/6/16
+在使用 dw2pdf时，需要使用参考打印机。有些电脑使用的默认打印机比较特殊，比如是票据打印机或条码打印机，这时候这个参考配置就有问题，直接取默认打印机不正常。解决方法：
+1.	增加SetPdfPrinter 函数，可以指定要使用哪台打印机
+2.	使用环境变量 “DW2PDF_PRINTER” 指定参考打印机
+
+2022/6/15
+修复SM2加密的一个重要BUG，会导致崩溃 ！！！
+
+2022/6/8
+增加了FTP server
+
+2022/5/20
+DEMO改版
+
+2022/5/18
+1.uo_image 增加 .webp 格式支持
+2.增加了若干GUI界面对象
+
+2022/5/16
+修复二维码字符串过长时崩溃问题，修复汉字扫码显示问题
+
+2022/5/8
+修得了 uo_zip 的一个BUG，在偶尔的情况下可能会导致崩溃。建议更新。
+
+2022/5/2
+增加了 uo_modbus_tcp，支持物联网应用。同步请求，支持同步/异步响应
+
+2022/5/1
+1.修改uo_string 返回自身引用导致内存增长问题
+2.uo_image 增加了读取 .wmf .emf .tif 格式。
+
+2022/4/27
+增加 uo_blob 对象，可以方便操作blob类型数据，方便进行 hex base64 编码解码，方便 blob,string,int,long数据类型和blob转换，方便实时编辑数据缓存。
+本对象可以作为一个实时缓存使用。
+尤其是涉及到硬件通讯，需要发送字节流，发送十六进制数据的时候，非常有用。
+
+2022/4/24
+//新增打开和保存文件对话框。声明为全局函数，就可以直接替换掉PB自带原生丑陋的对话框。
+//这组函数内部做了当前目录保存也恢复处理，避免当前目录改变后，调用DLL报找不到DLL的问题。
+function int GetFileOpenName(string title,ref string pathname, ref string filename) system library "pbidea.dll" alias for "fileGetFileOpenName"
+function int GetFileOpenName(string title,ref string pathname, ref string filename[]) system library "pbidea.dll" alias for "fileGetFileOpenName"
+function int GetFileOpenName(string title,ref string pathname, ref string filename ,string extension) system library "pbidea.dll" alias for "fileGetFileOpenName"
+function int GetFileOpenName(string title,ref string pathname, ref string filename[] ,string extension) system library "pbidea.dll" alias for "fileGetFileOpenName"
+function int GetFileOpenName(string title,ref string pathname, ref string filename ,string extension ,string initdir) system library "pbidea.dll" alias for "fileGetFileOpenName"
+function int GetFileOpenName(string title,ref string pathname, ref string filename[] ,string extension ,string initdir) system library "pbidea.dll" alias for "fileGetFileOpenName"
+
+function int GetFileSaveName(string title,ref string pathname, ref string filename) system library "pbidea.dll" alias for "fileGetFileSaveName"
+function int GetFileSaveName(string title,ref string pathname, ref string filename[]) system library "pbidea.dll" alias for "fileGetFileSaveName"
+function int GetFileSaveName(string title,ref string pathname, ref string filename ,string extension) system library "pbidea.dll" alias for "fileGetFileSaveName"
+function int GetFileSaveName(string title,ref string pathname, ref string filename[] ,string extension) system library "pbidea.dll" alias for "fileGetFileSaveName"
+function int GetFileSaveName(string title,ref string pathname, ref string filename ,string extension ,string initdir) system library "pbidea.dll" alias for "fileGetFileSaveName"
+function int GetFileSaveName(string title,ref string pathname, ref string filename[] ,string extension ,string initdir) system library "pbidea.dll" alias for "fileGetFileSaveName"
+
+2022/4/14
+添加 uo_yibao.importYiBaoZip 函数。
+
+2022/03/18
+增加系统已安装输入法获取和切换到任意输入法。支持XP、WIN7、WIN8、WIN10及以上版本
+//获取输入法列表
+function int GetInputList(uo_json inputList) system library "PbIdea.dll" alias for "GetInputList"
+//切换输入法
+function boolean InputChange(string inputID) system library "PbIdea.dll" alias for "InputChange"
+
+2022/02/22
+1.更新了 ping 函数,增加了ping指定端口功能
+2.修复 uo_database 之 sqlite不能使用中文路径
+3.dw2pdf 完善了图表导出错位问题
+
+2022/02/11
+1.把一个 datawindow 内容以虚拟打印的方式输出到PDF，或者 bmp,jpg,png类型文件，具体输出类型以文件扩展名区分
+function boolean PrintDatawindow(datawindow dw,string fileName) system library "PbIdea.dll" alias for "dwPrintDatawindow"
+function boolean PrintDatawindow(datawindow dw,string fileName,uo_json pdfoption) system library "PbIdea.dll" alias for "dwPrintDatawindow"
+
+uo_pdfmaker pdf
+pdf = create uo_pdfmaker
+pdf.printdatawindow( dw_1,"tmp\dw.jpg")
+pdf.printdatawindow( dw_1,"tmp\dw.png")
+pdf.printdatawindow( dw_1,"tmp\dw.bmp")
+
+uo_json joption
+joption = create uo_json
+//一些创建信息，可选
+joption.set("author","作者")
+joption.set("creator","创建者")
+joption.set("producer","生产工具")
+joption.set("title","标题")
+joption.set("subject","主题")
+joption.set("keywords","关键字")
+//使用密码，可选
+joption.set("owner_password","owner123")
+joption.set("user_password","user123")
+pdf.printdatawindow( dw_1,"tmp\dw.pdf",joption)
+destroy joption
+destroy pdf
+
+2022/02/10
+1.PSS 支持 https wss，不过需要单独编译DLL替换。找群主要。
+2.增加 uo_monitor.RotateMonitor(int angle) , 旋转显示屏 ，参数为 270 180 90 0 或 3 2 1 0
+
+2022/01/23
+1.增加了 uo_messagewidget 组件
+2.修复类似 /api/order/report 这样纯uri不能响应on_http 的bug
+
+2022/01/21
+增加MQTT客户端
+
+2022/01/18
+多屏信息，可支持多显示屏
+
+2022/1/16
+增加datawindow直接显示条码、二维码方法
+步骤1：在DW上放置一个计算字段，名称自定，表达式是什么不重要，可以直接输入""
+步骤2：对DW进行设置，SetDatawindowCoder。
+具体参考uo_tabpage_code
+
+2022/1/4
+添加.wav格式文件合并和播放函数,数组成员可以是 n 个，一些基础采样率使用第一个数据项内容
+any ls_wav[]
+blob data
+uo_file file
+file = create uo_file
+ls_wav[1] = "../demores/wav/1.wav"
+data = file.blobfromfile("../demores/wav/2.wav") //blob数据，此处从文件生成blob，实际应用中可以网上下载，可以从数据库中 selectblob
+ls_wav[2] = data
+uo_wavfile wav
+wav = create uo_wavfile
+data = wav.mergefile(ls_wav[])
+wav.play(data)
+destroy wav
+
+2022/01/01
+添加阿里 csb 签名方法
+PB版本用法：
+uo_json js
+js = create uo_json
+js.set("secretKey","4txZk+mhrU/JMLXmyP5m3S4Rc20=") //签名密钥，base64形式
+js.set("_api_access_key","3b78a66b1bb04183a0215b7b8e6e18e9")
+js.set("_api_name","hssServives")
+js.set("_api_timestamp",0) //设置为0，我会自动计算一个，然后放JSON里返回
+js.set("_api_version","1.0.0")
+js.set("base64key",true) //是否对 secretKey作base64解码处理
+//如果有其他参数需要放一起签名，请放到子JSON里去
+js.set("/other/mv1","mv1")
+js.set("/other/mv2","mv2")
+js.set("/test/name","张三")
+uo_crypto c
+c = create uo_crypto
+string ls_sign
+ls_sign = c.CsbSignature(js)
+MessageBox(ls_sign,js.tostring(true,false,true))
+
+标准版用法：
+string ls_jsonIn,ls_jsonOut
+int li_len
+uo_json js
+js = create uo_json
+js.set("secretKey","4txZk+mhrU/JMLXmyP5m3S4Rc20=") //签名密钥，base64形式
+js.set("_api_access_key","3b78a66b1bb04183a0215b7b8e6e18e9")
+js.set("_api_name","hssServives")
+js.set("_api_timestamp",0) //设置为0，我会自动计算一个，然后放JSON里返回
+js.set("_api_version","1.0.0")
+//如果有其他参数需要放一起签名，请放到子JSON里去
+js.set("/other/mv1","mv1")
+js.set("/other/mv2","mv2")
+js.set("/test/name","张三")
+ls_jsonIN = js.tostring()
+li_len = 4096
+ls_jsonOut = space(li_len)
+csb_signature(ls_jsonIn,ls_jsonOut,li_len) 
+js.parse(ls_jsonOut)
+MessageBox("",js.tostring(true,false,true))
+
+2021/12/31
+增加加了 uo_database_pool 对象。用处：可以初始时批量建立数据库连接，PSS线程里可以通过poolname 取得空闲数据库连接。适用于saas之类连接多数据库场合。
+1.启动PSS服务时，uo_database_pool pool; pool.CreatePool("sqlserver",dbsql);; pool.CreatePool("oracle",dbora); //分别创建8个 sql和ora的连接，名称可以自己起，从池中取的时候也要用同样的名称。
+2.PSS线程里 uo_database_pool pool; uo_database dbsql,dbora; dbsql = pool.queryPool("sqlserver"); dbora = pool.queryPool("oracle");，然后可以使用数据库实例对象操作数据
+  操作完成后，要把这个数据实例还给连接池，pool.GiveBackPool(dbsql) ;pool.GiveBackPool(dbora) ; 或者直接 destroy dbsql; destroy dbora; ，默认情况下，函数运行结束，自动也会销毁对象，也就自动还给数据库池
+3.停止服务后 uo_database_pool pool; pool.destroyPool(); 销毁数据库连接池，释放所有数据库连接。
+4.连接池内的连接如果10分钟没有被申请使用，会自动被断开。
+
+2021/12/25
+增加可视对象子类化功能对象 uo_subclass
+
+2021/12/21
+增加socket client 异步支持
+
+2021/12/18
+1.增加对gif格式支持
+2.添加表达式计算，以及一个计算器控件
+
+2021/12/17
+1.	增加打印机自定义纸张功能
+
+2021/12/12
+1.修改大文件导入的一个bug
+2.添加函数ReadResourceList，可以解析PBL源码中引用的文件，形成一个字符串列表，方便生成 .pbr 文件。文件大于2M不添加到列表，uo_utils基于此添加了makepbr函数
+3.增加 uo_tranicon对象，方便任务栏图标和弹出菜单应用
+
+2021/11/16
+1.增加ReadObjectNames和ReadObjectContent两个函数，读取PBL PBD（也可以是PB编译的DLL，EXE） 里面的对象内容，包括资源文件。
+2.uo_json 增加 WriteJsonFile 字符编码参数，可以把JSON存为 utf8,ansi,unicode(utf16)三种类型的文件
+2021/11/17
+1.uo_painter,uo_image,uo_json.parsefile 可以直接使用内置资源
+2021/11/24
+uo_httpclient uo_curl 两个对象，给 SetParam SetHeader 函数增加了 uo_map 类型参数
+作用：
+需要对类似 a=aa&b=bb&c=cc 这样的参数排序并签名时非常有用
+uo_map m;m = create uo_map
+m.set("c","cc");m.set("b","bb");m.set("a","aa"); //会自动排序
+ls_text = m.join("&") //join后得到字符串 "a=aa&b=bb&c=cc" ，然后根据文档要求对这个字符串进行签名
+httpclient.setParam(m) or curl.setParam(m) 把参数添加到对象
+这样使用方便
+
+2021/11/10
+增加语法高亮、折叠块、行号控件
+
+2021/10/31
+1.uo_pdfview printf 函数增加打印到指定打印机参数
+2.增加列举打印机函数，可查询所有已安装打印机，及打印机实时状态
+
+2021/10/29
+修复了几个BUG
+
+2021/10/15
+1.增加取拼音首字母汉字量，由原来 GB2312扩展到GBK计2W多汉字。
+2.改进了 dwImportFile 函数，该函数导入大医院下载的txt文件。增加了2个参数：
+boolean removeNull,对 null 这样的字段替换为空
+boolean autoTrunc，对超出字段长度的文本，直接进行截断处理，避免导入字段内容长于dw定义长度，导致报错。
+3.
+//根据指定标志，指定长度，取一个序号.本函数功能主要是在服务端，提供一个乱序，但不重复的单据号
+function string GetRandSerial(string flag,int numLen) system library "PbIdea.dll" alias for "stringGetRandSerial"
+
+2021/10/14
+1.uo_json 增加 GetString GetDobule GetLong GetLongLong 函数
+2.修改了医保接口函数 YiBao_Request 自动进行 SM4解密的一个BUG。
+
+2021/10/11
+1.增加了 kafka 生产者客户端功能
+2.增加了 kafka 消费者订阅客户端功能
+3。uo_json 增加 ToText 函数，用于生成格式化文本内容。
+
+2021/9/28
+1.增加一组函数：简繁体互转、取拼音首字母、全角半角互转、金额大写、比较字符串相似度
+2.修改了uo_xml一个按名称取节点属性会闪退的 BUG
+3.websocket 服务端和客户端，增加了发送消息类型参数，可以指定发blob和string消息
+4.修复了内部一个 pkcs7 对齐的BUG。
+
+2021/9/23
+1.uo_json set 函数，可以接受 date,time datetime 类型参数
+2.uo_json get 增加了根据索引取 键值对
+3.uo_json 增加了一个遍历示例。一直以来许多人不知道如何遍历 uo_json
+4.修复了 utf8 编码检测的一个BUG。
+5.修复 uo_httpclient.response.timeout 取不到设置值的问题
+6.excel操作已升级到 libxl 4.0.0.0
+
+2021/9/16
+1.增加了 uo_curl 异步下载支持
+2.增加了 JWT 分发token和验签对象 uo_jwt
+3.增加了大文本文件导入DW，兼容 ansi,utf8,unicode 各种编码，不用转换
+
+2021/9/10
+修复一个国家医保接口BUG：上传大文件时，有一定可能导致内存越界，程序崩溃。
+
+2021/9/7
+增加了基于 libcurl的 httpclient 对象 uo_curl ，可以支持 tls1.3,摆脱原来 uo_httpclient 受操作系统限制，导致win7不能访问某些服务的问题。
+
+2021/8/16
+1.增加了 dbf 导出与导入为 json 功能
+2.增加  asn1 编码解码功能
+3.增加 redis 客户端功能
+
+2021/7/14
+1.修改了若干BUG
+2.在多线程环境下运行得到有效支持
+3.提供国家医保相关技术支持
+
+2021/1/25
+1.提供全局选项，将deExportJson 导出的  NULL指定为  ""
+2.uo_image 增加 GetSize 函数。
+3.修复个别偶发性小BUG。
+
+2020/12/10
+修复一个PSS取base64参数的BUG
+
+2020/12/09
+国家医保接口需要的一个功能
+增加 JAVA 的BLOB转字节序函数 BlobToByte 和 ByteToBlob
+增强JSON
+uo_json js
+js = create uo_json
+js.set("in","20201208102640.zip",js.SetBytes)
+//或者 js.set("in",blob_data,js.SetBytes)
+destroy js
+这样可以直接把一个文件或blob数据在字节序的形式放进JSON。
+
+2020/12/07
+1.把 pbPaint功能合并进来
+2.把 fchart 合并进来
+3.添加了 uuid ,GetIP 函数
+4.添加了 QueryVar 函数，可以自己取得调试变量信息
+
+2020/12/02
+增加 7z 压缩支持，同时可以解压 .zip .cab ,iso
+修改了 zip 解压乱码问题
+
+2020/11/20
+增加了一个 socket 客户端
+
+2020/11/17
+修改 uo_json,dwimportjson 时，将第一行值为 null 的列，默认为 string 类型
+
+2020/11/2
+改进websocket 客户端心跳断线检测，同时增加连接参数，可以在连接时进行身份识别
+
+2020/10/26
+增加websocket 客户端心跳断线检测
+
+2020/10/24
+增加 websocket 客户端
+
+2020/9/24
+增加国密标准 SM2 加密、解密，签名、验签
+
+2020/9/2
+修正  pss 下载大文件失败
+
+2020/8/29
+1.uo_pdfview 增加多个PDF合并成一个PDF的功能
+2.支持文件HTTP方式，通过 form 提交文件，默认保存在当前目录的 tmp 子目录下
+
+2020/8/27
+uo_image 对象中，增加二维码和条码生成函数。生成后，可以另存为图片，或者显示到其他窗口上。
+
+2020/8/25
+修复PSS部分BUG，改进了基于HTTP的布署和增量更新，增加增量上传功能。
+
+2020/8/19
+1.PSS增加基于HTTP的布署和增量更新机制
+2.增加两个程序，用于支持基于HTTP的布署和增量更新。
+3.增加取硬盘序列号、CPU序列号函数
+
+2020/8/17
+1.增加 uo_image 对象，可以对 bmp,jpg,png 图片做一些常规格式转换、base64解码、显示、简单特效等。
+2.增加 uo_websocket_server 对象。
+	!!!!!!!!!!!!!!!!特别注意，这是一个重大功能
+	uo_websocket_server 对象可提供基于PB实现的 web server 和 websocket server 服务，直接可以用PB代码实现 iis + C# (JAVA,PHP) 实现的功能，直接就可以使用 pb 来写  web api.
+	结合 uo_database,uo_recordset,uo_field 对象使用，效率奇高。
+本功能单线程版本免费，多线程版本需要授权费用。
+
+2020/7/30
+1.改进 uo_httpclient ，自动解码 application/xml 到uo_xml对象
+2.对Content-Encoding:gzip 进行自动解压
+
+2020/7/29
+1.增加 uo_wait_box 对象，提供等待时的多线程等待动态图标对话框
+2.增加 uo_xml , uo_xml_node , uo_xml_attribute 对象，用于生成和解析 XML,提供 json2xml,datawindow 导入 xml 功能.
+3.改进了 pdf 签名
+
+2020/7/13
+增加了 uo_mail 对象
+1.提供 SendMail 函数用于发送邮件。
+2.提供 RecvMail 函数用于接收邮件，收到的邮件保存在当前目录下的 mail 目录里。
+
+2020/7/10
+增加 sftp 客户端支持
+加入datawindow鼠标拖拽功能
+
+2020/7/8
+增加PDF转存、放大缩小、旋转、签名等功能
+#define BUTTON_PAGE_PREV     201
+#define BUTTON_PAGE_NEXT     202
+#define BUTTON_ZOOM_LARGE    203
+#define BUTTON_ZOOM_SMALL    204
+#define BUTTON_ROATE_LEFT    205
+#define BUTTON_ROATE_RIGHT   206
+#define BUTTON_SAVE_AS       207
+#define BUTTON_PRINT         208
+#define BUTTON_FIND          209
+#define BUTTON_SIGN          210
+#define BUTTON_ABOUT         211
+在 pbjson.ini 里的 [pdfToolBar]下面，可以使用上面的定义，定义自己的工具条文本
+例如
+[pdfToolBar]
+201=谬总需求真变态
+202=谬总需求确实变态
+
+2020/6/21
+增加 pdf 阅读、转图片、转文本支持
+
+2020/6/19
+修改 JSON 在多线程下与DW交互的机制。
+
+2020/6/18
+增加 uo_string 对象，提供一些远超 string 提供的功能。
+
+2020/6/12
+1.增加了一个 ping 函数，提供类似操作系统 ping 命令的功能，可指定超时和 ping 次数。
+2.增加 uo_hook 对象，提供 HOOK DLL API 的功能，可以完成一些特别任务。
+
+2020/6/2
+修正 uo_zip 中文路径名问题
+
+2020/5/25
+增加数据连接对象(uo_database)、记录集对象(uo_recordset)、字段对象(uo_field)，支持目前几乎所有关系数据库。
+
+2020/05/23
+1.uo_json.SetOption函数增加 "valueasstring" , true/false,是否所有DW、DS值都作为字符串导出，默认为 false
+2.uo_crypto.FromTimeStamp , uo_crypto.ToTimeStamp 增对 datetime类型直接支持
+3.增加函数uo_crypto.AlignKey,自动修正密钥的格式
+function string AlignKey(string key,boolean opensslKey,boolean privateKey) system library "PbJson.dll" alias for "AlignKey"
+4.其他已发现的小BUG
+
+2020/04/30
+改进 dwExportJson 函数，导出时指定列方式，排除或者包含，并进行列名称关联，实现JSON KEY 大小写敏感，而不是全部小写
+
+2020/04/28
+增加 uo_zip
+
+2020/04/25
+增加 uo_map
+
+2020/04/25
+修复BUG：uo_json 取值时，使用进程变量取值失败
+
+我这两天测试了下FTP发现有以下一个小BUGS:
+下载方法[ ftpGet ],下载过程中如果真实情况是不成功[例如断网,文件不存在],
+此方法[ ftpGet ]都会返回True而非False
+而[ ftpPut ]方法则会相应的返回正确的结果[上传中途断网]
+
+2020/03/23
+1.uo_json 增使用 any 型直接取键值
+2.uo_json GetKeys 增加参数 ref ls_types[],将 keys 和 types 分开分别取到不同数组中
+3.uo_ujson GetType 返回当前json类型
+4.其他部分 uo_json 增强
+
+2020/03/19
+增加FTP功能组件
+
+2020/03/16
+1.增加了加密、解密、编码函数库。
+2.增加了表单提交功能函数
+
+2020/03/10
+增加上传函数，支持多文件上传
+
+2020/03/09
+增加了函数 SetOption 用于设置一些选项
+SetOption("rowid",true/false) 是否导出行号
+SetOption("displaydata",true/false) 导出显示值还是原始值
+
+2020/02/26
+增加了 uo_httpclient 对象，测试版本。
+
+2020/02/20
+1.增加函数 FromSQL,根据SQL语句直接生成JSON
+2.增加了一个根据主表和从表DW直接生成JSON的DEMO
 
 2020/02/16 重要改进
 1.增加 / 支持 ,方便存取子JSON和子数组。支持增、删除、改、查。
@@ -104,192 +863,70 @@ js.Set("/js/app/city/4","深圳")
 js.Get("/js/app/city/0",ref ls_city)
 以上方法同样支持子项!!!
 
-2020/02/20
-1.增加函数 FromSQL,根据SQL语句直接生成JSON
-2.增加了一个根据主表和从表DW直接生成JSON的DEMO
+2019/12/16
+1.//xml 转 json
+function boolean JsonFromXML(string xml) system library "PbJsonA.dll" alias for "JsonFromXML"
+2.	增加对PB8支持
 
-2020/02/26
-增加了 uo_httpclient 对象，测试版本。
+2019/12/6
+修改 Get longlong double real deicmal 时不能取所有数值的BUG
 
-2020/03/09
-增加了函数 SetOption 用于设置一些选项
-SetOption("rowid",true/false) 是否导出行号
-SetOption("displaydata",true/false) 导出显示值还是原始值
+2019/12/5
+增加压缩、解压缩函数。
+两组，分别基于 lzma 和 zlib
 
-2020/03/10
-增加上传函数，支持多文件上传
+2019/12/4
+增导入列映射功能。
+第一步，设置印象 ，印射方式为 "json关键字":"dw/ds列名"
+uo_json jsmap
+jsmap.set("UnitPrice","je") ,即将 json 的 UnitPrice 映射到 datawindow.je 列
+第二步
+ll_rows = js.dwImportJson(dw_1,jsmap)
+或
+ll_rows = js.dwImportJson(dw_1,"json3.txt",jsmap)
+导入，并使用映射关系指定
+两种情况下映射无效：1.动态创建DW、DS。2.datawindow里存在JSON关系字列，依然以关键字列导入。
 
-2020/03/16
-1.增加了加密、解密、编码函数库。
-2.增加了表单提交功能函数
+2019/12/2
+增加一组函数，使用方法很简单：
+/******************************************************************************************************
+* 特别注意，这组函数必须放在 datawindow/datastore 的继承类中 Local External Function 里面声明 !!!
+******************************************************************************************************/
+//此函数放在 dw/ds 的继承类中使用
+//使用方法，在dw/ds 的继承类中 Local External Function 里面声明此函数，然后直接就可以 dw_1.ImportJson("data.json")
+function long    ImportJson(string jsonFile) system library "PbJsonA.dll" alias for "ImportJson"
 
-2020/03/19
-增加FTP功能组件
+//将datawindow/datastore 数据生成JSON，返回生成条数,status : 0:NotModified! , 1:DataModified! ,2:New!,3:NewModified!	
+//参数jsonFile为直接生成到文件
+//3个参数，可以任意组合，自己声明吧
+//使用方法，在dw/ds 的继承类中 Local External Function 里面声明此函数，然后直接就可以 dw_1.ExportJson("data.json")
+function long    ExportJson(string jsonFile) system library "PbJsonA.dll" alias for "ExportJson"
+function long    ExportJson(int status) system library "PbJsonA.dll" alias for "ExportJson"
+function long    ExportJson(int status ,string jsonFile) system library "PbJsonA.dll" alias for "ExportJson"
+//只导出listColumns指定的所有列数
+function long    ExportJson(string listColumns[]) system library "PbJsonA.dll" alias for "ExportJson"
+function long    ExportJson(string listColumns[],string jsonFile) system library "PbJsonA.dll" alias for "ExportJson"
 
-2020/03/23
-1.uo_json 增使用 any 型直接取键值
-2.uo_json GetKeys 增加参数 ref ls_types[],将 keys 和 types 分开分别取到不同数组中
-3.uo_ujson GetType 返回当前json类型
-4.其他部分 uo_json 增强
+使用方法很简单：
+dw_2.ImportJson("json5.txt")
+dw_2.ExportJson("export.txt")
+给你原生无异。
 
-2020/04/25
-修复BUG：uo_json 取值时，使用进程变量取值失败
+2019/11/30
+全面优化，10W条记录，秒读秒写
 
-我这两天测试了下FTP发现有以下一个小BUGS:
-下载方法[ ftpGet ],下载过程中如果真实情况是不成功[例如断网,文件不存在],
-此方法[ ftpGet ]都会返回True而非False
-而[ ftpPut ]方法则会相应的返回正确的结果[上传中途断网]
+2019/11/29
+1.(*)修复内存泄漏的BUG
+2.(*)增加两个模式，直接从文件导入dw/ds，和直接将 dw/ds存为文件，几万条数据秒读秒写.
 
-2020/04/25
-增加 uo_map
+2019/11/28
+1.数字型导入DW的一个BUG
+2.第一行为null的字段，后面默认都当长度为20的字符串处理
 
-2020/04/28
-增加 uo_zip
-
-2020/04/30
-改进 dwExportJson 函数，导出时指定列方式，排除或者包含，并进行列名称关联，实现JSON KEY 大小写敏感，而不是全部小写
-
-2020/05/23
-1.uo_json.SetOption函数增加 "valueasstring" , true/false,是否所有DW、DS值都作为字符串导出，默认为 false
-2.uo_crypto.FromTimeStamp , uo_crypto.ToTimeStamp 增对 datetime类型直接支持
-3.增加函数uo_crypto.AlignKey,自动修正密钥的格式
-function string AlignKey(string key,boolean opensslKey,boolean privateKey) system library "PbJson.dll" alias for "AlignKey"
-4.其他已发现的小BUG
-
-2020/5/25
-增加数据连接对象(uo_database)、记录集对象(uo_recordset)、字段对象(uo_field)，支持目前几乎所有关系数据库。
-
-2020/6/2
-修正 uo_zip 中文路径名问题
-
-2020/6/12
-1.增加了一个 ping 函数，提供类似操作系统 ping 命令的功能，可指定超时和 ping 次数。
-2.增加 uo_hook 对象，提供 HOOK DLL API 的功能，可以完成一些特别任务。
-
-2020/6/18
-增加 uo_string 对象，提供一些远超 string 提供的功能。
-
-2020/6/19
-修改 JSON 在多线程下与DW交互的机制。
- 
-2020/6/21
-增加 pdf 阅读、转图片、转文本支持
-
-2020/7/8
-增加PDF转存、放大缩小、旋转、签名等功能
-#define BUTTON_PAGE_PREV     201
-#define BUTTON_PAGE_NEXT     202
-#define BUTTON_ZOOM_LARGE    203
-#define BUTTON_ZOOM_SMALL    204
-#define BUTTON_ROATE_LEFT    205
-#define BUTTON_ROATE_RIGHT   206
-#define BUTTON_SAVE_AS       207
-#define BUTTON_PRINT         208
-#define BUTTON_FIND          209
-#define BUTTON_SIGN          210
-#define BUTTON_ABOUT         211
-在 pbjson.ini 里的 [pdfToolBar]下面，可以使用上面的定义，定义自己的工具条文本
-例如
-[pdfToolBar]
-201=谬总需求真变态
-202=谬总需求确实变态
-
-2020/7/10
-增加 sftp 客户端支持
-加入datawindow鼠标拖拽功能
-
-2020/7/13
-增加了 uo_mail 对象
-1.提供 SendMail 函数用于发送邮件。
-2.提供 RecvMail 函数用于接收邮件，收到的邮件保存在当前目录下的 mail 目录里。
-
-2020/7/29
-1.增加 uo_wait_box 对象，提供等待时的多线程等待动态图标对话框
-2.增加 uo_xml , uo_xml_node , uo_xml_attribute 对象，用于生成和解析 XML,提供 json2xml,datawindow 导入 xml 功能.
-3.改进了 pdf 签名
-
-2020/7/30
-1.改进 uo_httpclient ，自动解码 application/xml 到uo_xml对象
-2.对Content-Encoding:gzip 进行自动解压
-
-2020/8/17
-1.增加 uo_image 对象，可以对 bmp,jpg,png 图片做一些常规格式转换、base64解码、显示、简单特效等。
-2.增加 uo_websocket_server 对象。
-	!!!!!!!!!!!!!!!!特别注意，这是一个重大功能
-	uo_websocket_server 对象可提供基于PB实现的 web server 和 websocket server 服务，直接可以用PB代码实现 iis + C# (JAVA,PHP) 实现的功能，直接就可以使用 pb 来写  web api.
-	结合 uo_database,uo_recordset,uo_field 对象使用，效率奇高。
-本功能单线程版本免费，多线程版本需要授权费用。
- 
-2020/8/19
-1.PSS增加基于HTTP的布署和增量更新机制
-2.增加两个程序，用于支持基于HTTP的布署和增量更新。
-3.增加取硬盘序列号、CPU序列号函数
-
-2020/8/25
-修复PSS部分BUG，改进了基于HTTP的布署和增量更新，增加增量上传功能。
-
-2020/8/27
-uo_image 对象中，增加二维码和条码生成函数。生成后，可以另存为图片，或者显示到其他窗口上。
-
-2020/8/29
-1.uo_pdfview 增加多个PDF合并成一个PDF的功能
-2.支持文件HTTP方式，通过 form 提交文件，默认保存在当前目录的 tmp 子目录下
-
-2020/9/2
-修正  pss 下载大文件失败
-
-2020/9/24
-增加国密标准 SM2 加密、解密，签名、验签
-
-2020/10/24
-增加 websocket 客户端
-2020/10/26
-增加websocket 客户端心跳断线检测
-2020/11/2
-改进websocket 客户端心跳断线检测，同时增加连接参数，可以在连接时进行身份识别
-
-2020/11/17
-修改 uo_json,dwimportjson 时，将第一行值为 null 的列，默认为 string 类型
-
-2020/11/20
-增加了一个 socket 客户端
-
-2020/12/02
-增加 7z 压缩支持，同时可以解压 .zip .cab ,iso
-修改了 zip 解压乱码问题
-
-2020/12/07
-1.把 pbPaint功能合并进来
-2.把 fchart 合并进来
-3.添加了 uuid ,GetIP 函数
-4.添加了 QueryVar 函数，可以自己取得调试变量信息
-
-2020/12/09
-国家医保接口需要的一个功能
-增加 JAVA 的BLOB转字节序函数 BlobToByte 和 ByteToBlob
-增强JSON
-uo_json js
-js = create uo_json
-js.set("in","20201208102640.zip",js.SetBytes)
-//或者 js.set("in",blob_data,js.SetBytes)
-destroy js
-这样可以直接把一个文件或blob数据在字节序的形式放进JSON。
-
-2020/12/10
-修复一个PSS取base64参数的BUG
-
-2021/1/25
-1.提供全局选项，将deExportJson 导出的  NULL指定为  ""
-2.uo_image 增加 GetSize 函数。
-3.修复个别偶发性小BUG。
+2019/11/26
+1.修改 true/false 类型读写的BUG
+2.修复导出JSON时取 decimal 列的一个BUG
+3.dwExportJson 增加了一个参数,DWItemStatus  : 0:NotModified! , 1:DataModified! ,2:New!,3:NewModified! ，可以指定只导出这些状态的数据
 
 
-2021/7/14
-1.修改了若干BUG
-2.在多线程环境下运行得到有效支持
-3.提供国家医保相关技术支持
 
-2021/8/16
-1.增加了 dbf 导出与导入为 json 功能
-2.增加  asn1 编码解码功能
-3.增加 redis 客户端功能
