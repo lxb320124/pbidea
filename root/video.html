@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset ="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+
+        <link href="video/7.21.0/video-js.css" rel="stylesheet" type="text/css">
+        <script src="video/7.21.0/video.js"></script>
+        
+        <title>H5视频播放</title>
+</head>
+<body>
+
+    <video id="myv" width="620" height="400" class="video-js vjs-default-skin vjs-big-play-centered" controls poster="" data-setup='{}'>
+        <source src="movie.mp4" type="video/mp4">
+    </video>
+
+    <script type="text/javascript">
+
+        const player = videojs('myv');
+
+        //  全局拦截器
+        videojs.Vhs.xhr.beforeRequest = function (options) {
+            if (options.headers == undefined) {
+                options.headers = {}
+            }
+            headers["headers1"] = "headers1";
+            headers["headers2"] = "headers2";
+            headers["token"] = "------------------------------------------";
+            options.headers.Authorization = "{{ access_token }}";
+                        
+            console.log("options", options);
+
+            return options;
+        };
+
+    </script>
+
+</body>
+</html>
