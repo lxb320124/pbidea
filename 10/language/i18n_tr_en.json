@@ -1,0 +1,555 @@
+{
+    "pdftoolbar": {
+        "201": {
+            "text": "prev page (ctrl + left)",
+            "icon": 64924
+        },
+        "202": {
+            "text": "next page (ctrl + right)",
+            "icon": 64925
+        },
+        "203": {
+            "text": "zoom out (ctrl + +)",
+            "icon": 64801
+        },
+        "204": {
+            "text": "zoom in (ctrl + -)",
+            "icon": 64805
+        },
+        "206": {
+            "text": "Clockwise (ctrl + R)",
+            "icon": 64955
+        },
+        "205": {
+            "text": "anti-clockwise (ctrl + L)",
+            "icon": 64956
+        },
+        "207": {
+            "text": "save as ... (ctrl + S)",
+            "icon": 65150
+        },
+        "208": {
+            "text": "print ... (ctrl + P)",
+            "icon": 64851
+        },
+        "209": {
+            "text": "Find ... (ctrl + F)",
+            "icon": 64770
+        },
+        "210": {
+            "text": "autograph ... (ctrl + I)",
+            "icon": 64850
+        },
+        "211": {
+            "text": "About ...",
+            "icon": 64809
+        },
+        "about": "Support keyboard and mouse actions:\n\tHome: goto first page\n\tEnd:  goto last page\n\tDirection key/Mouse wheel: Jump up and down one line\n\tPageDown/PageUp: Jump up and down one page\n\tctrl++ ctrl+- ctrl+< ctrl+> ctrl+MouseWheel: Zoom out/in\n\tctrl+r ctrl+l: Counterclockwise or clockwise rotation\n\tctrl+s: Save as\n\tctrl+p: Print\n\tctrl+f: Find\n\tRight click and drag to select local text, and then left click to copy it to the clipboard. Right click to deselect.\n\n\t\t\t¥Û◊‘‘⁄£®QQ:781770213)"
+    },
+    "tr": {
+        "80cab1138f2b7a28": {
+            "src": "{}\n\nDEMO source for object: {} , double click the selecteditem ,you can view the DEMO and object source°£",
+            "text": ""
+        },
+        "1a369c1c3ff3abd2": {
+            "src": "87084169928487037610654336223572953478841050860",
+            "text": ""
+        },
+        "87005734a3f1e8b5": {
+            "src": "0F40FD3E7E11F6B63949E82C2F8C53EDA34126EC",
+            "text": ""
+        },
+        "eb7016f0c80e3adf": {
+            "src": "3277092",
+            "text": ""
+        },
+        "ba9745957d09abee": {
+            "src": "320124",
+            "text": ""
+        },
+        "775925068c807fe8": {
+            "src": "04E27C",
+            "text": ""
+        },
+        "4005f8da13f42943": {
+            "src": "24",
+            "text": ""
+        },
+        "5568161a8cdf4ad2": {
+            "src": "18",
+            "text": ""
+        },
+        "2b244b5c8e00b2e7": {
+            "src": "F244BCAB",
+            "text": ""
+        },
+        "3fa24facd7490fd4": {
+            "src": "B244D9C7",
+            "text": ""
+        },
+        "f1a8bf7d4b223ac2": {
+            "src": "D1E93D1F",
+            "text": ""
+        },
+        "7433e3db2c166402": {
+            "src": "D7DC1E4F",
+            "text": ""
+        },
+        "8e2c1791e130ab82": {
+            "src": "C78B203D",
+            "text": ""
+        },
+        "5302e05d8db6cd38": {
+            "src": "83ADFED1",
+            "text": ""
+        },
+        "7bb2292589ff4d01": {
+            "src": "CFF793F07D51DDC6BA470120FBEB5882",
+            "text": ""
+        },
+        "ad43cce3ea640af0": {
+            "src": "CFF0377E54FE5B20214921614019F344",
+            "text": ""
+        },
+        "c77cfb0eedec6e95": {
+            "src": "A23B52B3B1C13445BDF345E564155480",
+            "text": ""
+        },
+        "2025e241389946b9": {
+            "src": "AA31383258D359C384A3BA560352F570",
+            "text": ""
+        },
+        "559dcc27e31fa9d2": {
+            "src": "8E8035DC071EF6B12CFB7CDEE802B199",
+            "text": ""
+        },
+        "72e6618b04ec5885": {
+            "src": "EF57CCA9279D777D0E9DCBDA20F72AED",
+            "text": ""
+        },
+        "2a67860d8f0d43b9": {
+            "src": "FD231FB6277F9FC4A758B4E01FBEA1E3",
+            "text": ""
+        },
+        "48007481725272ab": {
+            "src": "BD9310307565D32A4031A8B3059D97CC",
+            "text": ""
+        },
+        "4cf46ee2ad2ca498": {
+            "src": "F65CA9ED0350E634C4A99090C840DEE7",
+            "text": ""
+        },
+        "7122fa894be6fd9b": {
+            "src": "F360A92CC096DC20229A27E9300769E9",
+            "text": ""
+        },
+        "4c8e349943a3065b": {
+            "src": "C3AF8712B6C674FB3FE9E64E8F1E6C97",
+            "text": ""
+        },
+        "3d6a7cfefb23e434": {
+            "src": "CAD0CA9A7E7743C2063642755D14CC7F",
+            "text": ""
+        },
+        "5c6e8c10f9454adf": {
+            "src": "E4EF2DE78318BF949640ABAE4AAA942C",
+            "text": ""
+        },
+        "9a8b771cb27130c2": {
+            "src": "898D6911AA45C361F0EE348227A9E529",
+            "text": ""
+        },
+        "80cc9c86e87e02f2": {
+            "src": "EE75A4AFBE39B2B30240A1853AA67614",
+            "text": ""
+        },
+        "1f753e852ec70fee": {
+            "src": "8D34161D2EDC572AF4ED61D95A57E3FF",
+            "text": ""
+        },
+        "035d33ea06aacfa8": {
+            "src": "82C8361E43A362B867D91C3578AF84E5",
+            "text": ""
+        },
+        "6d1fbecfa6df756f": {
+            "src": "A883438493F78EA47DE40F1941C27623",
+            "text": ""
+        },
+        "cbb24a21c4544665": {
+            "src": "F8CE0EAE5C3B616E",
+            "text": ""
+        },
+        "5479decd52c34f6b": {
+            "src": "DBD2F711",
+            "text": ""
+        },
+        "f37b782d3a3b8694": {
+            "src": "84487536",
+            "text": ""
+        },
+        "86162ed818f3011a": {
+            "src": "D0F0569C",
+            "text": ""
+        },
+        "826e12eb63507bb3": {
+            "src": "A5D57D70E2500AF3",
+            "text": ""
+        },
+        "069b8cce6622d3c3": {
+            "src": "FA12753EDFBE7508",
+            "text": ""
+        },
+        "c303002e7af703f7": {
+            "src": "E2E2B61AA346F767",
+            "text": ""
+        },
+        "e143d9cf01c6db08": {
+            "src": "CBF7BF2993ECB825",
+            "text": ""
+        },
+        "cf7ecef80f51efdd": {
+            "src": "DFD64BA963A3B970",
+            "text": ""
+        },
+        "c4e3c4d51bd1640f": {
+            "src": "D93E0D0FC742E918",
+            "text": ""
+        },
+        "e2151a1abc7d0b25": {
+            "src": "FCD2C6F19721037E",
+            "text": ""
+        },
+        "c35f0acfb4699710": {
+            "src": "B44A8EF3E944D971",
+            "text": ""
+        },
+        "e56a2bd3e3939e9a": {
+            "src": "B5EF7E8CBDD28DC1",
+            "text": ""
+        },
+        "5dc451147cd5b33e": {
+            "src": "E4F1C7B2A231CB45",
+            "text": ""
+        },
+        "2a40b1cd3aa88606": {
+            "src": "D41B754E39A1A0E6",
+            "text": ""
+        },
+        "d1ee45aea3d3593e": {
+            "src": "A12274EFFF31931E",
+            "text": ""
+        },
+        "6c5c0f4a3fe3f035": {
+            "src": "CB04E36A4426D000",
+            "text": ""
+        },
+        "6a29dfdff42202a5": {
+            "src": "CD4613585A4A4C6C",
+            "text": ""
+        },
+        "6ec892565b60358f": {
+            "src": "88D0F53371C89836",
+            "text": ""
+        },
+        "1c33a43655dbd93c": {
+            "src": "CBE871FB48C81A95",
+            "text": ""
+        },
+        "4b431c78b620d2c5": {
+            "src": "F55FEFBCA192F963",
+            "text": ""
+        },
+        "8cfdf4d704a76d37": {
+            "src": "DA193F94FD4FC22F",
+            "text": ""
+        },
+        "2edc3e16f8812b16": {
+            "src": "DDF427DCCA198ABE",
+            "text": ""
+        },
+        "415d17c85b1f1204": {
+            "src": "90862D2A353FB01A",
+            "text": ""
+        },
+        "5baedd850f7d2a75": {
+            "src": "BC2C88578A9E1F1A",
+            "text": ""
+        },
+        "d1936d69cb863b17": {
+            "src": "974D9080B16BC534",
+            "text": ""
+        },
+        "d2f45864b0e50d16": {
+            "src": "A8FBCCA9C9175065",
+            "text": ""
+        },
+        "fd5705b91fac938d": {
+            "src": "A5B15933E8EBA620",
+            "text": ""
+        },
+        "cc8cbb882f850764": {
+            "src": "824786CB4D5D317F",
+            "text": ""
+        },
+        "e3a2fd4dec163222": {
+            "src": "FEA7F1B98A8E023C",
+            "text": ""
+        },
+        "c16aa5889af29f6a": {
+            "src": "E5B109576B4E1CCA",
+            "text": ""
+        },
+        "77958854c9ff70d7": {
+            "src": "F9B936CECDC40FA7",
+            "text": ""
+        },
+        "949903b0ef1d6cf2": {
+            "src": "E41DCD134216E6E5",
+            "text": ""
+        },
+        "c1f2f55f4a669b1b": {
+            "src": "ADFCFFD138960342",
+            "text": ""
+        },
+        ":6D:1A:36:9C:1C:": {
+            "src": "87084169928487037610654336223572953478841050860",
+            "text": ""
+        },
+        ":15:78:E7:71:D6:": {
+            "src": "A8DC111433F1D4D6",
+            "text": ""
+        },
+        ":AF:80:CA:B1:13:": {
+            "src": "{}\n\nDEMO source for object: {} , double click the selecteditem ,you can view the DEMO and object source°£",
+            "text": ""
+        },
+        ":70:CA:FD:5D:76:": {
+            "src": "A9A0616ACCE05E9F",
+            "text": ""
+        },
+        ":59:34:67:14:4A:": {
+            "src": "F1AFD14203D882B8",
+            "text": ""
+        },
+        "2d2995019541ba5f": {
+            "src": "A4DD9DBACB0DCA64",
+            "text": ""
+        },
+        "1A369C1C3FF3ABD2": {
+            "src": "87084169928487037610654336223572953478841050860",
+            "text": ""
+        },
+        "C815767D11AC3810": {
+            "src": "EDEACBDF69A57074",
+            "text": ""
+        },
+        "80CAB1138F2B7A28": {
+            "src": "{}\n\nDEMO source for object: {} , double click the selecteditem ,you can view the DEMO and object source°£",
+            "text": ""
+        },
+        "D412973056488BAE": {
+            "src": "BAAE343AE2E48DAE",
+            "text": ""
+        },
+        "22879DA5C7936D94": {
+            "src": "BB123964F4437EF0",
+            "text": ""
+        },
+        "10E56976AB6B6BB9": {
+            "src": "8CAAD2AF35019DBD",
+            "text": ""
+        },
+        "9C29C7C7860FDC6E": {
+            "src": "99145664F07A2119",
+            "text": ""
+        },
+        "CDF6E7FF1183D127": {
+            "src": "E19AD0103FC532DB",
+            "text": ""
+        },
+        "B5ABAC18D70A5357": {
+            "src": "D511DEE702E4B7C4",
+            "text": ""
+        },
+        "C9233A449BBCD700": {
+            "src": "BD1A8A1FC48E771E",
+            "text": ""
+        },
+        "5AC477E69C78808D": {
+            "src": "8D4CCA72CD93FB18",
+            "text": ""
+        },
+        "5EC1C2F136CCF3F1": {
+            "src": "’‚ «js  µ ±∑µªÿµƒΩ·π˚: ",
+            "text": "this is javascript return result: "
+        },
+        "297EDFAF95027C2F": {
+            "src": "’‚ «”Ô“Ù≤‚ ‘£¨…Ë÷√ÕÍ≥…∫Û«Î±£¥Ê£°",
+            "text": "This is a voice test. Please save it after setting!"
+        },
+        "561E0A8E977A72B6": {
+            "src": "«Î—°‘Ò”Ô“Ùø‚",
+            "text": "Please select a voice library"
+        },
+        "09049355527EF6A2": {
+            "src": "’≈",
+            "text": "sunny"
+        },
+        "DB83FD3D5924F851": {
+            "src": "∫≈¿œÕı",
+            "text": "LaoWangNextDoor"
+        },
+        "557796858A347C06": {
+            "src": "ƒ–",
+            "text": "male"
+        },
+        "91D9FCA8ACB82F02": {
+            "src": "{}\n",
+            "text": ""
+        },
+        "1EF405D9CE3282DD": {
+            "src": "this is thread\n",
+            "text": ""
+        },
+        "8713FA0D659CA268": {
+            "src": "parse {} fail",
+            "text": ""
+        },
+        "987680011D5749D9": {
+            "src": "D:\\is\\json\\PbJson\\demo\\9\\language\\en\\i18n_tr_en.json",
+            "text": ""
+        },
+        "2BD37A50B983C5E7": {
+            "src": "{}",
+            "text": ""
+        },
+        "21CD67149D5D2E3C": {
+            "src": "5F0B9B2C06A02608A598622C50B36BB15898FB4B2DDD268BC7FE75C280A76127{}",
+            "text": ""
+        },
+        "B0BEAD6162B00A32": {
+            "src": "businesstype=01101&districtno=379132&ecqrcode=4243804539684770662402370000&officeid=81&officename=379132&operatorid=81&operatorname=379132&orgid=379132&termid=XIAOWANGDE&termip=192.168.0.147&timestamp=1669355275556",
+            "text": ""
+        },
+        "8F00B204E9800998": {
+            "src": "",
+            "text": ""
+        },
+        "38BB57FA5748B106": {
+            "src": "iarr is: {}",
+            "text": ""
+        },
+        "EE13AD1178DCCD84": {
+            "src": "sarr is: {}",
+            "text": ""
+        },
+        "A0B8AC9F696CF5AC": {
+            "src": "ˇˇ\u0006",
+            "text": ""
+        },
+        "3F43C26EE759D6B9": {
+            "src": "jsarr is: {}",
+            "text": ""
+        },
+        "6AD9B3351EF61D5D": {
+            "src": "\n{}",
+            "text": ""
+        },
+        "A598BF0C72704CD3": {
+            "src": "content is:{}",
+            "text": ""
+        },
+        "E83A4D19EE8F34C7": {
+            "src": "\ntest: {}",
+            "text": ""
+        },
+        "B06BB8FF7ED06DCB": {
+            "src": "jb:{}",
+            "text": ""
+        },
+        "C5D62444BD6AC225": {
+            "src": "language: {}",
+            "text": ""
+        },
+        "1BD9177D4F1EE44F": {
+            "src": "i18n.language: {}",
+            "text": ""
+        },
+        "DDA027F773607EE2": {
+            "src": "{},{}, {}",
+            "text": ""
+        },
+        "E6D5CA7234984930": {
+            "src": "{},{}",
+            "text": ""
+        },
+        "725509A6C34DBE71": {
+            "src": "{} , {} , {}",
+            "text": ""
+        },
+        "BC37A4B197433D3A": {
+            "src": "exit: {}",
+            "text": ""
+        },
+        "D51E509157CFC9FE": {
+            "src": "write_object: {}: {}, {}, {}\n",
+            "text": ""
+        },
+        "15B86F2D013B2618": {
+            "src": "end",
+            "text": ""
+        },
+        "1120725D3FFB28BE": {
+            "src": "node count {}",
+            "text": ""
+        },
+        "A71AED424A80F4B1": {
+            "src": "get fail at node count {}",
+            "text": ""
+        },
+        "A7BFC03D7E97A2EB": {
+            "src": "{03} {}",
+            "text": ""
+        },
+        "7B238C5EC9B6B206": {
+            "src": "{} {}",
+            "text": ""
+        },
+        "EFA2D93403CF0619": {
+            "src": "º”‘ÿ≤Àµ• ß∞‹£¨ƒ„√ª”–∂‘—πÀı∞¸»´Ω‚—π∞…",
+            "text": ""
+        },
+        "FB9497BAA5CD519D": {
+            "src": "en",
+            "text": ""
+        },
+        "6A24781091EECA91": {
+            "src": "i18n: {}, {}",
+            "text": ""
+        },
+        "C7595C5F3736696E": {
+            "src": "use memory {}(M), system boot time: {}",
+            "text": ""
+        },
+        "DE6545E81CF5736B": {
+            "src": "version: {}, build datetiem: {}, sign: {}",
+            "text": ""
+        },
+        "718ED6E4CC655A3A": {
+            "src": "ue_show: {}, {}",
+            "text": ""
+        },
+        "FD3EF2F4085D990F": {
+            "src": "dw_tree: {}, [{}], [{}]",
+            "text": ""
+        },
+        "CFCAAC9C20308F53": {
+            "src": "ue_mousemove: {}, {}",
+            "text": ""
+        },
+        "865AE90ECE89BB5D": {
+            "src": "open: [{}], [{}]",
+            "text": ""
+        }
+    }
+}
