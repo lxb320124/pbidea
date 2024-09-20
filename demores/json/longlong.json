@@ -1,0 +1,1813 @@
+﻿{
+    "status": "success",
+    "messages": [],
+    "data": {
+        "postBackParameter": {
+            "parameterType": "LAST_RESULT_MAX_ID",
+            "parameterValue": "557254249"
+        },
+        "result": [
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 1447255880018679624,
+                "sn": "202108032035402400100",
+                "datetime": "2021-08-03 20:35:40",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 372028637652561690,
+                "sn": "202108032035431490101",
+                "datetime": "2021-08-03 20:35:44",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 720517942110125394,
+                "sn": "202108032035471250102",
+                "datetime": "2021-08-03 20:35:47",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 654350645522510234,
+                "sn": "202108032035488640103",
+                "datetime": "2021-08-03 20:35:49",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 8927345778243630,
+                "sn": "202108032035502140104",
+                "datetime": "2021-08-03 20:35:50",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 385013901731253713,
+                "sn": "202108032035517560105",
+                "datetime": "2021-08-03 20:35:51",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 541454168942252556,
+                "sn": "202108032035532380106",
+                "datetime": "2021-08-03 20:35:53",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 1025568703220140170,
+                "sn": "202108032035546740107",
+                "datetime": "2021-08-03 20:35:54",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 203385854742653718,
+                "sn": "202108032035561720108",
+                "datetime": "2021-08-03 20:35:56",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 2392890235327018154,
+                "sn": "202108032035574110109",
+                "datetime": "2021-08-03 20:35:57",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 2693902832133807300,
+                "sn": "202108032035594720110",
+                "datetime": "2021-08-03 20:35:59",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 3122663863220532096,
+                "sn": "202108032036041010111",
+                "datetime": "2021-08-03 20:36:04",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 994815714630289048,
+                "sn": "202108032036062220112",
+                "datetime": "2021-08-03 20:36:06",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 87595953795940044,
+                "sn": "202108032036078060113",
+                "datetime": "2021-08-03 20:36:07",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 634053700192392684,
+                "sn": "202108032036093350114",
+                "datetime": "2021-08-03 20:36:09",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 1077411054889447488,
+                "sn": "202108032036107230115",
+                "datetime": "2021-08-03 20:36:11",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 1292438634159819678,
+                "sn": "202108032036129160116",
+                "datetime": "2021-08-03 20:36:13",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 2637601595334643366,
+                "sn": "202108032036144080117",
+                "datetime": "2021-08-03 20:36:14",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 1052859247835952232,
+                "sn": "202108032036160420118",
+                "datetime": "2021-08-03 20:36:16",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 1553261945461087334,
+                "sn": "202108032036176390119",
+                "datetime": "2021-08-03 20:36:17",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 1488297064474543290,
+                "sn": "202108032036190480120",
+                "datetime": "2021-08-03 20:36:19",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 1493944110583549425,
+                "sn": "202108032036204230121",
+                "datetime": "2021-08-03 20:36:20",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 824567257415562716,
+                "sn": "202108032036217550122",
+                "datetime": "2021-08-03 20:36:22",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 63605699392303775,
+                "sn": "202108032036230210123",
+                "datetime": "2021-08-03 20:36:23",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 677975687670395692,
+                "sn": "202108032036242490124",
+                "datetime": "2021-08-03 20:36:24",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 1767787529410398174,
+                "sn": "202108032036252810125",
+                "datetime": "2021-08-03 20:36:25",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 353444652869125680,
+                "sn": "202108032036268460126",
+                "datetime": "2021-08-03 20:36:27",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 875658446787708558,
+                "sn": "202108032036302470127",
+                "datetime": "2021-08-03 20:36:30",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 310589630534,
+                "sn": "202108032036316830128",
+                "datetime": "2021-08-03 20:36:31",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 798468817659892560,
+                "sn": "202108032036337550129",
+                "datetime": "2021-08-03 20:36:33",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 631418012519131480,
+                "sn": "202108032036361970130",
+                "datetime": "2021-08-03 20:36:36",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 799567418714785770,
+                "sn": "202108032036377190131",
+                "datetime": "2021-08-03 20:36:37",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 1603405137220174431,
+                "sn": "202108032036392330132",
+                "datetime": "2021-08-03 20:36:39",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 3349442919219182268,
+                "sn": "202108032036407390133",
+                "datetime": "2021-08-03 20:36:40",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 128220431378900895,
+                "sn": "202108032036421080134",
+                "datetime": "2021-08-03 20:36:42",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 183175025705424010,
+                "sn": "202108032036433420135",
+                "datetime": "2021-08-03 20:36:44",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 39017438921187828,
+                "sn": "202108032036480280136",
+                "datetime": "2021-08-03 20:36:48",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 1035993989096310447,
+                "sn": "202108032036503410137",
+                "datetime": "2021-08-03 20:36:50",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 735208678196222662,
+                "sn": "202108032036525190138",
+                "datetime": "2021-08-03 20:36:52",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            },
+            {
+                "cashierUid": 832101480292933201,
+                "cashier": {
+                    "jobNumber": "1001",
+                    "name": "李光辉",
+                    "uid": 832101480292933201
+                },
+                "customerUid": 0,
+                "uid": 336295130746249920,
+                "sn": "202108032036543550139",
+                "datetime": "2021-08-03 20:36:55",
+                "totalAmount": 38.0,
+                "totalProfit": 0.0,
+                "discount": 100.0,
+                "rounding": 0.0,
+                "ticketType": "SELL",
+                "invalid": 0,
+                "remark": "",
+                "items": [
+                    {
+                        "name": "六畜兴旺",
+                        "buyPrice": 38.0,
+                        "sellPrice": 38.0,
+                        "customerPrice": 0.0,
+                        "quantity": 1.0,
+                        "discount": 100.0,
+                        "customerDiscount": 100.0,
+                        "totalAmount": 38.0,
+                        "totalProfit": 0.0,
+                        "isCustomerDiscount": 0,
+                        "productUid": 1034995577198267063,
+                        "productBarcode": "97878076832543800",
+                        "isWeighing": 0,
+                        "ticketitemattributes": [],
+                        "discountDetails": [],
+                        "saleGuiderList": []
+                    }
+                ],
+                "payments": [
+                    {
+                        "code": "payCode_1",
+                        "amount": 38.0
+                    }
+                ]
+            }
+        ],
+        "pageSize": 100
+    }
+}

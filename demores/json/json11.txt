@@ -1,0 +1,15 @@
+{
+"returnCode": "状态码",
+"returnMsg": "状态码说明",
+"accessToken": "令牌",
+"list": [{
+"hospitalID": "医疗机构账号1",
+"hospitalName": "医疗机构名称1"
+}, {
+"hospitalID": "医疗机构账号2",
+"hospitalName": "医疗机构名称2"?
+}?],
+"expiresIn": "效期时长",
+"currentTime": "当前时间",
+?"todayRemainVisitCount": "当天剩余访问次数"
+}

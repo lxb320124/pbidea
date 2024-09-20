@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+	<appid title="hello"><![CDATA[wx8c180fdc45032f02]]></appid>
+	<cash_fee_type><![CDATA[CNY]]></cash_fee_type>
+	<charset><![CDATA[UTF-8]]></charset>
+	<coupon_fee><![CDATA[0]]></coupon_fee>
+	<device_info><![CDATA[pos001]]></device_info>
+	<fee_type><![CDATA[CNY]]></fee_type>
+	<mch_id><![CDATA[212550000002]]></mch_id>
+	<nonce_str><![CDATA[7062095736716005376]]></nonce_str>
+	<openid><![CDATA[oMxlxwSwoPXCkZYfkq5uBTycmCsg]]></openid>
+	<out_trade_no><![CDATA[20230510231123]]></out_trade_no>
+	<out_transaction_id><![CDATA[4200001864202305108248075530]]></out_transaction_id>
+	<result_code><![CDATA[0]]></result_code>
+	<sign><![CDATA[nkbQUCJc+h7uCxz6slRBENqu/sAhogSXcOlQyfd0twInPBuoB+CGSbUy01YddOPg8h/uARhSZcSLVpT12h2C3j+NXZ624V3gckD8Dlo/fdnUbQYz6LO110Y4s1ncB9nOgVAxX1/WTv9Je9g0LD4PwiaQFSAFsCSxlAww/z1gl24+LrVzW5kMWoP00Uj/cs4mkeZwcLJHzqm+KToZyI6RfwIEJ9V79Fm+q5img50SYbQMSzH0mEjWPzGEXuw7RkJ2Lt/90HM7zthWRNHRQvDAsPhTI6pwSWGCq+xBUGn2oJz+EJauSs2gtKacTT+I6AYMPWQ38I1Up1SDXOuf8/zsdw==]]></sign>
+	<sign_type><![CDATA[RSA_1_256]]></sign_type>
+	<status><![CDATA[0]]></status>
+	<sub_openid><![CDATA[oZWW75NwI_tH3VM0JoEoe8zYaP0E]]></sub_openid>
+	<trade_state><![CDATA[REFUND]]></trade_state>
+	<trade_type><![CDATA[pay.weixin.micropay]]></trade_type>
+	<transaction_id><![CDATA[20230510002520000002484098621]]></transaction_id>
+	<version><![CDATA[2.0]]></version>
+	<tree>
+		<trade_type title="this is trade type"><![CDATA[pay.weixin.micropay]]></trade_type>
+		<transaction_id><![CDATA[20230510002520000002484098621]]></transaction_id>
+		<version><![CDATA[2.0]]></version>
+		<name>张三</name>
+	</tree>
+</xml>

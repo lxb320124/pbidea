@@ -1,0 +1,2 @@
+[{"billrq":"2018-06-26","billno":"20180626-1002-00006","status":"1","market":"19","fphm":"6","djlb":"506","syjh":"1002","syyid":"26","syyname":"admin","yyyid":"","yyyname":"","sybc":"","lsjje":"47.6000","xsjje":"47.6000","zzk":"0","sfje":47.6000,"zl":"0","hyzk":"0","popzk":"0","lszk":"0","syje":"0","vipid":"","vipjf":"","vipje":"","vipqkje":"","vippayje":"","optid":"","optname":"","optdt":"","memo":"","grantid":"","grantname":"","net":"¡¾ÁªÍø¡¿","sl":"1.0000","vipname":"","vipjfye":"","vipmzye":"","bfysje":"0","bfsl":"0","bfsfje":"0","bfzl":"0","lsh":1234567898}]
+

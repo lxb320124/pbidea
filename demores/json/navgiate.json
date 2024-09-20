@@ -1,0 +1,310 @@
+[
+    {
+        "text": "WebButton界面库使用演示",
+        "id": "start",
+        "tip": "ebButton界面库使用演示。大自在 QQ:781770213",
+        "href": "w_test",
+        "count": 0,
+        "icon": 57377,
+        "child": [
+            {
+                "text": "权限管理",
+                "id": "right",
+                "tip": "权限管理。",
+                "icon": 57874,
+                "child": [
+                    {
+                        "text": "人员",
+                        "tip": "人员。",
+                        "child": [
+                            {
+                                "text": "添加人员",
+                                "id": "operator",
+                                "tip": "人员。",
+                                "icon": 57352,
+                                "count": 1
+                            },
+                            {
+                                "text": "密码修改",
+                                "id": "password",
+                                "tip": "密码修改。",
+                                "icon": 983241,
+                                "count": 0
+                            }
+                        ],
+                        "count": 0,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "角色授权",
+                        "tip": "角色授权。",
+                        "count": 7,
+                        "icon": 64780,
+                        "level": 3,
+                        "selected": false
+                    }
+                ],
+                "count": 0,
+                "level": 2,
+                "selected": false,
+                "expanded": false
+            },
+            {
+                "text": "文件",
+                "tip": "",
+                "child": [
+                    {
+                        "text": "新建",
+                        "tip": "",
+                        "icon": 61462,
+                        "child": [
+                            {
+                                "text": "项目",
+                                "tip": "",
+                                "count": 1,
+                                "level": 4,
+                                "selected": false
+                            },
+                            {
+                                "text": "从现有项目...",
+                                "tip": "",
+                                "count": 2,
+                                "level": 4,
+                                "selected": false
+                            }
+                        ],
+                        "count": 0,
+                        "level": 3,
+                        "selected": false,
+                        "expanded": true
+                    },
+                    {
+                        "text": "打开",
+                        "tip": "",
+                        "count": 0,
+                        "icon": 61564,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "关闭",
+                        "tip": "",
+                        "count": 0,
+                        "icon": 62088,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "保存",
+                        "tip": "",
+                        "count": 0,
+                        "icon": 57714,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "打印",
+                        "tip": "",
+                        "count": 0,
+                        "icon": 57413,
+                        "level": 3,
+                        "selected": false
+                    }
+                ],
+                "count": 0,
+                "level": 2,
+                "selected": false,
+                "expanded": true
+            },
+            {
+                "text": "编辑",
+                "tip": "",
+                "child": [
+                    {
+                        "text": "转到",
+                        "tip": "",
+                        "child": [
+                            {
+                                "text": "转到行",
+                                "tip": "",
+                                "count": 0,
+                                "level": 4,
+                                "selected": false
+                            },
+                            {
+                                "text": "转到窗口",
+                                "tip": "",
+                                "count": 1,
+                                "level": 4,
+                                "selected": false
+                            },
+                            {
+                                "text": "转到最新打开项目",
+                                "tip": "",
+                                "count": 2,
+                                "level": 4,
+                                "selected": false
+                            }
+                        ],
+                        "count": 0,
+                        "level": 3,
+                        "selected": false,
+                        "expanded": true
+                    },
+                    {
+                        "text": "查找和替换",
+                        "tip": "",
+                        "count": 0,
+                        "icon": 57605,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "剪切",
+                        "tip": "",
+                        "count": 52,
+                        "icon": 983178,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "复制",
+                        "tip": "",
+                        "count": 0,
+                        "icon": 62029,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "粘贴",
+                        "tip": "",
+                        "count": 0,
+                        "icon": 64859,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "删除",
+                        "tip": "",
+                        "count": 0,
+                        "icon": 61460,
+                        "level": 3,
+                        "selected": false
+                    }
+                ],
+                "count": 0,
+                "level": 2,
+                "selected": true,
+                "expanded": true
+            },
+            {
+                "text": "视图",
+                "tip": "",
+                "icon": 61925,
+                "child": [
+                    {
+                        "text": "显示/隐藏工具栏",
+                        "tip": "",
+                        "count": 5,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "显示/隐藏状态栏",
+                        "tip": "",
+                        "count": 0,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "显示/隐藏导航栏",
+                        "tip": "",
+                        "count": 0,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "显示/隐藏首页",
+                        "tip": "",
+                        "count": 0,
+                        "level": 3,
+                        "selected": false
+                    }
+                ],
+                "count": 0,
+                "level": 2,
+                "selected": false,
+                "expanded": false
+            },
+            {
+                "text": "工具",
+                "tip": "",
+                "child": [
+                    {
+                        "text": "计算器",
+                        "tip": "",
+                        "count": 0,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "日历",
+                        "tip": "",
+                        "count": 0,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "抓屏截图",
+                        "tip": "",
+                        "count": 0,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "运行...",
+                        "tip": "",
+                        "count": 0,
+                        "level": 3,
+                        "selected": false
+                    }
+                ],
+                "count": 0,
+                "level": 2,
+                "selected": false,
+                "expanded": false
+            },
+            {
+                "text": "系统",
+                "tip": "",
+                "child": [
+                    {
+                        "text": "配置",
+                        "tip": "",
+                        "count": 0,
+                        "icon": 64854,
+                        "level": 3,
+                        "selected": false
+                    },
+                    {
+                        "text": "初始化",
+                        "id": "systeminit",
+                        "tip": "",
+                        "count": 0,
+                        "icon": 61787,
+                        "level": 3,
+                        "selected": false
+                    }
+                ],
+                "count": 0,
+                "level": 2,
+                "selected": false,
+                "expanded": false
+            }
+        ],
+        "expanded": true,
+        "level": 1,
+        "selected": false
+    }
+]

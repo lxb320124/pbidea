@@ -1,0 +1,1639 @@
+<?xml version="1.0"?>
+<data>
+	<account>
+		<user>YanGang</user>
+		<pwd>d9TeP2PCtTNeNMK4qAPaxQ==+2016-04-08 10:14:55</pwd>
+		<enctype>1</enctype>
+		<hello />
+	</account>
+	<msg>
+		<infos>
+			<webserv value="WSType">tally</webserv>
+			<errcode> 0</errcode>
+			<errmsg>正常回应</errmsg>
+			<num>54</num>
+			<records>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4327738</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">9</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">52.5650</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4327733</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">10</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">56.43</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4327734</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">10</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">57.44</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4327736</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">9</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">53.6050</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4327737</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">12</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">69.11</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4327727</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">11</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">54.98</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4327728</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">11</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">52.9650</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4327757</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2014200049003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">10</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">58.1450</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4327766</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2014200049003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">4</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">27.5450</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4327767</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2014200049003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">4</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">27.21</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4327732</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">10</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">55.5350</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4327731</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">10</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">55.66</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4328102</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">11</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">54.29</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4328103</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">11</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">53.75</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4327729</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">10</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">40.11</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4327730</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16外</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">4</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">15.56</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329046</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">5</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">29.81</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329053</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">12</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">58.9650</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329054</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">10</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">56.77</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329055</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">12</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">59.2050</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329057</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">12</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">59.1450</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329058</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">6</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">29.50</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329060</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">5</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">24.40</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329061</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">4</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">20.0650</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329062</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">7</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">35.1150</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329048</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">8</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">53.6550</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329064</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">10</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">56.60</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329065</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">10</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">56.18</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329047</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">11</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">54.85</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329049</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">10</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">40.29</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329050</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">4</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">16.3650</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329051</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324032</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">6</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">23.73</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4328994</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324035</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16鸿源吊</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2014200049003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">8</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">51.6850</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4329323</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/24 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324035</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">8裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200020003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">中宽带</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">42</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">442.0370</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4330245</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">10</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">55.3550</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4331176</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160325031</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">8</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">52.3950</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4331150</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160325031</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">15</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">58.7050</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4331494</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160325031</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">13</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">51.34</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4330251</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">15</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">59.0350</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4330252</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">15</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">59.54</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4331167</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160325031</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">9</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">36.0250</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4330253</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">21</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">84.5850</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4331156</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160325036</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">20</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">133.48</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4330256</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">4</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">18.1550</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4331165</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160325031</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">4</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">20.2450</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4330236</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">11</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">56.4150</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4330237</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">11</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">54.0250</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4333911</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160325031</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">9</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">45.09</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4330393</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">10</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">55.44</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4330395</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324002</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">10</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">55.1150</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4331126</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160325036</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">16裕盛达</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200004003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">剪切板</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">10</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">54.7750</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4330644</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160324005</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">8</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200020003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">中宽带</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">53</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">557.3280</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4331640</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160325036</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">888</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200020003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">中宽带</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">14</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">147.5910</WEIGHT_WGT>
+				</tally_out>
+				<tally_out>
+					<dr>0</dr>
+					<TALLY_NO lenght="22" type="NUMBER">4331646</TALLY_NO>
+					<dr>0</dr>
+					<TIMEINDEX lenght="7" type="DATE">2016/3/25 0:00:00</TIMEINDEX>
+					<dr>0</dr>
+					<WORKBILL_NO lenght="10" type="VARCHAR2">160325036</WORKBILL_NO>
+					<dr>0</dr>
+					<LINE_NO lenght="22" type="NUMBER">0</LINE_NO>
+					<dr>0</dr>
+					<WORK_TYPE lenght="2" type="VARCHAR2">3</WORK_TYPE>
+					<dr>0</dr>
+					<WORK_TYP_NAM lenght="20" type="VARCHAR2">汽车作业</WORK_TYP_NAM>
+					<dr>0</dr>
+					<TALLY_MARK lenght="10" type="VARCHAR2">888</TALLY_MARK>
+					<dr>0</dr>
+					<INFORM_NO lenght="100" type="VARCHAR2">2016200020003</INFORM_NO>
+					<dr>0</dr>
+					<SHIP_NAM lenght="50" type="VARCHAR2">汽车</SHIP_NAM>
+					<dr>0</dr>
+					<CARGO_NAM lenght="50" type="VARCHAR2">中宽带</CARGO_NAM>
+					<dr>0</dr>
+					<CARGO_KIND_NAM lenght="35" type="VARCHAR2">钢材</CARGO_KIND_NAM>
+					<dr>0</dr>
+					<CORPNAME lenght="60" type="VARCHAR2">唐山燕山钢铁有限公司</CORPNAME>
+					<dr>0</dr>
+					<PIECES_NUM lenght="22" type="NUMBER">36</PIECES_NUM>
+					<dr>0</dr>
+					<WEIGHT_WGT lenght="22" type="NUMBER">378.6860</WEIGHT_WGT>
+				</tally_out>
+			</records>
+		</infos>
+	</msg>
+</data>

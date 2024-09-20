@@ -1,0 +1,63 @@
+{
+  "deptName": "默认门诊科室",
+  "insuCode": "230100",
+  "diseinfoList": [
+    {
+      "diagDept": "002",
+      "diagTime": "2022-03-30 11:09:28",
+      "diagSrtNo": 1,
+      "diagType": "1",
+      "diagName": "职业性健康检查",
+      "diagCode": "Z10.000",
+      "diseDorName": "门诊医生",
+      "diseDorNo": "009",
+      "valiFlag": "1"
+    }
+  ],
+  "iptOtpNo": "230104198905052615",
+  "rxCircFlag": "0",
+  "psnNo": "230000000000000008955266",
+  "caty": "A01",
+  "idNo": "230104198905052615",
+  "orgCodg": "H23010201031",
+  "diseName": "职业性健康检查",
+  "atddrNo": "009",
+  "ecToken": "230000ecvd9dk2t01d0100007f00002a469b70",
+  "idType": "01",
+  "begntime": "2022-03-30 10:47:39",
+  "medOrgOrd": "155187370",
+  "feedetailList": [
+    {
+      "bilgDrCodg": "009",
+      "medListCodg": "XJ01CAA040A001010300600",
+      "cnt": 1,
+      "pric": 1,
+      "medinsListCodg": "Y1648450445990",
+      "rxCircFlag": "0",
+      "bilgDeptName": "默认门诊科室",
+      "psnNo": "230000000000000008955266",
+      "bilgDeptCodg": "002",
+      "medType": "11",
+      "hospApprFlag": "1",
+      "rxno": "20220330193145",
+      "detItemFeeSumamt": 1,
+      "feeOcurTime": "2022-03-30 19:32:03",
+      "mdtrtId": "1001239026",
+      "bilgDrName": "门诊医生"
+    }
+  ],
+  "drName": "门诊医生",
+  "acctUsedFlag": "1",
+  "feeType": "01",
+  "insutype": "310",
+  "userName": "刘立伟",
+  "invono": "3",
+  "psnSetlway": "01",
+  "medType": "11",
+  "medfeeSumamt": 1,
+  "je": 1.23,
+  "diseCodg": "Z10.000",
+  "birctrlMatnDate": "1900-01-01 00:00:01",
+  "deptCode": "002",
+  "mdtrtId": "1001239026"
+}

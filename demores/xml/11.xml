@@ -1,0 +1,9 @@
+<root>
+	<exam_subitem>
+		<item last_update_dtime="2021/8/23 0:00:00" org_code="123211G1001" event_no="5618475016" report_form_no="42471400729117557" exam_site_code="1" body_part_name="胸部" exam_item_code="210303C00101" exam_item_name="胸部平扫" recognition="1"/>
+		<item last_update_dtime="2021/8/23 0:00:00" org_code="350100A1004" event_no="5618475016" report_form_no="42471400729117560" exam_site_code="1" body_part_name="胸部" exam_item_code="210303C00101" exam_item_name="胸部平扫" recognition="1"/>
+		<item last_update_dtime="2021/8/23 0:00:00" org_code="350100A1004" event_no="5618475016" report_form_no="42471400729117557" exam_site_code="1" body_part_name="胸部" exam_item_code="210303C00101" exam_item_name="胸部平扫" recognition="1"/>
+		<item last_update_dtime="2021/8/24 14:40:00" org_code="350100A1004" event_no="2021080400001" report_form_no="202009020060001" exam_site_code="RAC" body_part_name="右胸" exam_item_code="210303C00101" exam_item_name="胸部平扫" recognition="0"/>
+		<item last_update_dtime="2021/8/23 0:00:00" org_code="350100A1004" event_no="5618475016" report_form_no="42471400729117560" exam_site_code="1" body_part_name="胸部" exam_item_code="210303C00101" exam_item_name="胸部平扫" recognition="1"/>
+	</exam_subitem>
+</root>

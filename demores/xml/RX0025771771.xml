@@ -1,0 +1,291 @@
+﻿<RxSalesOrder>
+    <Reference>L460A_100</Reference>
+    <CreatedOn>2022-10-21T11:59:42.891+03:00[Europe/Moscow]</CreatedOn>
+    <Customer code="WXTEST"/>
+    <BillTo>
+        <Customer code="WXTEST"/>
+    </BillTo>
+    <ShipTo>
+        <Customer code="WXTEST"/>
+    </ShipTo>
+    <OrderLines>
+        <OrderLine>
+            <Item type="RxProcess1">
+                <Product code="MHIW560001">
+                    <description>1.56 Lis Dual ID Outdoor</description>
+                    <searchString>L656O_100</searchString>
+                    <customId>509ac060-74e7-47ce-9856-780c072a5008</customId>
+                    <catalog>
+                        <id>b79e53ba-aa1f-4c95-962c-9eebe7b34135</id>
+                        <code>WanXin01</code>
+                        <name>WanXin01</name>
+                    </catalog>
+                </Product>
+                <Eye>Right</Eye>
+                <Manufacture>true</Manufacture>
+                <Specification>
+                    <PhysicalDiameter>
+                        <value>80.0</value>
+                    </PhysicalDiameter>
+                    <SpherePower>
+                        <value>-3.0</value>
+                    </SpherePower>
+                    <CylinderPower>
+                        <value>-1.0</value>
+                    </CylinderPower>
+                    <AdditionPower>
+                        <value>2.0</value>
+                    </AdditionPower>
+                    <Axis>
+                        <value>125.0</value>
+                    </Axis>
+                    <Base>
+                        <value>6.0</value>
+                    </Base>
+                    <Thickness>
+                        <value>C02</value>
+                    </Thickness>
+                </Specification>
+            </Item>
+            <Quantity>1</Quantity>
+            <PricingSpecification>
+                <priceIncludingTax>false</priceIncludingTax>
+                <price>
+                    <id>a96f62df-1878-4ef3-81a4-80e66008adcb</id>
+                    <code>PRICEELO</code>
+                    <currency>RUB</currency>
+                    <amount>0.00</amount>
+                </price>
+            </PricingSpecification>
+            <PricingSummary>
+                <exchangeable>false</exchangeable>
+                <beforeTaxAmount>0.0</beforeTaxAmount>
+                <baseAmount>0.0</baseAmount>
+                <netAmount>0.0</netAmount>
+                <discountAmount>0.0</discountAmount>
+                <taxAmount>0.0</taxAmount>
+                <payableTaxAmount>0.0</payableTaxAmount>
+                <beforeTaxAdjustmentAmount>0.0</beforeTaxAdjustmentAmount>
+                <payableBeforeTaxAdjustmentAmount>0.0</payableBeforeTaxAdjustmentAmount>
+                <payableBeforeTaxAmount>0.0</payableBeforeTaxAmount>
+                <payableNetAmount>0.0</payableNetAmount>
+            </PricingSummary>
+        </OrderLine>
+        <OrderLine>
+            <Item type="RxProcess">
+                <Product code="MHIW560001">
+                    <description>1.56 Lis Dual ID Outdoor</description>
+                    <searchString>L656O_100</searchString>
+                    <customId>509ac060-74e7-47ce-9856-780c072a5008</customId>
+                    <catalog>
+                        <id>b79e53ba-aa1f-4c95-962c-9eebe7b34135</id>
+                        <code>WanXin01</code>
+                        <name>WanXin01</name>
+                    </catalog>
+                </Product>
+                <Eye>Left</Eye>
+                <Manufacture>true</Manufacture>
+                <Specification>
+                    <PhysicalDiameter>
+                        <value>75.0</value>
+                    </PhysicalDiameter>
+                    <SpherePower>
+                        <value>-3.25</value>
+                    </SpherePower>
+                    <CylinderPower>
+                        <value>-0.75</value>
+                    </CylinderPower>
+                    <AdditionPower>
+                        <value>2.0</value>
+                    </AdditionPower>
+                    <Axis>
+                        <value>65.0</value>
+                    </Axis>
+                </Specification>
+            </Item>
+            <Quantity>1</Quantity>
+            <PricingSpecification>
+                <priceIncludingTax>false</priceIncludingTax>
+                <price>
+                    <id>a96f62df-1878-4ef3-81a4-80e66008adcb</id>
+                    <code>PRICEELO</code>
+                    <currency>RUB</currency>
+                    <amount>0.00</amount>
+                </price>
+            </PricingSpecification>
+            <PricingSummary>
+                <exchangeable>false</exchangeable>
+                <beforeTaxAmount>0.0</beforeTaxAmount>
+                <baseAmount>0.0</baseAmount>
+                <netAmount>0.0</netAmount>
+                <discountAmount>0.0</discountAmount>
+                <taxAmount>0.0</taxAmount>
+                <payableTaxAmount>0.0</payableTaxAmount>
+                <beforeTaxAdjustmentAmount>0.0</beforeTaxAdjustmentAmount>
+                <payableBeforeTaxAdjustmentAmount>0.0</payableBeforeTaxAdjustmentAmount>
+                <payableBeforeTaxAmount>0.0</payableBeforeTaxAmount>
+                <payableNetAmount>0.0</payableNetAmount>
+            </PricingSummary>
+        </OrderLine>
+        <OrderLine>
+            <Item type="ValueAdd">
+                <Product code="TT_PLBR_25P01">
+                    <description>Brown Grad 25</description>
+                    <searchString>T_Brown Grad 25</searchString>
+                    <customId>a4173172-e04e-4a2e-b8c5-5fb3edc2b85e</customId>
+                    <catalog>
+                        <id>b79e53ba-aa1f-4c95-962c-9eebe7b34135</id>
+                        <code>WanXin01</code>
+                        <name>WanXin01</name>
+                    </catalog>
+                </Product>
+                <Association>Both</Association>
+                <Manufacture>true</Manufacture>
+                <Specification/>
+            </Item>
+            <Quantity>2</Quantity>
+            <PricingSpecification>
+                <priceIncludingTax>false</priceIncludingTax>
+                <price>
+                    <id>a96f62df-1878-4ef3-81a4-80e66008adcb</id>
+                    <code>PRICEELO</code>
+                    <currency>RUB</currency>
+                    <amount>0.00</amount>
+                </price>
+            </PricingSpecification>
+            <PricingSummary>
+                <exchangeable>false</exchangeable>
+                <beforeTaxAmount>0.0</beforeTaxAmount>
+                <baseAmount>0.0</baseAmount>
+                <netAmount>0.0</netAmount>
+                <discountAmount>0.0</discountAmount>
+                <taxAmount>0.0</taxAmount>
+                <payableTaxAmount>0.0</payableTaxAmount>
+                <beforeTaxAdjustmentAmount>0.0</beforeTaxAdjustmentAmount>
+                <payableBeforeTaxAdjustmentAmount>0.0</payableBeforeTaxAdjustmentAmount>
+                <payableBeforeTaxAmount>0.0</payableBeforeTaxAmount>
+                <payableNetAmount>0.0</payableNetAmount>
+            </PricingSummary>
+        </OrderLine>
+    </OrderLines>
+    <Notes/>
+    <AuditInfo>
+        <createdOn>2022-10-21T08:59:42.891Z[UTC]</createdOn>
+        <createdBy>Maxim.Chayka</createdBy>
+        <updatedOn>2022-10-21T09:00:09.730Z[UTC]</updatedOn>
+        <updatedBy></updatedBy>
+    </AuditInfo>
+    <OrderStatus>DISPATCHED</OrderStatus>
+    <TrackingNumber>RX0025771771</TrackingNumber>
+    <SourceLegalEntity>PR_ELO</SourceLegalEntity>
+    <LeftRxSpecification>
+        <Pupillary>
+            <height>22.5</height>
+            <distance>32.5</distance>
+            <nearDistance>0.0</nearDistance>
+            <position>Absolute</position>
+        </Pupillary>
+        <FrameType>
+            <value>2</value>
+        </FrameType>
+        <LensWidth>
+            <value>55.0</value>
+        </LensWidth>
+        <LensHeight>
+            <value>45.0</value>
+        </LensHeight>
+        <LensDistance>
+            <value>20.0</value>
+        </LensDistance>
+        <EdgeThickness>
+            <value>1.5</value>
+        </EdgeThickness>
+        <Shape>
+            <value>Oval</value>
+        </Shape>
+        <Personalization>
+            <Parameter>
+                <value>14.0</value>
+                <name>Progression_Length_VX3</name>
+            </Parameter>
+            <Parameter>
+                <value>2.0</value>
+                <name>Inset Near Vision</name>
+            </Parameter>
+            <Parameter>
+                <value>7</value>
+                <name>Pantoscopic Angle</name>
+            </Parameter>
+            <Parameter>
+                <value>100.0</value>
+                <name>Vertex_Nikon</name>
+            </Parameter>
+            <Parameter>
+                <value>10</value>
+                <name>Wrap Angle</name>
+            </Parameter>
+        </Personalization>
+        <Prism>
+            <Thinning code="without"/>
+            <Optics value="Decenter"/>
+            <Dir1 value="5.0" direction="180.0"/>
+            <Dir2 value="3.0" direction="90.0"/>
+        </Prism>
+    </LeftRxSpecification>
+    <RightRxSpecification>
+        <Pupillary>
+            <height>22.5</height>
+            <distance>32.5</distance>
+            <nearDistance>0.0</nearDistance>
+            <position>Absolute</position>
+        </Pupillary>
+        <FrameType>
+            <value>2</value>
+        </FrameType>
+        <LensWidth>
+            <value>55.0</value>
+        </LensWidth>
+        <LensHeight>
+            <value>45.0</value>
+        </LensHeight>
+        <LensDistance>
+            <value>20.0</value>
+        </LensDistance>
+        <EdgeThickness>
+            <value>1.5</value>
+        </EdgeThickness>
+        <Shape>
+            <value>Oval</value>
+        </Shape>
+        <Personalization>
+            <Parameter>
+                <value>7</value>
+                <name>Pantoscopic Angle</name>
+            </Parameter>
+            <Parameter>
+                <value>2.0</value>
+                <name>Inset Near Vision</name>
+            </Parameter>
+            <Parameter>
+                <value>10</value>
+                <name>Wrap Angle</name>
+            </Parameter>
+            <Parameter>
+                <value>100.0</value>
+                <name>Vertex_Nikon</name>
+            </Parameter>
+            <Parameter>
+                <value>14.0</value>
+                <name>Progression_Length_VX3</name>
+            </Parameter>
+        </Personalization>
+        <Prism>
+            <Thinning code="without"/>
+            <Optics value="Decenter"/>
+            <Dir1 value="5.0" direction="0.0"/>
+            <Dir2 value="3.0" direction="90.0"/>
+        </Prism>
+    </RightRxSpecification>
+    <Trace/>
+</RxSalesOrder>
+

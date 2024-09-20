@@ -1,0 +1,42 @@
+[
+    {
+        "__rowid__": 1,
+        "prodname": "产品1",
+        "netprice": 10.0,
+        "updatedate": null,
+        "oldnetprice": 1.0,
+        "je": 100.0
+    },
+    {
+        "__rowid__": 2,
+        "prodname": "产品2",
+        "netprice": 20.0,
+        "updatedate": null,
+        "oldnetprice": 2.0,
+        "je": 200.0
+    },
+    {
+        "__rowid__": 3,
+        "prodname": "产品3",
+        "netprice": 30.0,
+        "updatedate": null,
+        "oldnetprice": 3.0,
+        "je": 300.0
+    },
+    {
+        "__rowid__": 4,
+        "prodname": "产品4",
+        "netprice": 40.0,
+        "updatedate": null,
+        "oldnetprice": 4.0,
+        "je": 400.0
+    },
+    {
+        "__rowid__": 5,
+        "prodname": "产品5",
+        "netprice": 50.0,
+        "updatedate": null,
+        "oldnetprice": 5.0,
+        "je": 500.0
+    }
+]

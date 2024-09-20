@@ -1,0 +1,29 @@
+{
+    "testnull": null,
+    "name": "黑黑",
+    "age": 964086664302283,
+    "mmm": 12.3456,
+    "js": {
+        "gh": "320124",
+        "bbb": 12.34
+    },
+    "d": false,
+    "artest": {
+        "ar": [
+            "ar1",
+            "new item",
+            "ar3"
+        ]
+    },
+    "nvlnull": null,
+    "long": 998877,
+    "scholl": "小学",
+    "jarr": [
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5"
+    ],
+    "live": false
+}

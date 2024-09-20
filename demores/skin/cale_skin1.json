@@ -1,0 +1,121 @@
+{
+  "padding": 16, //边距
+  "textFontName": "Arial", //日历数字文本字体
+  "textFontSize": 24, //日历数字文本字号
+  "textBold": false, //是否粗体
+  "textFontNameCN": "微软雅黑", //日历中文文本字体,星期和农历
+  "textFontSizeCN": 12, //日历中文文本字号,星期和农历
+  "textBoldCN": false, //是否粗体
+  "clrBack": "RGB(15, 15, 15)", //背景颜色
+  "clrBackGray": "RGB(25, 25, 25)", //日历中上个月和下个月单元格的背景色
+  "clrTextGray": "RGB(185, 185, 185)", //日历中上个月和下个月单元格的字体色
+  "clrBackHighLight": "RGB(195, 180, 200)", //当前选中单元格背景色
+  "clrHover": "RGB(180, 180,180)",
+  "clrWeekBack": "RGB(60,60,60)", //星期栏背景色
+  "clrWeekText": "RGB(250,250,255)", //星期栏文本色
+  "weekFont": "微软雅黑", //星期栏字体
+  "weekFontSize": 16, //星期栏字号
+  "clrTextHighLight": "RGB(255, 100, 50)", //星期六和星期日字体颜色
+  "clrTextDayNum": "RGB(250, 250, 250)", //数字日期文本颜色
+  "clrTextDayCh": "RGB(140, 140, 140)", //农历日期文本颜色
+  "clrChDate": "RGB(220, 220, 240)", //注脚日期文本颜色
+  "clrEditBack": "RGB(45, 45, 45)", //编辑框背景颜色
+  "clrEditOver": "RGB(55, 55, 55)", //编辑框鼠标滑过时颜色
+  "clrEditBorder": "RGB(160, 160, 160)", //编辑框边框颜色
+  "clrEditText": "RGB(240, 240, 250)", //编辑框文本字体颜色
+  "clrArrow": "RGB(240, 240, 250)", //箭头颜色
+  "clrButtonBack": "RGB(220,220,220)", //按钮背景颜色
+  "clrButtonOver": "RGB(220, 240, 250)", //按钮鼠标滑过时颜色
+  "clrButtonClick": "RGB(180, 200, 200)", //按钮点击颜色
+  "clrButtonBorder": "RGB(60, 60, 60)", //按钮边框颜色
+  "clrButtonText": "RGB(250, 250, 250)", //按钮文本颜色
+  "clrButtonFocus": "RGB(200, 220, 240)", //按钮焦点颜色，暂时未使用
+  "vline": [ //日历主体中8条纵线，分别从左到右的线条颜色和线条宽度
+    {
+      "clr": "RGB(100, 100, 200)",
+      "width": 0.0
+    },
+    {
+      "clr": "RGB(100, 100, 200)",
+      "width": 0.0
+    },
+    {
+      "clr": "RGB(100, 100, 200)",
+      "width": 0.0
+    },
+    {
+      "clr": "RGB(100, 100, 200)",
+      "width": 0.0
+    },
+    {
+      "clr": "RGB(100, 100, 200)",
+      "width": 0.0
+    },
+    {
+      "clr": "RGB(100, 100, 200)",
+      "width": 0.0
+    },
+    {
+      "clr": "RGB(100, 100, 200)",
+      "width": 0.0
+    },
+    {
+      "clr": "RGB(100, 100, 200)",
+      "width": 0.0
+    }
+  ],
+  "hline": [ //日历主体中8条横线，分别从上到下的线条颜色和线条宽度
+    {
+      "clr": "RGB(20, 20, 20)",
+      "width": 2.0
+    },
+    {
+      "clr": "RGB(20, 20, 20)",
+      "width": 2.0
+    },
+    {
+      "clr": "RGB(100, 100, 200)",
+      "width": 0.0
+    },
+    {
+      "clr": "RGB(100, 100, 200)",
+      "width": 0.0
+    },
+    {
+      "clr": "RGB(100, 100, 200)",
+      "width": 0.0
+    },
+    {
+      "clr": "RGB(100, 100, 200)",
+      "width": 0.0
+    },
+    {
+      "clr": "RGB(100, 100, 200)",
+      "width": 0.0
+    },
+    {
+      "clr": "RGB(20, 20, 20)",
+      "width": 2.0
+    }
+  ],
+  "image": "bk1.png", //背景图片，与背景颜色北透明融合
+  "weekOffset": 0, //星期日是在第一列还是最后一列.0或1，0星期日显示在第1列，1星期日显示在最后一列
+  "clrClockBack": "RGB(15, 15, 15)", //时钟背景颜色 
+  "clrClockPointer": "RGB(255, 255, 255)", //分针时针颜色
+  "clrClockBorder": "RGB(185, 185, 130)", //时钟边框颜色
+  "clrClockMark": "RGB(255, 255, 255)", //时钟刻度颜色
+  "markStyle": 1, //刻度的风格，0 是线条，1是点
+  "showClock": true, //时钟显示否
+  "clockPadding": 18, //时钟边距
+  "clockImage": "clock.png", //时钟背景图片
+  "clrListBack": "RGB(15, 15, 15)", //下拉框背景色
+  "clrListSelected": "RGB(255, 185, 125)", //下拉框选中颜色
+  "clrListText": "RGB(240, 240, 250)", //下拉框文本颜色
+  "szListFontName": "Arial", //下拉框字体
+  "nListFontSize": 14, //下拉框字号
+  "dwListFlag": "CENTER", //下拉框文字对齐
+  "fixed": true, //固定日历，只显示指定月份，不预选择日期
+  "showControls": true,
+  "lunar": true, //是否显示 农历
+  "footer": true //是否显示底部注脚
+}

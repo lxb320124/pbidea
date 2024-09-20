@@ -1,0 +1,42 @@
+[
+{
+            "byCardNo": "1",
+            "byTime": "2021-05-23 11:34:04",
+            "byCardType": 1,
+            "byWhiteListNo": 0,
+            "byReportChannel": 0,
+            "byCardReaderKind": 0,
+            "dwCardReaderNo": 1,
+            "dwDoorNo": 1,
+            "dwVerifyNo": 0,
+            "dwAlarmInNo": 0,
+            "dwAlarmOutNo": 0,
+            "dwCaseSensorNo": 0,
+            "byDeviceNo": 0,
+            "dwEmployeeNo": 1,
+            "byType": 0,
+            "dwSerialNo ": 3,
+            "byUserType ": 1,
+            "byCurrentVerifyMode ": 42
+        },
+        {
+            "byCardNo": "00101",
+            "byTime": "2021-05-23 14:57:41",
+            "byCardType": 1,
+            "byWhiteListNo": 0,
+            "byReportChannel": 0,
+            "byCardReaderKind": 0,
+            "dwCardReaderNo": 1,
+            "dwDoorNo": 1,
+            "dwVerifyNo": 0,
+            "dwAlarmInNo": 0,
+            "dwAlarmOutNo": 0,
+            "dwCaseSensorNo": 0,
+            "byDeviceNo": 0,
+            "dwEmployeeNo": 101,
+            "byType": 0,
+            "dwSerialNo ": 12,
+            "byUserType ": 1,
+            "byCurrentVerifyMode ": 42
+        }
+]

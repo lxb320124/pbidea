@@ -1,0 +1,38 @@
+[
+    {
+      "COMPID": 1.0,
+      "BUSNO": "1009",
+      "CLASSCODE": "17",
+      "STATUS": 2.0,
+      "CLASSNAME": "Ⅱ类医疗器械"
+    },
+    {
+      "COMPID": 1.0,
+      "BUSNO": "1009",
+      "CLASSCODE": "18",
+      "STATUS": 1.0,
+      "CLASSNAME": "Ⅲ类医疗器械"
+    },
+    {
+      "COMPID": 1.0,
+      "BUSNO": "1009",
+      "CLASSCODE": "20",
+      "STATUS": 1.0,
+      "CLASSNAME": "一类精神药品"
+    },
+    {
+      "COMPID": 1.0,
+      "BUSNO": "1009",
+      "CLASSCODE": "30",
+      "STATUS": 1.0,
+      "CLASSNAME": "二类精神药品"
+    },
+    {
+      "COMPID": 1.0,
+      "BUSNO": "1009",
+      "CLASSCODE": "61",
+      "STATUS": 1.0,
+      "CLASSNAME": "非药品"
+    }
+  ]
+ 

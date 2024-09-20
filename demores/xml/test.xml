@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bocb2e version="120" locale="zh_CN">
+	<head>
+		<termid>E172001100205</termid>
+		<trnid>191206160337</trnid>
+		<custid>133826677</custid>
+		<cusopr>136164526</cusopr>
+		<trncod>b2e0102</trncod>
+		<token>ACD49EA1202895F0B87899EFC1613B85</token>
+	</head>
+	<trans>
+		<trn-b2e0102-rs>
+			<status>
+				<rspcod>B001</rspcod>
+				<rspmsg>ok</rspmsg>
+			</status>
+			<totalnum>2</totalnum>
+			<b2e0102-rs>
+				<status>
+					<rspcod>B001</rspcod>
+					<rspmsg>ok</rspmsg>
+				</status>
+				<seqnum>000001</seqnum>
+				<msgseq>1043010030112019120600705390</msgseq>
+				<orinseq />
+				<cliorg />
+				<draftno>310430100301120191206800705389</draftno>
+				<amount>113.00</amount>
+				<date>20191206</date>
+				<status>020001</status>
+				<duedate>20191231</duedate>
+				<draweename>精华制药集团股份有限公司</draweename>
+				<acceptorname>精华制药集团股份有限公司</acceptorname>
+				<toname>江苏金贸钢宝电子商务</toname>
+				<applyname />
+				<drafttype>AC02</drafttype>
+				<draweeacn />
+				<acceptoracn />
+				<toacn />
+				<tramt>0.00</tramt>
+				<rdsrat>0.000000</rdsrat>
+			</b2e0102-rs>
+			<b2e0102-rs>
+				<status>
+					<rspcod>B001</rspcod>
+					<rspmsg>ok</rspmsg>
+				</status>
+				<seqnum>000002</seqnum>
+				<msgseq>1043010030112019120600705393</msgseq>
+				<orinseq />
+				<cliorg />
+				<draftno>310430100301120191206800705387</draftno>
+				<amount>6145.00</amount>
+				<date>20191206</date>
+				<status>020001</status>
+				<duedate>20191231</duedate>
+				<draweename>制药集团股份有限公司</draweename>
+				<acceptorname>制药集团股份有限公司</acceptorname>
+				<toname>江苏电子商务</toname>
+				<applyname />
+				<drafttype>AC02</drafttype>
+				<draweeacn />
+				<acceptoracn />
+				<toacn />
+				<tramt>0.00</tramt>
+				<rdsrat>0.000000</rdsrat>
+			</b2e0102-rs>
+		</trn-b2e0102-rs>
+	</trans>
+</bocb2e>

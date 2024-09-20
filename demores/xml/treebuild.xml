@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package name="zlib" version="1.2.11">
+ <library name="zlib" dlversion="1.2.11" dlname="z">
+	<property name="description"> zip compression library </property>
+	<property name="include-target-dir" value="$(@PACKAGE/install-includedir)" />
+
+	<!-- fixme: not implemented yet -->
+	<property name="compiler/c/inline" value="yes" >compiler/c/inline</property>
+
+	<include-file name="zlib.h" scope="public" mode="644" />
+	<include-file name="zconf.h" scope="public" mode="644" />
+
+	<source name="adler32.c">
+	    <depend name="zlib.h" />
+	    <depend name="zconf.h"/>
+	</source>
+	<source name="compress.c">
+	    <depend name="zlib.h" />
+	    <depend name="zconf.h" />
+	</source>
+	<source name="crc32.c">
+	    <depend name="zlib.h" />
+	    <depend name="zconf.h" />
+	    <depend name="crc32.h" />
+	</source>
+
+ </library>
+</package>
+<我的>
+	<老李>测试</老李>
+</我的>
+<!--
+CFLAGS=-O
+#CFLAGS=-O -DMAX_WBITS=14 -DMAX_MEM_LEVEL=7
+#CFLAGS=-g -DZLIB_DEBUG
+#CFLAGS=-O3 -Wall -Wwrite-strings -Wpointer-arith -Wconversion \
+#           -Wstrict-prototypes -Wmissing-prototypes
+
+# OBJA =
+# to use the asm code: make OBJA=match.o
+#
+match.o: match.S
+	$(CPP) match.S > _match.s
+	$(CC) -c _match.s
+	mv _match.o match.o
+	rm -f _match.s
+-->

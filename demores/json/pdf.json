@@ -1,0 +1,40 @@
+{
+  "unit": "mm",
+  "width": 210,
+  "height": 297,
+  "margin": [ 20.0, 10, 10, 20 ],
+  "offset": [ 20.0, 10 ],
+  "metadata": {
+    "title": "pdf writer demo",
+    "author": "大自在 QQ:781770213",
+    "subject": "pbidea:pdf writer demo",
+    "keywords": "pbidea: pdf: writer",
+    "creator": "pbidea",
+    "createdate": "2023-1-10 23:59:01",
+    "modifydate": "2023-01-10"
+  },
+  "pages": [
+    {
+      "unit": "mm",
+      "color": "rgb(0,0,0)",
+      "linewidth": 1.0,
+      "line": [ 0, 0, 60, 0 ],
+      "line": [ 0, 20, 60, 20 ],
+      "color": "argb(155,240,140,40)",
+      "rect": [ 100, 100, 40, 40 ],
+      "color": "argb(255,40,40,0)",
+      "font": {
+        "name": "宋体",
+        "size": 24,
+        "bold": false,
+        "italic": false
+      },
+      "text": {
+        "x": 0,
+        "y": 40,
+        "string": "测试文本"
+      }
+    }
+  ]
+}
+

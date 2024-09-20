@@ -1,0 +1,44 @@
+{
+    "identity": "2329CC5F90EDAA8208F1F3C72A0CE72A713A9D425CD50CDE",
+    "order": {
+        "buyername": "浙江爱信诺",
+        "taxnum": "124511234993295177",
+        "phone": "0",
+        "address": "浙江省杭州市万塘路",
+        "account": "",
+        "telephone": "0",
+        "orderno": "nuonuo12345",
+        "invoicedate": "2018-10-31 19:16:51",
+        "clerk": "黄芝",
+        "saleaccount": "宇宙行442612010103507108",
+        "salephone": "0774-7893911",
+        "saleaddress": "富川瑶族自治县新永路 138 号",
+        "saletaxnum": "339901999999142",
+        "kptype": "1",
+        "message": "",
+        "payee": "林莉苏",
+        "checker": "林莉苏",
+        "tsfs": "-1",
+        "email": "502192347@qq.com",
+        "qdbz": "0",
+        "qdxmmc": "",
+        "detail": [
+            {
+                "goodsname": "苹果",
+                "num": "1",
+                "price": "1",
+                "hsbz": "1",
+                "taxrate": "0.13",
+                "spec": "",
+                "unit": "吨",
+                "spbm": "10101150101",
+                "zsbm": "",
+                "fphxz": "0",
+                "yhzcbs": "0",
+                "zzstsgl": "",
+                "lslbs": "",
+                "kce": ""
+            }
+        ]
+    }
+}

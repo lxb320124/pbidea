@@ -1,0 +1,44 @@
+<html>
+
+<body>
+<form id="myForm" name="myForm">
+<input id="filest" name="file" type="file" class="file_input" autocomplete="off"/>
+<script>
+    $('#filest').on('change', function () {
+        let fileLength = $('.div_par').size();
+        let files = this.files[ 0 ];
+        let reader = new FileReader();
+        if(files.type.indexOf('image') == '-1'){
+            toastr.error('只能上传图片格式');
+            return false;
+        }
+        if (files.size > 2 * 1024 * 1024) {
+            toastr.error('图片太大,图片不可以超过2M！');
+            return false;
+        }
+        if (fileLength >= 1) {
+            toastr.warning('图片一次只可以上传一张！');
+            return false;
+        }
+        const formData = new FormData();
+        formData.append('schoolCode', schoolCode);
+        formData.append('fileList', files);
+        formData.append('folderName', 'avatar');
+        formData.append('type', '1');
+        $.ajax({
+            type: 'post',
+            url: uploadUrl + '/api/operatefile/v1/uploadFile',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (res) {
+                handleResponse(res, function (data) {
+                    $('#masg').html( '<div class="div_par" data-url="'+ data[0].url+'" style="position: relative;"><span class="spanMove" data-url="'+ data[0].url+'" style="cursor:pointer;position:absolute;right:0px;color:#d11b1b;font-size: 16px;">x</span><img style="width: 80px;height: 80px;" src="'+previewUrl+''+ data[0].url+'" /></div>');
+                })
+            }
+        })
+    });
+</script>
+</form>
+</body>
+</html>

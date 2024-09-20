@@ -1,0 +1,18 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.com/">
+<soapenv:Header/>
+<soapenv:Body>
+<ser:invoke>
+<service>LISRequestQuery</service>
+<urid></urid>
+<pwd></pwd>
+<parameter>
+<![CDATA[
+<Request>
+<LISRequest>
+<RequestId>20110604882010</RequestId>
+</LISRequest>
+</Request>]]>
+</parameter>
+</ser:invoke>
+</soapenv:Body>
+</soapenv:Envelope>

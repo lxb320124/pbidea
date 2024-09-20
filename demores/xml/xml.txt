@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceesn>0001</serviceesn>
+<userid>admin</userid>
+<acountid>10010001</acountid>
+<serviceid>100100000031</serviceid>
+<result>
+	<code>EA000110</code>
+	<message>命令字符串为空</message>
+</result>
+<returntime>2020-07-30 19:04:04.139</returntime>
+<returndata />
