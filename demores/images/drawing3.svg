@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="744.09448"
+   height="1052.3622"
+   id="svg2818">
+  <defs
+     id="defs2820" />
+  <path
+     d="m 485.71428,440.93362 a 151.42857,151.42857 0 0 1 -302.85715,0 151.42857,151.42857 0 1 1 302.85715,0 z"
+     id="Item1"
+     style="color:#000000;fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:#808000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <path
+     d="m 404.07156,861.42725 a 128.77005,119.88937 0 1 1 -257.5401,0 128.77005,119.88937 0 1 1 257.5401,0 z"
+     id="Item2"
+     style="color:#000000;fill:#ff00ff;fill-opacity:1;fill-rule:nonzero;stroke:#2b0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <g
+     id="Group1">
+    <desc
+       id="desc2827">This is a what kind of basic shapes..</desc>
+    <title
+       id="title2825">Basic shapes</title>
+    <g
+       id="Group2">
+      <rect
+         width="315.26462"
+         height="168.73317"
+         x="93.247284"
+         y="62.164856"
+         id="Item3"
+         style="color:#000000;fill:#00ff00;fill-opacity:1;fill-rule:nonzero;stroke:#008080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <rect
+         width="177.61388"
+         height="97.68763"
+         x="155.41214"
+         y="97.68763"
+         id="Item4"
+         style="color:#000000;fill:#ff00ff;fill-opacity:1;fill-rule:nonzero;stroke:#2b0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <path
+       d="M 519.52057,182.05422 648.29063,57.724508 674.93271,239.77873 523.96092,301.94358 519.52057,182.05422 z"
+       id="Item5"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+  <rect
+     width="137.65076"
+     height="346.34705"
+     x="550.60303"
+     y="608.32751"
+     id="Item6"
+     style="color:#000000;fill:#00ffff;fill-opacity:1;fill-rule:nonzero;stroke:#000080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <g
+     id="Group3">
+    <path
+       d="M 71.045548,555.04335 239.77873,692.69409 57.724508,794.82207 71.045548,555.04335 z"
+       id="Item8"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <rect
+       width="146.53145"
+       height="84.366585"
+       x="-44.403469"
+       y="448.47504"
+       id="Item7"
+       style="color:#000000;fill:#00ffff;fill-opacity:1;fill-rule:nonzero;stroke:#000080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  </g>
+</svg>
