@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <script src="pbidea.js"></script>
+</head>
+<html>
+<head>
+    <title>javascript - powerbuilder 交互</title>
+</head>
+<body>
+    <center>
+        <h1>javascript - powerbuilder 交互</h1>
+    </center>
+    <center>具体实现，请打开 host.html 演示页面看源码</center>
+    <h2>Invoke Method</h2>
+    <button id="invokeMethodAsyncButton">触发PB事件 async</button>
+    <input type="text" id="invokeMethodAsyncParam1" placeholder="String parameter" />
+    <label for="invokeMethodAsyncButton">Runs await</label>
+    <code><pre><span id="invokeMethodAsyncOutput"></span></pre></code>
+
+    <button id="invokeMethodSyncButton">触发PB事件 sync</button>
+    <input type="text" id="invokeMethodSyncParam1" placeholder="String parameter" />
+    <label for="invokeMethodSyncButton">Runs </label>
+    <code><pre><span id="invokeMethodSyncOutput"></span></pre></code>
+
+    <button id="postMessageButton">Post Message To PowerBuilder</button>
+
+    <div id="div_iframe" style="display: none;">
+        <h2>IFrame</h2>
+    </div>
+
+    <script>
+
+        //! Create IFrame from the parent html page and load it
+        function createIFrame() {
+            var i = document.createElement("iframe");
+            //i.src = "http://pbidea.com/wb/host.html";
+            i.src = "host.html";
+            i.scrolling = "auto";
+            i.frameborder = "0";
+            i.height = "100%";
+            i.width = "100%";
+            i.name = "iframe_name";
+            var div = document.getElementById("div_iframe");
+            div.appendChild(i); div.style.display = 'block';
+        };
+
+        window.onload = function () {
+            if (window.top === window) {
+                createIFrame();
+            }
+        };
+
+        //监听由pb发来的消息
+        window.chrome.webview.addEventListener("message",
+            arg => {
+                console.log(arg);
+                alert(arg.data);
+            });
+
+        //异步方式触发pb事件
+        document.getElementById("invokeMethodAsyncButton").addEventListener("click", async () => {
+            const paramValue = document.getElementById("invokeMethodAsyncParam1").value;
+            var json = {
+                args: [paramValue, "hello", 3.45, 1234, "async"]
+            };
+            const resultValue = await pbInvokeEventAsync("ue_invoke", json);
+            document.getElementById("invokeMethodAsyncOutput").textContent = resultValue;
+        });
+
+        //同步方式触发pb事件
+        document.getElementById("invokeMethodSyncButton").addEventListener("click", () => {
+            const paramValue = document.getElementById("invokeMethodSyncParam1").value;
+            var json = {
+                args: [paramValue, "hello", 3.45, 1234, "sync"]
+            };
+            const resultValue = pbInvokeEvent("ue_invoke", json);
+            document.getElementById("invokeMethodSyncOutput").textContent = resultValue;
+        });
+
+        //发消息给pb
+        document.getElementById("postMessageButton").addEventListener("click", () => {
+            var json = {
+                "hello": "this is message from webview"
+            };
+            pbPostMessage(json);
+        });
+
+    </script>
+</body>
+</html>
