@@ -1,0 +1,18 @@
+release 9;
+datawindow(units=0 timer_interval=0 color=1073741824 processing=1 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 110 print.margin.right = 110 print.margin.top = 96 print.margin.bottom = 96 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes hidegrayline=no grid.lines=0 )
+summary(height=0 color="536870912" )
+footer(height=0 color="536870912" )
+detail(height=352 color="536870912" )
+table(column=(type=decimal(0) updatewhereclause=no name=bl dbname="bl" )
+ column=(type=char(100) updatewhereclause=no name=style dbname="style" )
+ )
+column(band=detail id=1 alignment="2" tabsequence=32766 border="0" color="33554432" x="9" y="140" height="80" width="247" format="[general]" html.valueishtml="0"  name=bl visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="ËÎÌו" font.height="-10" font.weight="400"  font.family="0" font.pitch="2" font.charset="134" background.mode="1" background.color="536870912" )
+compute(band=detail alignment="0" expression="bitmap(~"tmp\~" + getrow() + ~".bmp~")"border="0" color="33554432" x="923" y="124" height="108" width="1074" format="[GENERAL]" html.valueishtml="0"  name=jdt visible="1"  font.face="Arial" font.height="-12" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+column(band=detail id=2 alignment="0" tabsequence=32766 border="0" color="33554432" x="265" y="36" height="240" width="649" format="[general]" html.valueishtml="0"  name=style visible="1" height.autosize=yes edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.autovscroll=yes edit.imemode=0 edit.displayonly=yes  font.face="ËÎÌו" font.height="-10" font.weight="400"  font.family="0" font.pitch="2" font.charset="134" background.mode="1" background.color="536870912" )
+compute(band=detail alignment="0" expression="bitmap(~"tmp\box_~" + getrow() + ~".bmp~")"border="0" color="33554432" x="2007" y="16" height="324" width="910" format="[GENERAL]" html.valueishtml="0"  name=mtt visible="1"  font.face="ËÎÌו" font.height="-10" font.weight="400"  font.family="0" font.pitch="2" font.charset="134" background.mode="1" background.color="536870912" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" )
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()
+export.pdf(method=0 distill.custompostscript="0" xslfop.print="0" )
+ 

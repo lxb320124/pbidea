@@ -1,755 +1,970 @@
 {
-  "label": "PbIdea功能库菜单",
+  "text": "PbIdea功能库菜单",
   "tip": "PbIdea 是PowerBuidler扩展库，尤其是在目前互联网发展、新医保开发等形势下，大大提高了PowerBuilder的可用性。\n此库使用是免费的，而且永久免费！\n其中个别模块需要开发授权，即使没开发授权，也只是有些提示，不影响具体功能实现。\n本菜单内容请查看menu.json文件，里面有功能与具体模块对应关系，方便查找具体功能。\n\n                                                                             大自在 QQ:781770213",
+  "param": "",
   "items": [
     {
-      "label": "首页",
-      "page": "uo_tabpage_homepage",
+      "text": "首页",
+      "id": "uo_tabpage_homepage",
       "obj": "uo_pdfview",
       "tip": "开始之前，建议先花点时间，阅读一下本说明。\n了解一下 websuite 库的基本功能。"
     },
     {
-      "label": "对象参考手册",
-      "page": "uo_tabpage_manual",
+      "text": "-"
+    },
+    {
+      "text": "对象参考手册",
+      "id": "uo_tabpage_manual",
       "obj": "",
       "tip": "对象参考技术手册"
     },
     {
-      "label": "PowerScript Server(PSS)",
-      "page": "uo_tabpage_pss_server",
+      "text": "PowerScript Server(PSS)<VIP>",
+      "id": "uo_tabpage_pss_server",
       "obj": "uo_websocket_server",
       "tip": "让你用PB写自己的 webapi 服务和 websocket 服务(不需要你懂.net C# JAVA 等等，只需要PB),为第三方或者自己的APP提供数据服务，或者对内网进行代理外网接口访问。"
     },
     {
-      "label": "Postman",
-      "page": "uo_tabpage_postman",
+      "text": "Postman",
+      "id": "uo_tabpage_postman",
       "obj": "uo_httpclient",
       "tip": "Postman"
     },
     {
-      "label": "国家医保接口相关实现",
-      "page": "uo_tabpage_yb",
+      "text": "国家医保接口相关实现<VIP>",
+      "id": "uo_tabpage_yb",
       "obj": "uo_yibao",
       "tip": "提供基于国家医保标准的部分省份接口和SM2 SM3 SM4 算法。"
     },
     {
-      "label": "json/bson/xml等各种交换格式",
-      "page": "uo_tabpage_json",
+      "text": "pbidea专用资源下载",
+      "id": "uo_tabpage_webview2_download",
+      "obj": "uo_webView2",
+      "tip": "pbidea专用资源下载"
+    },
+    {
+      "text": "json/bson/xml等各种交换格式",
       "tip": "快速解析和生成JSON，提供高效基于 datawindow 的导入和导出。\n最值得一用的功能是：在有子JSON和数组的时候，可以用符号 / 直接取得成员值，不需要一层层解析。\n该对象处理JSON的效率和速度，在PB界是最快的，与PB2019的JSON持平。",
       "items": [
         {
-          "label": "uo_json(JSON处理)",
-          "page": "uo_tabpage_json",
+          "text": "uo_json(JSON处理)",
+          "id": "uo_tabpage_json",
           "obj": "uo_json",
           "tip": "快速解析和生成JSON，提供高效基于 datawindow 的导入和导出。\n最值得一用的功能是：在有子JSON和数组的时候，可以用符号 / 直接取得成员值，不需要一层层解析。\n该对象处理JSON的效率和速度，在PB界是最快的，与PB2019的JSON持平。"
         },
         {
-          "label": "uo_bson(BSON处理)",
-          "page": "uo_tabpage_bson",
+          "text": "uo_bson(BSON处理)",
+          "id": "uo_tabpage_bson",
           "obj": "uo_bson",
           "tip": "bson 文件和数据解析和生成，高效方便。"
         },
         {
-          "label": "uo_xml(XML处理)",
-          "page": "uo_tabpage_xml",
+          "text": "uo_xml(XML处理)",
+          "id": "uo_tabpage_xml",
           "obj": "uo_xml",
           "tip": "xml 文件和字符串解析和生成，高效方便。"
         }
       ]
     },
     {
-      "label": "httpclient",
+      "text": "httpclient",
       "tip": "提供 HttpClient 访问功能。分别基于 WinHttp和libcurl。",
       "items": [
         {
-          "label": "uo_httpclient(基于WinHttp)",
-          "page": "uo_tabpage_httpclient",
+          "text": "uo_httpclient(基于WinHttp)",
+          "id": "uo_tabpage_httpclient",
           "obj": "uo_httpclient",
           "tip": "提供基于 WinHttp 的 HTTP/HTTPS 协议的数据访问，封装有下载和上传功能，可以直接传送JSON对象，自动 utf8 转码。\n可完全取代系统的 xmlhttp 对象功能，只会更强更方便。"
         },
         {
-          "label": "uo_curl(基于libcurl)",
-          "page": "uo_tabpage_curl",
+          "text": "uo_curl(基于libcurl)",
+          "id": "uo_tabpage_curl",
           "obj": "uo_curl",
           "tip": "提供基于 libcurl 的 HTTP/HTTPS 协议的数据访问，封装有下载和上传功能，可以直接传送JSON对象，自动 utf8 转码。\n可完全取代系统的 xmlhttp 对象功能，只会更强更方便。"
+        },
+        {
+          "text": "全国统计用区划代码和城乡划分代码",
+          "id": "uo_tabpage_reptile",
+          "obj": "uo_curl, uo_httpclient",
+          "tip": "使用 httpclient 爬数据的例子"
         }
       ]
     },
     {
-      "label": "加/解密和编码",
-      "page": "uo_tabpage_crypto",
+      "text": "加/解密和编码",
+      "id": "uo_tabpage_crypto",
       "tip": "基于 openssl 实现常用的功能。\n1.RSA 公钥私钥生成、加密解密、签名和验签。\n2.CRC32 CRC16 CRC8 校验。\n3.MD5、SHA、SM3、base64、urlencode/urldecode、timestamp等众多编码解码功能。\n4.AES、DES、3DES、SM4等众多加密解密功能。\n以上可以用于完成绝大多数电子商务签名、加密解密工作。",
       "items": [
         {
-          "label": "RSA加密解密签名验签",
-          "page": "uo_tabpage_crypto_rsa",
+          "text": "RSA加密解密签名验签",
+          "id": "uo_tabpage_crypto_rsa",
           "obj": "uo_crypto",
           "tip": "基于 openssl 实现常用的功能。\n1.RSA 公钥私钥生成、加密解密、签名和验签。\n2.CRC32 CRC16 CRC8 校验。\n3.MD5、SHA、SM3、base64、urlencode/urldecode、timestamp等众多编码解码功能。\n4.AES、DES、3DES、SM4等众多加密解密功能。\n以上可以用于完成绝大多数电子商务签名、加密解密工作。"
         },
         {
-          "label": "各种CRC编码",
-          "page": "uo_tabpage_crypto_crc",
+          "text": "各种CRC编码",
+          "id": "uo_tabpage_crypto_crc",
           "obj": "uo_crypto",
           "tip": "基于 openssl 实现常用的功能。\n1.RSA 公钥私钥生成、加密解密、签名和验签。\n2.CRC32 CRC16 CRC8 校验。\n3.MD5、SHA、SM3、base64、urlencode/urldecode、timestamp等众多编码解码功能。\n4.AES、DES、3DES、SM4等众多加密解密功能。\n以上可以用于完成绝大多数电子商务签名、加密解密工作。"
         },
         {
-          "label": "AES、DES、base64、SM3/4等各种常用算法",
-          "page": "uo_tabpage_crypto_a",
+          "text": "AES、DES、base64、SM3/4等各种常用算法",
+          "id": "uo_tabpage_crypto_a",
           "obj": "uo_crypto",
           "tip": "基于 openssl 实现常用的功能。\n1.RSA 公钥私钥生成、加密解密、签名和验签。\n2.CRC32 CRC16 CRC8 校验。\n3.MD5、SHA、SM3、base64、urlencode/urldecode、timestamp等众多编码解码功能。\n4.AES、DES、3DES、SM4等众多加密解密功能。\n以上可以用于完成绝大多数电子商务签名、加密解密工作。"
         },
         {
-          "label": "国密SM2",
-          "page": "uo_tabpage_crypto_sm2",
+          "text": "国密SM2",
+          "id": "uo_tabpage_crypto_sm2",
           "obj": "uo_crypto",
           "tip": "基于 openssl 实现常用的功能。\n1.RSA 公钥私钥生成、加密解密、签名和验签。\n2.CRC32 CRC16 CRC8 校验。\n3.MD5、SHA、SM3、base64、urlencode/urldecode、timestamp等众多编码解码功能。\n4.AES、DES、3DES、SM4等众多加密解密功能。\n以上可以用于完成绝大多数电子商务签名、加密解密工作。"
         },
         {
-          "label": "asn1/jwt",
-          "page": "uo_tabpage_crypto_asn1",
+          "text": "asn1/jwt",
+          "id": "uo_tabpage_crypto_asn1",
           "obj": "uo_crypto",
           "tip": "基于 openssl 实现常用的功能。\n1.RSA 公钥私钥生成、加密解密、签名和验签。\n2.CRC32 CRC16 CRC8 校验。\n3.MD5、SHA、SM3、base64、urlencode/urldecode、timestamp等众多编码解码功能。\n4.AES、DES、3DES、SM4等众多加密解密功能。\n以上可以用于完成绝大多数电子商务签名、加密解密工作。"
+        },
+        {
+          "text": "bcrypto",
+          "id": "uo_tabpage_bcrypto",
+          "obj": "uo_crypto",
+          "tip": "用于保存、验证密码。"
         }
       ]
     },
     {
-      "label": "FTP/sFTP/FTP服务器",
+      "text": "FTP/sFTP/FTP服务器",
       "tip": "FTP 和 sFTP 客户端。",
       "items": [
         {
-          "label": "uo_ftp_server(FTP服务器)",
-          "page": "uo_tabpage_ftp_server",
+          "text": "uo_ftp_server(FTP服务器)",
+          "id": "uo_tabpage_ftp_server",
           "obj": "uo_ftp_server",
           "tip": "提供了一个 FTP 服务器，可以共享本机文件给其他客户端。"
         },
         {
-          "label": "uo_ftp(FTP)",
-          "page": "uo_tabpage_ftp",
+          "text": "uo_ftp(FTP)",
+          "id": "uo_tabpage_ftp",
           "obj": "uo_ftp",
           "tip": "基于 libftp 库，完全从底层协议实现的 ftp 客户端。\n与基于 WINAPI 的 FTP 客户端不同的是：提供了更多的详细控制。"
         },
         {
-          "label": "uo_ftp((FTP资源管理器)",
-          "page": "uo_tabpage_ftp_browser",
+          "text": "uo_ftp((FTP资源管理器)",
+          "id": "uo_tabpage_ftp_browser",
           "obj": "uo_ftp",
           "tip": "基于 libftp 库，完全从底层协议实现的 ftp 客户端。\n与基于 WINAPI 的 FTP 客户端不同的是：提供了更多的详细控制。\n这是模仿资源管理器实现的一个 FTP 客户端管理器。双击资源管理器里的文件，可以编辑后自动更新到服务器里去。"
         },
         {
-          "label": "uo_sftp(SFTP)",
-          "page": "uo_tabpage_sftp",
+          "text": "uo_sftp(SFTP)",
+          "id": "uo_tabpage_sftp",
           "obj": "uo_sftp",
           "tip": "基于 ssh 协议的 FTP 客户端，简称 sftp。\n除了文件上传下载以外，还可以在服务端执行操作系统命令，相当于合并了 ssh 功能。"
         }
       ]
     },
     {
-      "label": "扩展数据类型(map,string等)",
-      "page": "",
+      "text": "扩展数据类型(map,string等)",
+      "id": "",
       "obj": "",
       "tip": "扩展数据类型(map,blob,string等)",
       "items": [
         {
-          "label": "uo_map 容器",
-          "page": "uo_tabpage_map_asn1",
+          "text": "uo_map 容器",
+          "id": "uo_tabpage_map_asn1",
           "obj": "uo_map",
           "tip": "Map是一种关联容器，它按照特定顺序存储由键值Key和映射值Value组合而成的元素。这是一个非常有用的工具。其特性有：\n1.键值Key通常用于排序和唯一标识元素，而映射值Value存储与此键值Key相关联的内容。\n2.元素总是按照其键Key进行排序的。\n在保存类似数据字典这样的数据时非常有用。\nasn1编码是将数据编码成二进制，方便对非格式化数据进行打包处理。"
         },
         {
-          "label": "uo_blob 二进制数据处理",
-          "page": "uo_tabpage_blob",
+          "text": "uo_blob 二进制数据处理",
+          "id": "uo_tabpage_blob",
           "obj": "uo_blob",
           "tip": "强大的二进制数据处理，功能远超blob类型。"
         },
         {
-          "label": "uo_string(字符串高级处理)",
-          "page": "uo_tabpage_string",
+          "text": "uo_string(字符串高级处理)",
+          "id": "uo_tabpage_string",
           "obj": "uo_string",
           "tip": "一个快速高效的字符串处理对象，尤其是在很多字符串拼接操作中，比 string 变量操作快五十倍之多。\n除查找、替换等功能以外，其他特殊功能有：\n1.正则表达式搜索、匹配、替换。\n2.大文本按行处理。\n3.字符集转换。\n4.直接读写文本文件\n5.字符串分割。\n6.控制台输出调试功能。"
         },
         {
-          "label": "位操作与进制转换",
-          "page": "uo_tabpage_bits",
+          "text": "位操作与进制转换",
+          "id": "uo_tabpage_bits",
           "obj": "uo_bits,uo_string",
           "tip": "位操作与进制转换。"
+        },
+        {
+          "text": "大整数(biginteger)",
+          "id": "uo_tabpage_biginteger",
+          "obj": "uo_biginteger",
+          "tip": "大整数。"
+        },
+        {
+          "text": "日期和时间",
+          "id": "uo_tabpage_datetime",
+          "obj": "uo_datetime",
+          "tip": "日期和时间处理、计算"
         }
       ]
     },
     {
-      "label": "压缩/解压缩",
-      "page": "",
+      "text": "压缩/解压缩",
+      "id": "",
       "tip": "提供压缩和解压缩功能。",
       "items": [
         {
-          "label": "uo_zip(ZIP文件压缩/解压缩)",
-          "page": "uo_tabpage_zip",
+          "text": "uo_zip(ZIP文件压缩/解压缩)",
+          "id": "uo_tabpage_zip",
           "obj": "uo_zip",
           "tip": "提供 ZIP 格式的压缩和解压缩功能。\n除对文件进行压缩和解压缩外，也可以把BLOB数据添加进压缩包，或者将压缩里的内容读入BLOB变量。"
         },
         {
-          "label": "uo_compress(压缩/解压缩)",
-          "page": "uo_tabpage_compress",
+          "text": "uo_compress(压缩/解压缩)",
+          "id": "uo_tabpage_compress",
           "obj": "uo_compress",
           "tip": "提供 数据流压缩和解压缩功能。支持压缩、解压缩 .gz 格式文件。"
         }
       ]
     },
     {
-      "label": "数据库扩展",
-      "page": "",
+      "text": "数据库扩展",
+      "id": "",
       "obj": "",
       "tip": "",
       "items": [
         {
-          "label": "uo_sql(数据库)",
-          "page": "uo_tabpage_sql",
+          "text": "uo_sql(数据库)",
+          "id": "uo_tabpage_sql",
           "obj": "uo_database",
           "tip": "提供了众多数据库连接支持。快速高效访问数据库和结果集。支持的连接方式和数据库有：\n1.ODBC\n2.Microsoft SQL Server\n3.Oracle\n4.InterBase/Firebird\n5.SQLBase\n6.DB2\n7.Sybase\n8.MySQL\n9.PostgreSQL\n10.SQLite\n11.SQLAnywere"
         },
         {
-          "label": "事务对象(PB数据库)",
-          "page": "uo_tabpage_transaction",
+          "text": "事务对象(PB数据库)",
+          "id": "uo_tabpage_transaction",
           "obj": "uo_transaction",
           "tip": "PB自身数据库改进，支持断线检测等功能"
         },
         {
-          "label": "dbf文件导入与导出",
-          "page": "uo_tabpage_dbf",
+          "text": "dbf文件导入与导出",
+          "id": "uo_tabpage_dbf",
           "obj": "uo_dbf",
           "tip": "dbf文件导入与导出，支持超过1000列。"
         },
         {
-          "label": "解析oracle TNS 文件",
-          "page": "uo_tabpage_tns",
+          "text": "解析oracle TNS 文件",
+          "id": "uo_tabpage_tns",
           "obj": "uo_json",
           "tip": "解析oracle TNS 文件为json格式，方便使用。"
+        },
+        {
+          "text": "key-value数据库",
+          "id": "uo_tabpage_kv",
+          "obj": "uo_kv",
+          "tip": "键值数据库是一种非关系数据库，它使用简单的键值方法来存储数据。键值数据库将数据存储为键值对集合，其中键作为唯一标识符。"
         }
       ]
     },
     {
-      "label": "PDF浏览与dw2pdf",
-      "page": "uo_tabpage_pdf",
+      "text": "PDF浏览与dw2pdf<VIP>",
       "tip": "比较少见的 pdf 文件阅读控件（不是 ocx）。\n功能有：\n1.加载PDF，可打印和另存，如同首页上显示的内容一般。\n2.将PDF转成图片。\n3.将PDF转成纯文本内容，可取到每一个单词。\n4.在指定位置添加图片。\n5.添加手写签名。\n6.dw2pdf 生成PDF和图片。",
       "items": [
         {
-          "label": "pdf生成: dw2pdf",
-          "page": "uo_tabpage_pdf_maker",
+          "text": "pdf生成: dw2pdf<VIP>",
+          "id": "uo_tabpage_pdf_maker",
           "obj": "uo_pdfmaker",
           "tip": "比较少见的 pdf 文件阅读控件（不是 ocx）。\n功能有：\n1.加载PDF，可打印和另存，如同首页上显示的内容一般。\n2.将PDF转成图片。\n3.将PDF转成纯文本内容，可取到每一个单词。\n4.在指定位置添加图片。\n5.添加手写签名。\n6.dw2pdf 生成PDF和图片"
         },
         {
-          "label": "pdf浏览与修改",
-          "page": "uo_tabpage_pdf_view",
+          "text": "pdf浏览与修改<VIP>",
+          "id": "uo_tabpage_pdf_view",
           "obj": "uo_pdfview",
           "tip": "比较少见的 pdf 文件阅读控件（不是 ocx）。\n功能有：\n1.加载PDF，可打印和另存，如同首页上显示的内容一般。\n2.将PDF转成图片。\n3.将PDF转成纯文本内容，可取到每一个单词。\n4.在指定位置添加图片。\n5.添加手写签名。\n6.dw2pdf 生成PDF和图片"
         },
         {
-          "label": "多个PDF文件合并为一个文件",
-          "page": "uo_tabpage_pdf_merge",
+          "text": "pdf发票识别<VIP>",
+          "id": "uo_tabpage_pdf_fpsb",
+          "obj": "uo_pdfview",
+          "tip": "pdf 发票识别功能"
+        },
+        {
+          "text": "多个PDF文件合并为一个文件",
+          "id": "uo_tabpage_pdf_merge",
           "obj": "uo_pdfview",
           "tip": "将多个PDF文件合并为一个PDF文件。"
         }
       ]
     },
     {
-      "label": "图形图片条码、多媒体",
-      "page": "",
+      "text": "OFD(开放版式文档)<VIP>",
+      "tip": "由我国自主研发的文档格式，旨在打破政府部门和党委机关电子公文格式不统一的局面，以方便地进行电子文档的存储、读取以及编辑，实现文档格式的自主可控和跨平台兼容性。",
+      "items": [
+        {
+          "text": "ofd 阅读/打印",
+          "id": "uo_tabpage_ofd_view",
+          "obj": "uo_ofdview",
+          "tip": "由我国自主研发的文档格式，旨在打破政府部门和党委机关电子公文格式不统一的局面，以方便地进行电子文档的存储、读取以及编辑，实现文档格式的自主可控和跨平台兼容性。"
+        },
+        {
+          "text": "ofd 转换pdf/png/svg",
+          "id": "uo_tabpage_ofd_conv",
+          "obj": "uo_ofdserver",
+          "tip": "由我国自主研发的文档格式，旨在打破政府部门和党委机关电子公文格式不统一的局面，以方便地进行电子文档的存储、读取以及编辑，实现文档格式的自主可控和跨平台兼容性。"
+        },
+        {
+          "text": "ofd 服务",
+          "id": "uo_tabpage_ofd_server",
+          "obj": "uo_ofdreader",
+          "tip": "由我国自主研发的文档格式，旨在打破政府部门和党委机关电子公文格式不统一的局面，以方便地进行电子文档的存储、读取以及编辑，实现文档格式的自主可控和跨平台兼容性。"
+        }
+      ]
+    },
+    {
+      "text": "图形图片条码、多媒体",
+      "id": "",
       "tip": "支持各种图片加载、显示、转换处理，以及条码、二维码生成与显示打印。",
       "items": [
         {
-          "label": "uo_image(图片处理)",
-          "page": "uo_tabpage_image",
+          "text": "uo_image(图片处理)",
+          "id": "uo_tabpage_image",
           "obj": "uo_image",
           "tip": "支持 bmp、jpg、png、emf、wmf、webp、tif、gif 等格式、图片加载、显示、转换。"
         },
         {
-          "label": "条码、二维码",
-          "page": "uo_tabpage_code",
+          "text": "条码、二维码",
+          "id": "uo_tabpage_code",
           "obj": "uo_image",
           "tip": "条码、二维码。"
         },
         {
-          "label": "uo_painter高级绘图",
-          "page": "uo_tabpage_painter",
+          "text": "条码、二维码识别",
+          "id": "uo_tabpage_symbol",
+          "obj": "uo_image",
+          "tip": "条码、二维码识别。"
+        },
+        {
+          "text": "设备无关位图(dib)",
+          "id": "uo_tabpage_dib",
+          "obj": "uo_dib",
+          "tip": "设备无关位图(dib)"
+        },
+        {
+          "text": "图片浏览控件",
+          "id": "uo_tabpage_image_view",
+          "obj": "uo_imageview",
+          "tip": "图片浏览控件。"
+        },
+        {
+          "text": "图片浏览控件(sciter)",
+          "id": "w_image_viewer",
+          "obj": "uo_imageview",
+          "tip": "图片浏览控件。"
+        },
+        {
+          "text": "SVG viewer",
+          "id": "uo_tabpage_image_svg",
+          "obj": "uo_imageview",
+          "tip": "图片浏览控件。"
+        },
+        {
+          "text": "uo_painter高级绘图",
+          "id": "uo_tabpage_painter",
           "obj": "uo_painter",
           "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越",
           "items": [
             {
-              "label": "arc",
-              "page": "uo_tabpage_painter_chart_arc",
+              "text": "arc",
+              "id": "uo_tabpage_painter_chart_arc",
               "obj": "uo_painter",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "area",
-              "page": "uo_tabpage_painter_chart_area",
+              "text": "area",
+              "id": "uo_tabpage_painter_chart_area",
               "obj": "uo_painter",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "bar",
-              "page": "uo_tabpage_painter_chart_bar",
+              "text": "bar",
+              "id": "uo_tabpage_painter_chart_bar",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "bar3d",
-              "page": "uo_tabpage_painter_chart_bar3d",
+              "text": "bar3d",
+              "id": "uo_tabpage_painter_chart_bar3d",
               "obj": "uo_painter",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "barline",
-              "page": "uo_tabpage_painter_chart_barline",
+              "text": "barline",
+              "id": "uo_tabpage_painter_chart_barline",
               "obj": "uo_painter",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "guage",
-              "page": "uo_tabpage_painter_chart_guage",
+              "text": "guage",
+              "id": "uo_tabpage_painter_chart_guage",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "hbar",
-              "page": "uo_tabpage_painter_chart_hbar",
+              "text": "hbar",
+              "id": "uo_tabpage_painter_chart_hbar",
               "obj": "uo_painter",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "line",
-              "page": "uo_tabpage_painter_chart_line",
+              "text": "line",
+              "id": "uo_tabpage_painter_chart_line",
               "obj": "uo_painter",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "npie",
-              "page": "uo_tabpage_painter_chart_npie",
+              "text": "npie",
+              "id": "uo_tabpage_painter_chart_npie",
               "obj": "uo_painter",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "percent",
-              "page": "uo_tabpage_painter_chart_percent",
+              "text": "percent",
+              "id": "uo_tabpage_painter_chart_percent",
               "obj": "uo_painter",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "pie",
-              "page": "uo_tabpage_painter_chart_pie",
+              "text": "pie",
+              "id": "uo_tabpage_painter_chart_pie",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "radar",
-              "page": "uo_tabpage_painter_chart_radar",
+              "text": "radar",
+              "id": "uo_tabpage_painter_chart_radar",
               "obj": "uo_painter",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "scatter",
-              "page": "uo_tabpage_painter_chart_scatter",
+              "text": "scatter",
+              "id": "uo_tabpage_painter_chart_scatter",
               "obj": "uo_painter",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "clip",
-              "page": "uo_tabpage_painter_clip",
+              "text": "clip",
+              "id": "uo_tabpage_painter_clip",
               "obj": "uo_painter",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "image",
-              "page": "uo_tabpage_painter_image",
+              "text": "image",
+              "id": "uo_tabpage_painter_image",
               "obj": "uo_painter",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             },
             {
-              "label": "report",
-              "page": "uo_tabpage_painter_re",
+              "text": "report",
+              "id": "uo_tabpage_painter_re",
               "obj": "uo_painter",
               "tip": "图形处理工具，功能可以类似windows自带的 画图 工具，甚至超越"
             }
           ]
         },
         {
-          "label": "多 .wav 文件合并",
-          "page": "uo_tabpage_wav",
+          "text": "多 .wav 文件合并",
+          "id": "uo_tabpage_wav",
           "obj": "uo_wavfile",
           "tip": "音频文件合并"
         },
         {
-          "label": "语音识别与文本播放",
-          "page": "uo_tabpage_speak",
+          "text": "语音识别与文本播放",
           "obj": "uo_speak,uo_speak_recognize",
           "tip": "音频文件合并与阅读",
           "items": [
             {
-              "label": "播放语音播放",
-              "page": "uo_tabpage_speak",
+              "text": "播放语音播放",
+              "id": "uo_tabpage_speak",
               "obj": "uo_speak,uo_speak_recognize",
               "tip": "音频文件合并与阅读"
             },
             {
-              "label": "语音<->文本互转",
-              "page": "uo_tabpage_speak_recognize",
+              "text": "语音<->文本互转",
+              "id": "uo_tabpage_speak_recognize",
               "obj": "uo_speak,uo_speak_recognize",
               "tip": "音频文件合并与阅读"
             }
           ]
+        },
+        {
+          "text": "MP3 player",
+          "id": "uo_tabpage_mp3",
+          "obj": "uo_zplay",
+          "tip": "music, mp3 player"
+        },
+        {
+          "text": "Camera",
+          "id": "uo_tabpage_camera",
+          "obj": "uo_camera",
+          "tip": "usb camera"
+        },
+        {
+          "text": "Camera(window)",
+          "id": "w_camera",
+          "obj": "uo_camera",
+          "tip": "usb camera"
         }
       ]
     },
     {
-      "label": "数据窗口增强",
-      "page": "",
+      "text": "数据窗口增强",
+      "id": "",
       "tip": "基于 datawindow 的增强功能。",
       "items": [
         {
-          "label": "数据窗口-Excel",
-          "page": "uo_tabpage_excel",
+          "text": "数据窗口-Excel",
+          "id": "uo_tabpage_excel",
           "obj": "uo_datawindowex",
           "tip": "datawindow与excel导入导出。"
         },
         {
-          "label": "拖拽数据窗口",
-          "page": "uo_tabpage_drag_datawindow",
+          "text": "拖拽数据窗口",
+          "id": "uo_tabpage_drag_datawindow",
           "obj": "uo_drag_datawindow",
           "tip": "基于 datawindow的远比PB自身提供的 drag 方便好用得多的拖拽功能。\n可用于排班、排房间等业务系统中。"
         },
         {
-          "label": "超大文本文件导入",
-          "page": "uo_tabpage_datawindow",
+          "text": "超大文本文件导入",
+          "id": "uo_tabpage_datawindow",
           "obj": "uo_datawindowex",
           "tip": "超大文本文件导入。医保两库目录通常常200M 300M 甚至更大的那种。"
         },
         {
-          "label": "鼠标拖拽选区获取datawindow数据",
-          "page": "uo_tabpage_datawindow_seletect",
+          "text": "鼠标拖拽选区获取datawindow数据",
+          "id": "uo_tabpage_datawindow_seletect",
           "obj": "vuo_selected_datawindow",
           "tip": "鼠标拖拽选区获取datawindow数据"
         },
         {
-          "label": "数据窗口语法解析为 json",
-          "page": "uo_tabpage_datawindow_syntax",
+          "text": "数据窗口语法解析为 json",
+          "id": "uo_tabpage_datawindow_syntax",
           "obj": "uo_json",
           "tip": "数据窗口语法解析为 json。"
         },
         {
-          "label": "数据列动态图片",
-          "page": "uo_tabpage_datawindow_dimage",
+          "text": "数据列动态图片",
+          "id": "uo_tabpage_datawindow_dimage",
           "obj": "uo_datawindowex",
           "tip": "实时生成图片。"
+        },
+        {
+          "text": "垂直居中和背景/透明背景",
+          "id": "uo_tabpage_datawindow_vcenter",
+          "obj": "uo_datawindowex",
+          "tip": "datawindow grid vert center"
+        },
+        {
+          "text": "dw tree",
+          "id": "uo_tabpage_datawindow_tree",
+          "obj": "uo_datawindowex",
+          "tip": "datawindow tree"
+        },
+        {
+          "text": "excel->json->dw",
+          "id": "uo_tabpage_excel_json",
+          "obj": "uo_datawindowex",
+          "tip": "excel sheet to json, dw"
         }
       ]
     },
     {
-      "label": "websocket和tcp/ip客户端",
-      "page": "",
+      "text": "Excel",
+      "id": "",
+      "tip": "基于 excel 的相关操作。",
+      "items": [
+        {
+          "text": "数据窗口-Excel",
+          "id": "uo_tabpage_excel",
+          "obj": "uo_datawindowex",
+          "tip": "datawindow与excel导入导出。"
+        },
+        {
+          "text": "excel->json->dw",
+          "id": "uo_tabpage_excel_json",
+          "obj": "uo_datawindowex",
+          "tip": "excel sheet to json, dw"
+        },
+        {
+          "text": "Excel读写(基于libxl)",
+          "id": "uo_tabpage_excel_libxl",
+          "obj": "uo_xl_book",
+          "tip": "base libxl, excel read/write"
+        }
+      ]
+    },
+    {
+      "text": "websocket和tcp/ip客户端",
+      "id": "",
       "obj": "",
       "tip": "websocket和socket客户端",
       "items": [
         {
-          "label": "websocket_client",
-          "page": "uo_tabpage_ws_client",
+          "text": "websocket_client",
+          "id": "uo_tabpage_ws_client",
           "obj": "uo_websocket_client",
           "tip": "websocket 客户端"
         },
         {
-          "label": "socket_client",
-          "page": "uo_tabpage_socket_client",
+          "text": "socket_client",
+          "id": "uo_tabpage_socket_client",
           "obj": "uo_socket_client",
           "tip": "socket 客户端"
         },
         {
-          "label": "ping",
-          "page": "uo_tabpage_ping",
+          "text": "ping",
+          "id": "uo_tabpage_ping",
           "obj": "",
           "tip": "ping，支持带端口ping"
         },
         {
-          "label": "uo_mail(电子邮件收发)",
-          "page": "uo_tabpage_mail",
+          "text": "uo_mail(电子邮件收发)",
+          "id": "uo_tabpage_mail",
           "obj": "uo_mail",
           "tip": "1.基于 smtp 协议发送邮件。\n2.基于 pop 协议接收邮件。收到的邮件已解析为 json 结构，方便利用。"
         }
       ]
     },
     {
-      "label": "高并发组件",
-      "page": "",
+      "text": "高并发组件",
+      "id": "",
       "tip": "redis,kafka,mqtt 客户端",
       "items": [
         {
-          "label": "RibbitMQ",
-          "page": "uo_tabpage_hc_rabbitmq",
+          "text": "RabbitMQ",
+          "id": "uo_tabpage_hc_rabbitmq",
           "obj": "uo_rabbitmq,uo_rabbitmq_exchange,uo_rabbitmq_queue",
           "tip": ""
         },
         {
-          "label": "kafka",
-          "page": "uo_tabpage_hc_kafka",
+          "text": "kafka",
+          "id": "uo_tabpage_hc_kafka",
           "obj": "uo_kafka_consumer,uo_kafka_producer",
           "tip": ""
         },
         {
-          "label": "mqtt",
-          "page": "uo_tabpage_hc_mqtt",
+          "text": "mqtt",
+          "id": "uo_tabpage_hc_mqtt",
           "obj": "uo_mqtt",
           "tip": ""
         },
         {
-          "label": "redis",
-          "page": "uo_tabpage_hc_redis",
+          "text": "redis",
+          "id": "uo_tabpage_hc_redis",
           "obj": "uo_redis",
           "tip": ""
         }
       ]
     },
     {
-      "label": "物联网开发和智能设备",
-      "page": "",
+      "text": "物联网开发和智能设备",
+      "id": "",
       "obj": "uo_modbus_tcp",
       "tip": "物联网开发和智能设备",
       "items": [
         {
-          "label": "modbus-tcp",
-          "page": "uo_tabpage_modbus",
+          "text": "modbus-tcp",
+          "id": "uo_tabpage_modbus",
           "obj": "uo_modbus_tcp",
           "tip": "modbus-tcp"
         },
         {
-          "label": "海康指纹仪",
-          "page": "uo_tabpage_fingerprint",
+          "text": "海康指纹仪",
+          "id": "uo_tabpage_fingerprint",
           "obj": "uo_fingerprint",
           "tip": "海康指纹仪"
         },
         {
-          "label": "websocket_client",
-          "page": "uo_tabpage_ws_client",
-          "obj": "uo_websocket_client",
-          "tip": "websocket 客户端"
-        },
-        {
-          "label": "串口通讯(COM口)",
-          "page": "uo_tabpage_serial",
+          "text": "串口通讯(COM口)",
+          "id": "uo_tabpage_serial",
           "obj": "uo_serial",
           "tip": "串口通讯(COM口)"
         },
         {
-          "label": "通用读取身份证信息",
-          "page": "uo_tabpage_sdtapi",
+          "text": "通用读取身份证信息",
+          "id": "uo_tabpage_sdtapi",
           "obj": "uo_sdtapi",
           "tip": "读取身份证信息"
+        },
+        {
+          "text": "RFID-UHFReader18",
+          "id": "w_uhfreader18",
+          "obj": "uo_uhfreader18",
+          "tip": "RFID-UHFReader18"
         }
       ]
     },
     {
-      "label": "计算机/打印机及系统",
-      "page": "uo_tabpage_printer",
+      "text": "计算机/打印机及系统",
       "tip": "打印机控制相关功能和计算器控件",
       "items": [
         {
-          "label": "打印机",
-          "page": "uo_tabpage_printer",
+          "text": "打印机",
+          "id": "uo_tabpage_printer",
           "obj": "uo_printer",
           "tip": "打印机控制相关功能"
         },
         {
-          "label": "USB无驱打印机",
-          "page": "uo_tabpage_printer_usb",
+          "text": "USB无驱打印机",
+          "id": "uo_tabpage_printer_usb",
           "obj": "uo_printer_usb",
           "tip": "无驱打印机"
         },
         {
-          "label": "取IP，CPU序列号等",
-          "page": "uo_tabpage_hardware",
+          "text": "取IP，CPU序列号等",
+          "id": "uo_tabpage_hardware",
           "obj": "uo_hardware",
           "tip": "取IP，CPU序列号等"
         },
         {
-          "label": "多显示器管理",
-          "page": "uo_tabpage_monitor",
+          "text": "多显示器管理",
+          "id": "uo_tabpage_monitor",
           "obj": "uo_monitor",
           "tip": "多显示器管理"
         },
         {
-          "label": "操作系统相关",
-          "page": "uo_tabpage_system",
+          "text": "操作系统相关",
+          "id": "uo_tabpage_system",
           "obj": "uo_hardware",
           "tip": "取IP，CPU序列号等"
         },
         {
-          "label": "子类化处理",
-          "page": "uo_tabpage_subclass",
+          "text": "子类化处理",
+          "id": "uo_tabpage_subclass",
           "obj": "uo_subclass",
           "tip": "窗口子类化处理，拦截窗口消息，自己做出判断处理。这是C/C++才能轻易做到的功能，现在咱PB也可以。"
         },
         {
-          "label": "多线程和进程数据共享",
-          "page": "uo_tabpage_thread",
+          "text": "多线程和进程数据共享",
+          "id": "uo_tabpage_thread",
           "obj": "uo_thread_factory,uo_thread",
           "tip": "多线程和进程数据共享。"
         },
         {
-          "label": "系统环境变量",
-          "page": "uo_tabpage_env",
+          "text": "系统环境变量",
+          "id": "uo_tabpage_env",
           "obj": "uo_sysenv",
           "tip": "系统环境变量管理。"
+        },
+        {
+          "text": "事件日志",
+          "id": "uo_tabpage_eventlog",
+          "obj": "uo_eventlog",
+          "tip": "读取操作系统事件日志"
         }
       ]
     },
     {
-      "label": "控件与界面美观",
-      "page": "",
+      "text": "WebView2",
+      "id": "",
+      "tip": "基于 Edge(chrome) 内核封装的 WebView2 实现",
+      "items": [
+        {
+          "text": "基于webView2的浏览器实现",
+          "id": "uo_tabpage_webview2",
+          "obj": "uo_webview2",
+          "tip": "基于微软最新edge webView2的浏览器控件"
+        },
+        {
+          "text": "基于webView2的交互控件",
+          "id": "uo_tabpage_webview2_2",
+          "obj": "uo_webview2",
+          "tip": "基于微软最新edge webView2的浏览器控件"
+        },
+        {
+          "text": "基于echarts的展板",
+          "id": "uo_tabpage_webview2_echart",
+          "obj": "uo_webview2",
+          "tip": "echarts"
+        }
+      ]
+    },
+    {
+      "text": "控件与界面美观",
+      "id": "",
       "tip": "控件与界面美观",
       "items": [
         {
-          "label": "打开/保存对话框",
-          "page": "uo_tabpage_opensave_dialog",
-          "obj": "pbjson.sra",
+          "text": "打开/保存对话框",
+          "id": "uo_tabpage_opensave_dialog",
+          "obj": "",
           "tip": "打开和保存对话框,声明为全局函数即可."
         },
         {
-          "label": "Scintilla语法高亮编辑器",
-          "page": "uo_tabpage_scintilla",
+          "text": "弹出式菜单",
+          "id": "w_popupmenu",
+          "obj": "",
+          "tip": "弹出式菜单，可定制风格"
+        },
+        {
+          "text": "Scintilla语法高亮编辑器",
+          "id": "uo_tabpage_scintilla",
           "obj": "uo_scintilla",
           "tip": "Scintilla"
         },
         {
-          "label": "计算器控件",
-          "page": "uo_tabpage_calculator",
+          "text": "计算器控件",
+          "id": "uo_tabpage_calculator",
           "obj": "uo_calculator",
           "tip": "计算器控件，支持事件"
         },
         {
-          "label": "漂亮的日历控件",
-          "page": "uo_tabpage_calendar",
+          "text": "漂亮的日历控件",
+          "id": "uo_tabpage_calendar",
           "obj": "uo_calendar",
           "tip": "支持农历的日历控件。支持鼠标和键盘操作，直接输入日期，可快速跳转，例如直接在键盘输入输入 19491001 ,CTRL + PgDn/PgUp 会快速按上下年跳动"
         },
         {
-          "label": "进度条控件和弹窗",
-          "page": "uo_tabpage_progress",
+          "text": "进度条控件和弹窗",
+          "id": "uo_tabpage_progress",
           "obj": "uo_wait_box,uo_progress,uo_messagewidget",
           "tip": "不同类型的进度条"
         },
         {
-          "label": "内置字体图标速查",
-          "page": "uo_tabpage_awesome",
+          "text": "内置字体图标速查",
+          "id": "uo_tabpage_awesome",
           "obj": "",
           "tip": "内置字体图标速查"
         },
         {
-          "label": "基于webView2的浏览器实现",
-          "page": "uo_tabpage_webview2",
-          "obj": "uo_webview2",
-          "tip": "基于微软最新edge webView2的浏览器控件"
-        },
-        {
-          "label": "基于webView2的交互控件",
-          "page": "uo_tabpage_webview2_2",
-          "obj": "uo_webview2",
-          "tip": "基于微软最新edge webView2的浏览器控件"
+          "text": "堆叠式控件(Tab)和状态栏",
+          "id": "uo_tabpage_stack",
+          "obj": "uo_widgetstack",
+          "tip": "堆叠式控件,相当于没有头部的tab控件"
         }
       ]
     },
     {
-      "label": "其他 PowerBuilder 扩展功能",
-      "page": "",
+      "text": "其他 PowerBuilder 扩展功能",
+      "id": "",
       "obj": "",
       "tip": "难以归类的其他功能",
       "items": [
         {
-          "label": "PB读取对象内容",
-          "page": "uo_tabpage_pb_reader",
+          "text": "PB读取对象内容",
+          "id": "uo_tabpage_pb_reader",
           "obj": "uo_utils",
           "tip": "各种杂项函数和功能的集合"
         },
         {
-          "label": "PB变量读写函数",
-          "page": "uo_tabpage_pb_var",
+          "text": "PB变量读写函数",
+          "id": "uo_tabpage_pb_var",
           "obj": "uo_utils",
           "tip": "各种杂项函数和功能的集合"
         },
         {
-          "label": "保护PBD不被反编译",
-          "page": "uo_tabpage_pb_safe",
+          "text": "保护PBD不被反编译",
+          "id": "uo_tabpage_pb_safe",
           "obj": "uo_utils",
           "tip": "加强应用程序安全，保护PBD不被反编译，尤其是数据库用户名密码等关键信息。"
         },
         {
-          "label": "文件读写操作增强功能",
-          "page": "uo_tabpage_file_op",
+          "text": "文件读写操作增强功能",
+          "id": "uo_tabpage_file_op",
           "obj": "uo_file,uo_blob,uo_string,uo_logfile",
           "tip": "文件读写操作增强功能。"
         },
         {
-          "label": "DLL函数调用",
-          "page": "uo_tabpage_dll",
+          "text": "DLL函数调用",
+          "id": "uo_tabpage_dll",
           "obj": "uo_dll",
           "tip": "PB默认只支持 stdcall 约定的DLL函数，本功能除支持 stdcall 约定外，也可以支持 cdecl 约定。"
+        },
+        {
+          "text": "C# DLL 函数调用",
+          "id": "uo_tabpage_csdll",
+          "obj": "uo_csharp",
+          "tip": "支持直接调用C#写的DLL，包括支持可视界面."
+        },
+        {
+          "text": "orca动态编译",
+          "id": "uo_tabpage_orca",
+          "obj": "uo_orca",
+          "tip": "PB动态编译。"
+        },
+        {
+          "text": "配置文件及序列化",
+          "id": "uo_tabpage_config",
+          "obj": "uo_config",
+          "tip": "配置文件及序列化。"
         }
       ]
     },
     {
-      "label": "行业应用和案例",
-      "page": "uo_tabpage_bussess",
+      "text": "行业应用和案例",
+      "id": "uo_tabpage_bussess",
       "obj": "uo_crypto,uo_httpclient,uo_curl",
       "tip": "行业应用和案例",
       "items": [
         {
-          "label": "阿里 csb 签名",
-          "page": "uo_tabpage_bussess_csb",
+          "text": "阿里 csb 签名",
+          "id": "uo_tabpage_bussess_csb",
           "obj": "uo_crypto,uo_httpclient,uo_curl",
           "tip": "行业应用和案例"
         },
         {
-          "label": "内蒙古预算管理一体化系统接口签名",
-          "page": "uo_tabpage_bussess_nmys",
+          "text": "内蒙古预算管理一体化系统接口签名",
+          "id": "uo_tabpage_bussess_nmys",
           "obj": "uo_crypto,uo_httpclient,uo_curl",
           "tip": "内蒙古预算管理一体化系统接口签名"
         },
         {
-          "label": "农业银行商户接口签名",
-          "page": "uo_tabpage_bussess_nyyhsh",
+          "text": "农业银行商户接口签名",
+          "id": "uo_tabpage_bussess_nyyhsh",
           "obj": "uo_crypto,uo_httpclient,uo_curl",
           "tip": "农业银行商户接口签名"
         },
         {
-          "label": "赣州银行开放平台-收单支付-标准接口",
-          "page": "uo_tabpage_bussess_gzbank",
+          "text": "赣州银行开放平台-收单支付-标准接口",
+          "id": "uo_tabpage_bussess_gzbank",
           "obj": "uo_crypto,uo_httpclient,uo_curl",
           "tip": "赣州银行开放平台-收单支付-标准接口"
         },
         {
-          "label": "工商银行二维码被扫支付接口",
-          "page": "uo_tabpage_bussess_ghpay",
+          "text": "工商银行二维码被扫支付接口",
+          "id": "uo_tabpage_bussess_ghpay",
           "obj": "uo_crypto,uo_httpclient,uo_curl",
           "tip": "工商银行二维码被扫支付接口"
         },
         {
-          "label": "建行互联网银企直连请求加密及返回验签方法(广州)",
-          "page": "uo_tabpage_bussess_ghpay",
+          "text": "建行互联网银企直连请求加密及返回验签方法(广州)",
+          "id": "uo_tabpage_bussess_ghpay",
           "obj": "uo_crypto,uo_httpclient,uo_curl",
           "tip": "建行互联网银企直连请求加密及返回验签方法(广州)"
         },
         {
-          "label": "国家医保上传下载接口",
-          "page": "uo_tabpage_bussess_yb_ud",
+          "text": "国家医保上传下载接口",
+          "id": "uo_tabpage_bussess_yb_ud",
           "obj": "uo_crypto,uo_httpclient,uo_curl",
           "tip": "国家医保上传下载接口"
         },
         {
-          "label": "诺诺企业发票接口加密",
-          "page": "uo_tabpage_bussess_nnfp",
+          "text": "诺诺企业发票接口加密",
+          "id": "uo_tabpage_bussess_nnfp",
           "obj": "uo_crypto,uo_httpclient,uo_curl",
           "tip": "诺诺企业发票接口加密"
+        },
+        {
+          "text": "微信刷脸支付",
+          "id": "w_wx_face",
+          "obj": "uo_wxface",
+          "tip": "微信刷脸支付"
         }
       ]
 
     },
     {
-      "label": "PbIdea相关文档",
-      "page": "uo_tabpage_document",
+      "text": "-"
+    },
+    {
+      "text": "PbIdea相关文档",
+      "id": "uo_tabpage_document",
       "obj": "",
-      "param": "modify.pdf/PbIdea更新历史,blog.pdf/学习PbIdea参考阅读资料,updateapp.pdf/基于HTTP的应用程序布署和更新,ybfile.pdf/PbIdea 如何导入医保大文件,pss.pdf/webapi和websocke服务使用说明,safe.pdf/关于PB核心代码保护的一个方案",
+      "param": "modify.pdf/PbIdea更新历史,blog.pdf/学习PbIdea参考阅读资料,updateapp.pdf/基于HTTP的应用程序布署和更新,ybfile.pdf/PbIdea 如何导入医保大文件,pss.pdf/webapi和websocke服务使用说明,safe.pdf/关于PB核心代码保护的一个方案,webView2.pdf/关于如何布署和分发webView2的问题,libxl.pdf/Pbidea之libxl接口及使用",
       "tip": "更新说明和阅读参考。"
     }
   ]

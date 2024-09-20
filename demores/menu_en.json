@@ -1,0 +1,944 @@
+﻿{
+  "text": "PbIdea function library menu ",
+  "tip": "PbIdea is PowerBuidler extension library, especially in the current situation of the development of the Internet, new medical insurance development, greatly improve the usability of PowerBuilder. \n This library is free to use, and always free! \n Some modules need development authorization, even if there is no development authorization, it is just some tips, and does not affect the specific function implementation. \n Please check the menu.json file for the contents of this menu, which contains the corresponding relationship between functions and specific modules, so as to facilitate the search of specific functions. \n\n free QQ:781770213",
+  "items": [
+    {
+      "text": "Home",
+      "id": "uo_tabpage_homepage",
+      "obj": "uo_pdfview",
+      "tip": "Before you begin, it is recommended that you take a moment to read this note. nLearn about the basic features of the WebSuite library. "
+    },
+    {
+      "text": "Object Reference Manual",
+      "id": "uo_tabpage_manual",
+      "obj": "",
+      "tip": "Object Reference Technical Manual"
+    },
+    {
+      "text": "PowerScript Server(PSS)<VIP>",
+      "id": "uo_tabpage_pss_server",
+      "obj": "uo_websocket_server",
+      "tip": "Let you write your own webapi services and websocket services in PB (don't need you understand .NET C# JAVA, etc., only need PB), provide data services for third parties or your own APP, or proxy external network interface access to the intranet."
+    },
+    {
+      "text": "Postman",
+      "id": "uo_tabpage_postman",
+      "obj": "uo_httpclient",
+      "tip": "Postman"
+    },
+    {
+      "text": "National Medical Insurance Interface Related Implementation<VIP>",
+      "id": "uo_tabpage_yb",
+      "obj": "uo_yibao",
+      "tip": "Provide some provincial interfaces based on national medical insurance standards and SM2 SM3 SM4 algorithm."
+    },
+    {
+      "text": "pbidea resource",
+      "id": "uo_tabpage_webview2_download",
+      "obj": "uo_webView2",
+      "tip": "pbidea resource"
+    },
+    {
+      "text": "json/bson/xml and other interchange formats",
+      "id": "uo_tabpage_json",
+      "tip": "Quickly parse and generate JSON, providing efficient datawindow-based import and export. nThe most worthwhile function is that when there is subJSON and arrays, you can use the symbol / to directly obtain member values, without layer by layer parsing. The efficiency and speed of processing JSON by this object is the fastest in the PB world, on par with PB2019's JSON.",
+      "items": [
+        {
+          "text": "uo_json",
+          "id": "uo_tabpage_json",
+          "obj": "uo_json",
+          "tip": "Quickly parse and generate JSON, providing efficient datawindow-based import and export. nThe most worthwhile function is that when there is subJSON and arrays, you can use the symbol / to directly obtain member values, without layer by layer parsing. The efficiency and speed of processing JSON by this object is the fastest in the PB world, on par with PB2019's JSON."
+        },
+        {
+          "text": "uo_bson",
+          "id": "uo_tabpage_bson",
+          "obj": "uo_bson",
+          "tip": "BSON file and data parsing and generation, efficient and convenient."
+        },
+        {
+          "text": "uo_xml",
+          "id": "uo_tabpage_xml",
+          "obj": "uo_xml",
+          "tip": "XML file and string parsing and generation, efficient and convenient."
+        }
+      ]
+    },
+    {
+      "text": "httpclient",
+      "tip": "Provides HttpClient access. Based on WinHttp and libcurl, respectively. ",
+      "items": [
+        {
+          "text": "uo_httpclient(base WinHttp)",
+          "id": "uo_tabpage_httpclient",
+          "obj": "uo_httpclient",
+          "tip": "Provides data access based on WinHttp HTTP/HTTPS protocol, encapsulates download and upload functions, can directly transfer JSON objects, and automatically transcodes UTF8. nIt can completely replace the system's XMLHTTP object function, only stronger and more convenient."
+        },
+        {
+          "text": "uo_curl(base libcurl)",
+          "id": "uo_tabpage_curl",
+          "obj": "uo_curl",
+          "tip": "Provides data access based on libcurl-based HTTP/HTTPS protocol, encapsulates download and upload functions, can directly transfer JSON objects, and automatically transcodes UTF8. nIt can completely replace the system's XMLHTTP object function, only stronger and more convenient."
+        },
+        {
+          "text": "全国统计用区划代码和城乡划分代码",
+          "id": "uo_tabpage_reptile",
+          "obj": "uo_curl, uo_httpclient",
+          "tip": "使用 httpclient 爬数据的例子"
+        }
+      ]
+    },
+    {
+      "text": "Encrypt/decrypt and encode",
+      "id": "uo_tabpage_crypto",
+      "tip": "Implement commonly used functions based on OpenSSL. n1. RSA public key and private key generation, encryption and decryption, signing, and verification. n2. CRC32 CRC16 CRC8 check. n3. MD5, SHA, SM3, base64, urlencode/urldecode, timestamp and many other codec functions. n4. AES, DES, 3DES, SM4 and many other encryption and decryption functions. nThe above can be used to complete most e-commerce signing, encryption and decryption work.",
+      "items": [
+        {
+          "text": "RSA encryption decrypts signature verification",
+          "id": "uo_tabpage_crypto_rsa",
+          "obj": "uo_crypto",
+          "tip": "Implement commonly used functions based on OpenSSL. n1. RSA public key and private key generation, encryption and decryption, signing, and verification. n2. CRC32 CRC16 CRC8 check. n3. MD5, SHA, SM3, base64, urlencode/urldecode, timestamp and many other codec functions. n4. AES, DES, 3DES, SM4 and many other encryption and decryption functions. nThe above can be used to complete most e-commerce signing, encryption and decryption work."
+        },
+        {
+          "text": "Various CRC codes",
+          "id": "uo_tabpage_crypto_crc",
+          "obj": "uo_crypto",
+          "tip": "Implement commonly used functions based on OpenSSL. n1. RSA public key and private key generation, encryption and decryption, signing, and verification. n2. CRC32 CRC16 CRC8 check. n3. MD5, SHA, SM3, base64, urlencode/urldecode, timestamp and many other codec functions. n4. AES, DES, 3DES, SM4 and many other encryption and decryption functions. nThe above can be used to complete most e-commerce signing, encryption and decryption work."
+        },
+        {
+          "text": "AES、DES、base64、SM3/4 And other common algorithms",
+          "id": "uo_tabpage_crypto_a",
+          "obj": "uo_crypto",
+          "tip": "Implement commonly used functions based on OpenSSL. n1. RSA public key and private key generation, encryption and decryption, signing, and verification. n2. CRC32 CRC16 CRC8 check. n3. MD5, SHA, SM3, base64, urlencode/urldecode, timestamp and many other codec functions. n4. AES, DES, 3DES, SM4 and many other encryption and decryption functions. nThe above can be used to complete most e-commerce signing, encryption and decryption work."
+        },
+        {
+          "text": "SM2",
+          "id": "uo_tabpage_crypto_sm2",
+          "obj": "uo_crypto",
+          "tip": "SM2"
+        },
+        {
+          "text": "asn1/jwt",
+          "id": "uo_tabpage_crypto_asn1",
+          "obj": "uo_crypto",
+          "tip": "asn1 encode/decode , jwt like java"
+        },
+        {
+          "text": "bcrypto",
+          "id": "uo_tabpage_bcrypto",
+          "obj": "uo_crypto",
+          "tip": "save and check password。"
+        }
+      ]
+    },
+    {
+      "text": "FTP/SFP/FTP server",
+      "tip": "FTP server and  FTP/sFTP client",
+      "items": [
+        {
+          "text": "uo_ftp_server(FTP server)",
+          "id": "uo_tabpage_ftp_server",
+          "obj": "uo_ftp_server",
+          "tip": "An FTP server is provided to share native files to other clients."
+        },
+        {
+          "text": "uo_ftp(FTP)",
+          "id": "uo_tabpage_ftp",
+          "obj": "uo_ftp",
+          "tip": "An FTP client based on the libftp library implemented entirely from the underlying protocol. IS DIFFERENT FROM WINAPI-BASED FTP CLIENTS IN THAT IT PROVIDES MORE DETAILED CONTROL."
+        },
+        {
+          "text": "uo_ftp((FTP Explorer)",
+          "id": "uo_tabpage_ftp_browser",
+          "obj": "uo_ftp",
+          "tip": "An FTP client based on the libftp library implemented entirely from the underlying protocol. IS DIFFERENT FROM WINAPI-BASED FTP CLIENTS IN THAT IT PROVIDES MORE DETAILED CONTROL. nThis is an FTP client manager that mimics the resource manager implementation. Double-click the file in the explorer to edit and automatically update it to the server."
+        },
+        {
+          "text": "uo_sftp(SFTP)",
+          "id": "uo_tabpage_sftp",
+          "obj": "uo_sftp",
+          "tip": "FTP client based on the ssh protocol, abbreviated as sftp. nIn addition to file upload and download, you can also execute operating system commands on the server, which is equivalent to incorporating the SSH function."
+        }
+      ]
+    },
+    {
+      "text": "Extended data types (map, string, etc.)",
+      "id": "",
+      "obj": "",
+      "tip": "Extended data types (map, string, etc.)",
+      "items": [
+        {
+          "text": "uo_map",
+          "id": "uo_tabpage_map_asn1",
+          "obj": "uo_map",
+          "tip": "A map is an associative container that stores elements consisting of a combination of a key-value Key and a mapped value Value, in a specific order. This is a very useful tool. Key-value Key is typically used to sort and uniquely identify elements, while the mapped value Value stores the content associated with this key-value Key. n2. Elements are always sorted by their key, Key. nVery useful when saving data like a data dictionary. nasn1 encoding encodes data into binary to facilitate packaging of unformatted data."
+        },
+        {
+          "text": "uo_blob Binary data processing",
+          "id": "uo_tabpage_blob",
+          "obj": "uo_blob",
+          "tip": "Powerful binary data processing that goes far beyond blob types."
+        },
+        {
+          "text": "uo_string (Advanced String Processing)",
+          "id": "uo_tabpage_string",
+          "obj": "uo_string",
+          "tip": "A fast and efficient string handling object, especially in many string concatenation operations, is up to fifty times faster than string variable operations. nIn addition to the functions of finding and replacing, other special functions are:n1.Regular expression search, matching, and replacement. n2. Large text is processed by line. n3. Character set conversion. n4.Read and write text files directlyn5.String splitting. n6.Console output debugging function."
+        },
+        {
+          "text": "Bit manipulation and decimal conversion",
+          "id": "uo_tabpage_bits",
+          "obj": "uo_bits,uo_string",
+          "tip": "Bit manipulation and decimal conversion"
+        },
+        {
+          "text": "big integer",
+          "id": "uo_tabpage_biginteger",
+          "obj": "uo_biginteger",
+          "tip": "big integer"
+        },
+        {
+          "text": "datetime",
+          "id": "uo_tabpage_datetime",
+          "obj": "uo_datetime",
+          "tip": "date/time/datetime"
+        }
+      ]
+    },
+    {
+      "text": "Compress/decompress",
+      "id": "",
+      "tip": "Provides compression and decompression capabilities.",
+      "items": [
+        {
+          "text": "uo_zip (ZIP file compression/decompression)",
+          "id": "uo_tabpage_zip",
+          "obj": "uo_zip",
+          "tip": "Provides compression and decompression in ZIP format. nIn addition to compressing and decompressing files, you can also add BLOB data to the compressed package, or read the contents of the compressed file into BLOB variables."
+        },
+        {
+          "text": "uo_compress(Compress/decompress)",
+          "id": "uo_tabpage_compress",
+          "obj": "uo_compress",
+          "tip": "Provides data stream compression and decompression. Supports compressing and decompressing .gz format files."
+        }
+      ]
+    },
+    {
+      "text": "Database extensions",
+      "id": "",
+      "obj": "",
+      "tip": "",
+      "items": [
+        {
+          "text": "uo_sql(Database)",
+          "id": "uo_tabpage_sql",
+          "obj": "uo_database",
+          "tip": "Numerous database connection support is available. Fast and efficient access to databases and result sets. The supported connection methods and databases are:n1. ODBCn2. Microsoft SQL Servern3. Oraclen4. InterBase/Firebirdn5. SQLBasen6. DB2n7. Sybasen8. MySQLn9. PostgreSQLn10. SQLiten11. SQLAnywere"
+        },
+        {
+          "text": "Transaction object (PB database)",
+          "id": "uo_tabpage_transaction",
+          "obj": "uo_transaction",
+          "tip": "PB's own database is improved, and it supports functions such as disconnection detection"
+        },
+        {
+          "text": "DBF file import and export",
+          "id": "uo_tabpage_dbf",
+          "obj": "uo_dbf",
+          "tip": "DBF file import and export, support more than 1000 columns."
+        },
+        {
+          "text": "Parse the oracle TNS file",
+          "id": "uo_tabpage_tns",
+          "obj": "uo_json",
+          "tip": "Parse the oracle TNS file in JSON format, which is convenient to use."
+        },
+        {
+          "text": "key-value database",
+          "id": "uo_tabpage_kv",
+          "obj": "uo_kv",
+          "tip": "A key-value database is a non-relational database that uses a simple key-value approach to storing data. A key-value database stores data as a collection of key-value pairs, where the key acts as a unique identifier。"
+        }
+      ]
+    },
+    {
+      "text": "PDF browsing and generation<VIP>",
+      "id": "uo_tabpage_pdf",
+      "tip": "A less common PDF file reading control (not OCX). nFunctions are:n1.Load PDF, print and save, just like the content displayed on the front page. n2.Convert PDF to image. n3.Convert PDF to plain text content, you can get every word. n4.Add a picture at the specified location. n5.Add a handwritten signature. n6.dw2pdf Generate PDFs and images.",
+      "items": [
+        {
+          "text": "pdf generation: dw2pdf<VIP>",
+          "id": "uo_tabpage_pdf_maker",
+          "obj": "uo_pdfmaker",
+          "tip": ""
+        },
+        {
+          "text": "pdf brower and edit<VIP>",
+          "id": "uo_tabpage_pdf_view",
+          "obj": "uo_pdfview",
+          "tip": ""
+        },
+        {
+          "text": "Multiple PDF files are combined into one file",
+          "id": "uo_tabpage_pdf_merge",
+          "obj": "uo_pdfview",
+          "tip": "Merge multiple PDF files into one PDF file."
+        }
+      ]
+    },
+    {
+      "text": "OFD(开放版式文档)<VIP>",
+      "tip": "由我国自主研发的文档格式，旨在打破政府部门和党委机关电子公文格式不统一的局面，以方便地进行电子文档的存储、读取以及编辑，实现文档格式的自主可控和跨平台兼容性。",
+      "items": [
+        {
+          "text": "ofd view/print",
+          "id": "uo_tabpage_ofd_view",
+          "obj": "uo_ofdview",
+          "tip": "由我国自主研发的文档格式，旨在打破政府部门和党委机关电子公文格式不统一的局面，以方便地进行电子文档的存储、读取以及编辑，实现文档格式的自主可控和跨平台兼容性。"
+        },
+        {
+          "text": "ofd convert to pdf/png/svg",
+          "id": "uo_tabpage_ofd_conv",
+          "obj": "uo_ofdserver",
+          "tip": "由我国自主研发的文档格式，旨在打破政府部门和党委机关电子公文格式不统一的局面，以方便地进行电子文档的存储、读取以及编辑，实现文档格式的自主可控和跨平台兼容性。"
+        },
+        {
+          "text": "ofd server",
+          "id": "uo_tabpage_ofd_server",
+          "obj": "uo_ofdreader",
+          "tip": "由我国自主研发的文档格式，旨在打破政府部门和党委机关电子公文格式不统一的局面，以方便地进行电子文档的存储、读取以及编辑，实现文档格式的自主可控和跨平台兼容性。"
+        }
+      ]
+    },
+    {
+      "text": "Graphic picture barcode, multimedia",
+      "id": "",
+      "tip": "Support various picture loading, display, conversion processing, as well as barcode, QR code generation and display printing.",
+      "items": [
+        {
+          "text": "uo_image",
+          "id": "uo_tabpage_image",
+          "obj": "uo_image",
+          "tip": "Support BMP, JPG, PNG, EMF, WMF, WEBP, TIF, GIF and other formats, image loading, display, conversion."
+        },
+        {
+          "text": "Barcode, QR code",
+          "id": "uo_tabpage_code",
+          "obj": "uo_image",
+          "tip": "Barcode, QR code"
+        },
+        {
+          "text": "Barcode, QR code Scanner",
+          "id": "uo_tabpage_symbol",
+          "obj": "uo_image",
+          "tip": "Barcode, QR code Scanner"
+        },
+        {
+          "text": "dib",
+          "id": "uo_tabpage_dib",
+          "obj": "uo_dib",
+          "tip": "dib"
+        },
+        {
+          "text": "image view control",
+          "id": "uo_tabpage_image_view",
+          "obj": "uo_imageview",
+          "tip": "image view control。"
+        },
+        {
+          "text": "SVG viewer",
+          "id": "uo_tabpage_image_svg",
+          "obj": "uo_imageview",
+          "tip": "图片浏览控件。"
+        },
+        {
+          "text": "uo_painter advanced drawing",
+          "id": "uo_tabpage_painter",
+          "obj": "uo_painter",
+          "tip": "Based on the GDIplus packaging graphics processing tool, the function can be similar to the drawing tool that comes with Windows, or even surpassed",
+          "items": [
+            {
+              "text": "arc",
+              "id": "uo_tabpage_painter_chart_arc",
+              "obj": "uo_painter",
+              "tip": ""
+            },
+            {
+              "text": "area",
+              "id": "uo_tabpage_painter_chart_area",
+              "obj": "uo_painter",
+              "tip": ""
+            },
+            {
+              "text": "bar",
+              "id": "uo_tabpage_painter_chart_bar",
+              "tip": ""
+            },
+            {
+              "text": "bar3d",
+              "id": "uo_tabpage_painter_chart_bar3d",
+              "obj": "uo_painter",
+              "tip": ""
+            },
+            {
+              "text": "barline",
+              "id": "uo_tabpage_painter_chart_barline",
+              "obj": "uo_painter",
+              "tip": ""
+            },
+            {
+              "text": "guage",
+              "id": "uo_tabpage_painter_chart_guage",
+              "tip": ""
+            },
+            {
+              "text": "hbar",
+              "id": "uo_tabpage_painter_chart_hbar",
+              "obj": "uo_painter",
+              "tip": ""
+            },
+            {
+              "text": "line",
+              "id": "uo_tabpage_painter_chart_line",
+              "obj": "uo_painter",
+              "tip": ""
+            },
+            {
+              "text": "npie",
+              "id": "uo_tabpage_painter_chart_npie",
+              "obj": "uo_painter",
+              "tip": ""
+            },
+            {
+              "text": "percent",
+              "id": "uo_tabpage_painter_chart_percent",
+              "obj": "uo_painter",
+              "tip": ""
+            },
+            {
+              "text": "pie",
+              "id": "uo_tabpage_painter_chart_pie",
+              "tip": ""
+            },
+            {
+              "text": "radar",
+              "id": "uo_tabpage_painter_chart_radar",
+              "obj": "uo_painter",
+              "tip": ""
+            },
+            {
+              "text": "scatter",
+              "id": "uo_tabpage_painter_chart_scatter",
+              "obj": "uo_painter",
+              "tip": ""
+            },
+            {
+              "text": "clip",
+              "id": "uo_tabpage_painter_clip",
+              "obj": "uo_painter",
+              "tip": ""
+            },
+            {
+              "text": "image",
+              "id": "uo_tabpage_painter_image",
+              "obj": "uo_painter",
+              "tip": ""
+            },
+            {
+              "text": "report",
+              "id": "uo_tabpage_painter_re",
+              "obj": "uo_painter",
+              "tip": ""
+            }
+          ]
+        },
+        {
+          "text": ".wav File merging",
+          "id": "uo_tabpage_wav",
+          "obj": "uo_wavfile",
+          "tip": "Audio file merging"
+        },
+        {
+          "text": "Speech recognition and text playback",
+          "id": "uo_tabpage_speak",
+          "obj": "uo_speak,uo_speak_recognize",
+          "tip": "",
+          "items": [
+            {
+              "text": "Play voice playback",
+              "id": "uo_tabpage_speak",
+              "obj": "uo_speak,uo_speak_recognize",
+              "tip": ""
+            },
+            {
+              "text": "Speech <-> text to and from each other",
+              "id": "uo_tabpage_speak_recognize",
+              "obj": "uo_speak,uo_speak_recognize",
+              "tip": ""
+            }
+          ]
+        },
+        {
+          "text": "MP3 player",
+          "id": "uo_tabpage_mp3",
+          "obj": "uo_zplay",
+          "tip": "music, mp3 player"
+        },
+        {
+          "text": "Camera",
+          "id": "uo_tabpage_camera",
+          "obj": "uo_camera",
+          "tip": "usb camera"
+        }
+      ]
+    },
+    {
+      "text": "Datawindow enhancements",
+      "id": "",
+      "tip": "Datawindow-based enhancements.",
+      "items": [
+        {
+          "text": "datawindow-Excel",
+          "id": "uo_tabpage_excel",
+          "obj": "uo_datawindowex",
+          "tip": "datawindow excel import/export。"
+        },
+        {
+          "text": "drag dw",
+          "id": "uo_tabpage_drag_datawindow",
+          "obj": "uo_drag_datawindow",
+          "tip": "Datawindow-based drag-and-drop functionality is much easier to use than PB's own drag. nIt can be used in business systems such as shift and room scheduling."
+        },
+        {
+          "text": "Very large text file import",
+          "id": "uo_tabpage_datawindow",
+          "obj": "uo_datawindowex",
+          "tip": "Very large text file import. The medical insurance two-library catalog is usually 200M 300M or even larger kind."
+        },
+        {
+          "text": "Drag the mouse to get the datawindow data",
+          "id": "uo_tabpage_datawindow_seletect",
+          "obj": "vuo_selected_datawindow",
+          "tip": "Drag the mouse to get the datawindow data"
+        },
+        {
+          "text": "The datawindow syntax resolves to json",
+          "id": "uo_tabpage_datawindow_syntax",
+          "obj": "uo_json",
+          "tip": "The datawindow syntax resolves to json。"
+        },
+        {
+          "text": "Dynamic picture of the data column",
+          "id": "uo_tabpage_datawindow_dimage",
+          "obj": "uo_datawindowex",
+          "tip": "Generate pictures in real time。"
+        },
+        {
+          "text": "vert center",
+          "id": "uo_tabpage_datawindow_vcenter",
+          "obj": "uo_datawindowex",
+          "tip": "datawindow grid vert center"
+        },
+        {
+          "text": "dw tree",
+          "id": "uo_tabpage_datawindow_tree",
+          "obj": "uo_datawindowex",
+          "tip": "datawindow tree"
+        },
+        {
+          "text": "excel->json->dw",
+          "id": "uo_tabpage_excel_json",
+          "obj": "uo_datawindowex",
+          "tip": "excel sheet to json, dw"
+        }
+      ]
+    },
+    {
+      "text": "Excel",
+      "id": "",
+      "tip": "excel",
+      "items": [
+        {
+          "text": "Datawindow-Excel",
+          "id": "uo_tabpage_excel",
+          "obj": "uo_datawindowex",
+          "tip": "datawindow excel import/export"
+        },
+        {
+          "text": "excel->json->dw",
+          "id": "uo_tabpage_excel_json",
+          "obj": "uo_datawindowex",
+          "tip": "excel sheet to json, dw"
+        },
+        {
+          "text": "Excel read/write(base libxl)",
+          "id": "uo_tabpage_excel_libxl",
+          "obj": "uo_xl_book",
+          "tip": "base libxl, excel read/write"
+        }
+      ]
+    },
+    {
+      "text": "websocket and tcp/ip client",
+      "id": "",
+      "obj": "",
+      "tip": "websocket and tcp/ip client",
+      "items": [
+        {
+          "text": "websocket_client",
+          "id": "uo_tabpage_ws_client",
+          "obj": "uo_websocket_client",
+          "tip": "websocket client"
+        },
+        {
+          "text": "socket_client",
+          "id": "uo_tabpage_socket_client",
+          "obj": "uo_socket_client",
+          "tip": "socket client"
+        },
+        {
+          "text": "ping",
+          "id": "uo_tabpage_ping",
+          "obj": "",
+          "tip": "ping, which supports port ping"
+        },
+        {
+          "text": "uo_mail (e-mail)",
+          "id": "uo_tabpage_mail",
+          "obj": "uo_mail",
+          "tip": "1. Send mail based on SMTP protocol. n2.Receive mail based on POP protocol. The received email has been parsed into a JSON structure for ease of use."
+        }
+      ]
+    },
+    {
+      "text": "High concurrency components",
+      "id": "",
+      "tip": "redis,kafka,mqtt... client",
+      "items": [
+        {
+          "text": "RabbitMQ",
+          "id": "uo_tabpage_hc_rabbitmq",
+          "obj": "uo_rabbitmq,uo_rabbitmq_exchange,uo_rabbitmq_queue",
+          "tip": ""
+        },
+        {
+          "text": "kafka",
+          "id": "uo_tabpage_hc_kafka",
+          "obj": "uo_kafka_consumer,uo_kafka_producer",
+          "tip": ""
+        },
+        {
+          "text": "mqtt",
+          "id": "uo_tabpage_hc_mqtt",
+          "obj": "uo_mqtt",
+          "tip": ""
+        },
+        {
+          "text": "redis",
+          "id": "uo_tabpage_hc_redis",
+          "obj": "uo_redis",
+          "tip": ""
+        }
+      ]
+    },
+    {
+      "text": "IoT development and smart devices",
+      "id": "",
+      "obj": "uo_modbus_tcp",
+      "tip": "IoT development and smart devices",
+      "items": [
+        {
+          "text": "modbus-tcp",
+          "id": "uo_tabpage_modbus",
+          "obj": "uo_modbus_tcp",
+          "tip": "modbus-tcp"
+        },
+        {
+          "text": "Hikvision fingerprint meter",
+          "id": "uo_tabpage_fingerprint",
+          "obj": "uo_fingerprint",
+          "tip": "Hikvision fingerprint meter"
+        },
+        {
+          "text": "websocket_client",
+          "id": "uo_tabpage_ws_client",
+          "obj": "uo_websocket_client",
+          "tip": "websocket client"
+        },
+        {
+          "text": "Serial port communication (COM port)",
+          "id": "uo_tabpage_serial",
+          "obj": "uo_serial",
+          "tip": "Serial port communication (COM port)"
+        },
+        {
+          "text": "通用读取身份证信息",
+          "id": "uo_tabpage_sdtapi",
+          "obj": "uo_sdtapi",
+          "tip": "读取身份证信息"
+        },
+        {
+          "text": "RFID-UHFReader18",
+          "id": "w_uhfreader18",
+          "obj": "uo_uhfreader18",
+          "tip": "RFID-UHFReader18"
+        }
+      ]
+    },
+    {
+      "text": "Computers/printers and systems",
+      "id": "uo_tabpage_printer",
+      "tip": "Printer control related functions and calculator controls",
+      "items": [
+        {
+          "text": "printer",
+          "id": "uo_tabpage_printer",
+          "obj": "uo_printer",
+          "tip": "Printer control related functions"
+        },
+        {
+          "text": "USB driveless printer",
+          "id": "uo_tabpage_printer_usb",
+          "obj": "uo_printer_usb",
+          "tip": "USB driveless printer"
+        },
+        {
+          "text": "Take the IP, CPU serial number, etc",
+          "id": "uo_tabpage_hardware",
+          "obj": "uo_hardware",
+          "tip": "Take the IP, CPU serial number, etc"
+        },
+        {
+          "text": "Multi-monitor management",
+          "id": "uo_tabpage_monitor",
+          "obj": "uo_monitor",
+          "tip": "Multi-monitor management"
+        },
+        {
+          "text": "Operating system related",
+          "id": "uo_tabpage_system",
+          "obj": "uo_hardware",
+          "tip": "Operating system related"
+        },
+        {
+          "text": "Subclassing",
+          "id": "uo_tabpage_subclass",
+          "obj": "uo_subclass",
+          "tip": "Window subclassing, intercepting window messages, and making your own judgment processing. This is a feature that C/C++ can easily do, and now we can PB too."
+        },
+        {
+          "text": "Multithreading and process data sharing",
+          "id": "uo_tabpage_thread",
+          "obj": "uo_thread_factory,uo_thread",
+          "tip": "Multithreading and process data sharing"
+        },
+        {
+          "text": "System environment variables",
+          "id": "uo_tabpage_env",
+          "obj": "uo_sysenv",
+          "tip": "System environment variables"
+        },
+        {
+          "text": "Event Log",
+          "id": "uo_tabpage_eventlog",
+          "obj": "uo_eventlog",
+          "tip": "read system event log"
+        }
+      ]
+    },
+    {
+      "text": "WebView2",
+      "id": "",
+      "tip": "WebView2",
+      "items": [
+        {
+          "text": "Browser implementation based on webView2",
+          "id": "uo_tabpage_webview2",
+          "obj": "uo_webview2",
+          "tip": "Browser control based on Microsoft's latest edge webView2"
+        },
+        {
+          "text": "webView2-based interactive controls",
+          "id": "uo_tabpage_webview2_2",
+          "obj": "uo_webview2",
+          "tip": "Browser control based on Microsoft's latest edge webView2"
+        },
+        {
+          "text": "base echarts display board",
+          "id": "uo_tabpage_webview2_echart",
+          "obj": "uo_webview2",
+          "tip": "base echarts display board"
+        }
+      ]
+    },
+    {
+      "text": "Controls and interfaces",
+      "id": "",
+      "tip": "Controls and interfaces",
+      "items": [
+        {
+          "text": "Open/Save dialog",
+          "id": "uo_tabpage_opensave_dialog",
+          "obj": "pbjson.sra",
+          "tip": "Open and save the dialog and declare it as a global function."
+        },
+        {
+          "text": "popup menu",
+          "id": "w_popupmenu",
+          "obj": "",
+          "tip": "popup menu ,have many style"
+        },
+        {
+          "text": "Scintilla syntax highlights the editor",
+          "id": "uo_tabpage_scintilla",
+          "obj": "uo_scintilla",
+          "tip": "Scintilla"
+        },
+        {
+          "text": "Calculator control",
+          "id": "uo_tabpage_calculator",
+          "obj": "uo_calculator",
+          "tip": "Calculator control, supporting events"
+        },
+        {
+          "text": "Beautiful calendar control",
+          "id": "uo_tabpage_calendar",
+          "obj": "uo_calendar",
+          "tip": "A calendar control that supports the lunar calendar. Support mouse and keyboard operation, directly enter the date, can quickly jump, such as directly enter 19491001 in the keyboard input, CTRL + PgDn/PgUp will quickly press up and down to jump"
+        },
+        {
+          "text": "Progress bar controls and pop-ups",
+          "id": "uo_tabpage_progress",
+          "obj": "uo_wait_box,uo_progress,uo_messagewidget",
+          "tip": "Progress bar controls and pop-ups"
+        },
+        {
+          "text": "Built-in font icon quick check",
+          "id": "uo_tabpage_awesome",
+          "obj": "",
+          "tip": "Built-in font icon quick check"
+        }
+      ]
+    },
+    {
+      "text": "Other PowerBuilder extensions",
+      "id": "",
+      "obj": "",
+      "tip": "Other PowerBuilder extensions that are difficult to categorize",
+      "items": [
+        {
+          "text": "PB reads the object contents",
+          "id": "uo_tabpage_pb_reader",
+          "obj": "uo_utils",
+          "tip": ""
+        },
+        {
+          "text": "PB variable read and write function",
+          "id": "uo_tabpage_pb_var",
+          "obj": "uo_utils",
+          "tip": ""
+        },
+        {
+          "text": "Protect PBD from decompilation",
+          "id": "uo_tabpage_pb_safe",
+          "obj": "uo_utils",
+          "tip": "Strengthen application security to protect PBD from decompilation, especially critical information such as database username and password."
+        },
+        {
+          "text": "File read and write operation enhancements",
+          "id": "uo_tabpage_file_op",
+          "obj": "uo_file,uo_blob,uo_string,uo_logfile",
+          "tip": "File read and write operation enhancements"
+        },
+        {
+          "text": "DLL function calls",
+          "id": "uo_tabpage_dll",
+          "obj": "uo_dll",
+          "tip": "PB only supports DLL functions of stdcall convention by default, and this feature can also support cdecl contracts in addition to stdcall conventions.and can use callback."
+        },
+        {
+          "text": "C# DLL function calls",
+          "id": "uo_tabpage_csdll",
+          "obj": "uo_csharp",
+          "tip": "call C# dll."
+        },
+        {
+          "text": "dynamic compilation(orca)",
+          "id": "uo_tabpage_orca",
+          "obj": "uo_orca",
+          "tip": "dynamic compilation。"
+        },
+        {
+          "text": "Configuration files and serialization",
+          "id": "uo_tabpage_config",
+          "obj": "uo_config",
+          "tip": "Configuration files and serialization。"
+        }
+      ]
+    },
+    {
+      "text": "Industry applications and cases",
+      "id": "uo_tabpage_bussess",
+      "obj": "uo_crypto,uo_httpclient,uo_curl",
+      "tip": "行业应用和案例",
+      "items": [
+        {
+          "text": "阿里 csb 签名",
+          "id": "uo_tabpage_bussess_csb",
+          "obj": "uo_crypto,uo_httpclient,uo_curl",
+          "tip": "行业应用和案例"
+        },
+        {
+          "text": "内蒙古预算管理一体化系统接口签名",
+          "id": "uo_tabpage_bussess_nmys",
+          "obj": "uo_crypto,uo_httpclient,uo_curl",
+          "tip": "内蒙古预算管理一体化系统接口签名"
+        },
+        {
+          "text": "农业银行商户接口签名",
+          "id": "uo_tabpage_bussess_nyyhsh",
+          "obj": "uo_crypto,uo_httpclient,uo_curl",
+          "tip": "农业银行商户接口签名"
+        },
+        {
+          "text": "赣州银行开放平台-收单支付-标准接口",
+          "id": "uo_tabpage_bussess_gzbank",
+          "obj": "uo_crypto,uo_httpclient,uo_curl",
+          "tip": "赣州银行开放平台-收单支付-标准接口"
+        },
+        {
+          "text": "工商银行二维码被扫支付接口",
+          "id": "uo_tabpage_bussess_ghpay",
+          "obj": "uo_crypto,uo_httpclient,uo_curl",
+          "tip": "工商银行二维码被扫支付接口"
+        },
+        {
+          "text": "建行互联网银企直连请求加密及返回验签方法(广州)",
+          "id": "uo_tabpage_bussess_ghpay",
+          "obj": "uo_crypto,uo_httpclient,uo_curl",
+          "tip": "建行互联网银企直连请求加密及返回验签方法(广州)"
+        },
+        {
+          "text": "国家医保上传下载接口",
+          "id": "uo_tabpage_bussess_yb_ud",
+          "obj": "uo_crypto,uo_httpclient,uo_curl",
+          "tip": "国家医保上传下载接口"
+        },
+        {
+          "text": "诺诺企业发票接口加密",
+          "id": "uo_tabpage_bussess_nnfp",
+          "obj": "uo_crypto,uo_httpclient,uo_curl",
+          "tip": "诺诺企业发票接口加密"
+        }
+      ]
+
+    },
+    {
+      "text": "PbIdea-related documentation",
+      "id": "uo_tabpage_document",
+      "obj": "",
+      "param": "modify.pdf/PbIdea update history,blog.pdf/learn PbIdea reference reading, updateapp.pdf/HTTP-based application deployment and update, ybfile.pdf/PbIdea how to import health care large files, pss.pdf/webapi and websocke service usage instructions, safe.pdf/a solution on PB core code protection, webView2.pdf/about install webView2,libxl.pdf/about libxl and template usage",
+      "tip": "Update instructions and read references。"
+    }
+  ]
+}
